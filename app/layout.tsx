@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Create Next TeleMaster App",
+  title: "Create Next TeleMaster App !",
   description: "Create Next TeleMaster App",
 };
 
