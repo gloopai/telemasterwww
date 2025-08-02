@@ -70,8 +70,10 @@ export default function HeroHome() {
               data-aos="zoom-y-out"
               data-aos-delay={150}
             >
-              The website builder you're <br className="max-lg:hidden" />
+              {/* The website builder you're <br className="max-lg:hidden" />
               looking for
+               */}
+               Smart Telegram Management, Unleashed
             </h1>
             <div className="mx-auto max-w-3xl">
               <p
@@ -79,8 +81,7 @@ export default function HeroHome() {
                 data-aos="zoom-y-out"
                 data-aos-delay={300}
               >
-                Simple is a modern website builder powered by AI that changes
-                how companies create user interfaces together.
+               All-in-one Telegram bot management tool to streamline group and channel operations.
               </p>
               <div className="relative before:absolute before:inset-0 before:border-y before:[border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1]">
                 <div
@@ -118,7 +119,7 @@ export default function HeroHome() {
             <div className="relative aspect-video rounded-2xl bg-gray-900 px-5 py-3 shadow-xl before:pointer-events-none before:absolute before:-inset-5 before:border-y before:[border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1] after:absolute after:-inset-5 after:-z-10 after:border-x after:[border-image:linear-gradient(to_bottom,transparent,--theme(--color-slate-300/.8),transparent)1]">
               <div className="relative mb-8 flex items-center justify-between before:block before:h-[9px] before:w-[41px] before:bg-[length:16px_9px] before:[background-image:radial-gradient(circle_at_4.5px_4.5px,var(--color-gray-600)_4.5px,transparent_0)] after:w-[41px]">
                 <span className="text-[13px] font-medium text-white">
-                  cruip.com
+                  telemaster.io
                 </span>
               </div>
               <div className="font-mono text-gray-500 [&_span]:opacity-0">
