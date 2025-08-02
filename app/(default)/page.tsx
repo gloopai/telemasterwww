@@ -1,6 +1,5 @@
 export const metadata = {
-  title: "Home - Simple",
-  description: "Page description",
+  title: "Home-Smart Telegram Management, Unleashed - Telemaster",
 };
 
 import Hero from "@/components/hero-home";

@@ -9,7 +9,25 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Smart Telegram Management, Unleashed",
+  title: "Smart Telegram Management, Unleashed - Telemaster",
+  keywords: [
+    "Telegram bot management",
+    "Telegram group management",
+    "Telegram channel management",
+    "Telegram automation",
+    "Telegram analytics",
+    "Telegram bot tools",
+    "Telegram group tools", 
+    "Telegram channel tools",
+    "Telegram bot analytics",
+    "Telegram group analytics",
+    "Telegram channel analytics",
+    "Telegram bot automation",
+    "Telegram group automation",
+    "Telegram channel automation",
+    "Telegram bot management tool",
+    "Telegram group management tool",
+    "Telegram channel management tool",],
   description: "All-in-one Telegram bot management tool to streamline group and channel operations.",
 };
 
