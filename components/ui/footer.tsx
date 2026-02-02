@@ -193,6 +193,8 @@ export default function Footer({ border = false }: { border?: boolean }) {
                   </svg>
                 </Link>
               </li>
+
+              
             </ul>
           </div>
         </div>
