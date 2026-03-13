@@ -1,3 +1,4 @@
+"use client";
 
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
@@ -7,6 +8,30 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
+  useEffect(() => {
+    if (!mobileMenuOpen) return;
+
+    const onPointerDown = (event: MouseEvent | TouchEvent) => {
+      const target = event.target;
+      if (!(target instanceof Node)) return;
+      if (!menuRef.current) return;
+      if (menuRef.current.contains(target)) return;
+      setMobileMenuOpen(false);
+    };
+
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setMobileMenuOpen(false);
+    };
+
+    window.addEventListener("mousedown", onPointerDown);
+    window.addEventListener("touchstart", onPointerDown);
+    window.addEventListener("keydown", onKeyDown);
+    return () => {
+      window.removeEventListener("mousedown", onPointerDown);
+      window.removeEventListener("touchstart", onPointerDown);
+      window.removeEventListener("keydown", onKeyDown);
+    };
+  }, [mobileMenuOpen]);
 
   const handleMenuToggle = () => setMobileMenuOpen((open) => !open);
   return (
@@ -20,12 +45,20 @@ export default function Header() {
             {/* Desktop menu links */}
             <ul className="hidden md:flex grow justify-center flex-wrap items-center text-sm">
               <li>
-                <Link href="/pricing" className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Home</Link>
+                <Link
+                  href="/"
+                  className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
+                >
+                  Home
+                </Link>
               </li>
-       
+
               <li>
-                <Link href="/tutorials" className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">
-                  Price
+                <Link
+                  href="/tutorials"
+                  className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
+                >
+                  Tutorials
                 </Link>
               </li>
               <li>
@@ -77,10 +110,46 @@ export default function Header() {
           {/* 移动端弹出菜单 */}
           {mobileMenuOpen && (
             <div
-              className={`fixed m-4 inset-0 z-40 flex md:hidden top-[4rem] h-[100px] rounded-2xl bg-white/90 px-3 shadow-lg shadow-black/[0.03]}`}
+              className="fixed inset-x-4 top-[4.5rem] z-40 flex flex-col gap-1 rounded-2xl bg-white/95 p-3 shadow-lg shadow-black/[0.03] backdrop-blur-xs md:hidden"
               ref={menuRef}
             >
-                asdfsdf
+              <Link
+                href="/"
+                className="rounded-lg px-3 py-2 text-gray-800 hover:bg-gray-100"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Home
+              </Link>
+              <Link
+                href="/tutorials"
+                className="rounded-lg px-3 py-2 text-gray-800 hover:bg-gray-100"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Tutorials
+              </Link>
+              <Link
+                href="/faq"
+                className="rounded-lg px-3 py-2 text-gray-800 hover:bg-gray-100"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                FAQ
+              </Link>
+              <div className="mt-2 grid grid-cols-2 gap-2">
+                <Link
+                  href="/signin"
+                  className="btn-sm w-full justify-center bg-white text-gray-800 shadow-sm hover:bg-gray-50"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Login
+                </Link>
+                <Link
+                  href="/signup"
+                  className="btn-sm w-full justify-center bg-gray-800 text-gray-200 shadow-sm hover:bg-gray-900"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Register
+                </Link>
+              </div>
             </div>
           )}
       </div>
