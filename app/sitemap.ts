@@ -43,6 +43,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.7,
     },
     {
+      url: new URL("/alliance", siteUrl).toString(),
+      changeFrequency: "monthly",
+      priority: 0.75,
+    },
+    {
       url: new URL("/changelog", siteUrl).toString(),
       changeFrequency: "monthly",
       priority: 0.6,

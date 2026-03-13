@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "使用场景",
   description:
-    "Telemaster 使用场景：群组治理、频道运营、客服支持、社区增长与内容分发。为你的 Telegram 运营选择更匹配的工作流。",
+    "Telemaster 使用场景：群组治理、频道运营、客服支持、社群变现与内容分发。为你的 Telegram 运营选择更匹配的工作流。",
   alternates: { canonical: "/use-cases" },
 };
 
@@ -53,6 +53,20 @@ const cases: UseCase[] = [
     links: [
       { label: "关键词自动回复教程", href: "/tutorials/telegram-auto-reply-keywords" },
       { label: "联系我们", href: "/contact" },
+    ],
+  },
+  {
+    title: "社群变现与转化",
+    description:
+      "把内容、权益与服务做成可售卖的产品，并把“承接-转化-交付-复盘”流程化。",
+    bullets: [
+      "关键词入口引导到报名/咨询/付费页面（按可用性）",
+      "群规与反垃圾保障体验，提升付费意愿与留存",
+      "排期与智能回复降低交付成本，复盘持续优化转化",
+    ],
+    links: [
+      { label: "查看定价", href: "/pricing" },
+      { label: "功能总览", href: "/features" },
     ],
   },
 ];

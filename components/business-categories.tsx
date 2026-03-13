@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Logo01 from "@/public/images/logo-01.svg";
 import Logo02 from "@/public/images/logo-02.svg";
 import Logo03 from "@/public/images/logo-03.svg";
@@ -26,6 +27,83 @@ export default function BusinessCategories() {
     {
       title: "风险提示",
       desc: "对广告、钓鱼链接与敏感内容进行提示与拦截建议（按可用性）。",
+    },
+  ];
+
+  const monetizationModel = [
+    {
+      title: "承接：把流量变成可运营的人",
+      desc: "用清晰的入口与规则，把新成员稳定导入你的“转化路径”。",
+      bullets: [
+        "欢迎语与固定入口：权益说明、常见问题、下一步指引",
+        "关键词触发：资料领取、课程报名、合作咨询等场景化引导",
+        "意图识别分流：转到私聊、表单或人工支持（按可用性）",
+      ],
+    },
+    {
+      title: "转化：把兴趣变成订单",
+      desc: "把“问来问去”变成“可复用的话术与流程”，减少漏单与跟进成本。",
+      bullets: [
+        "标准话术与套餐说明：保持口径一致，支持多语言（按可用性）",
+        "分层权限与群规：维护高质量讨论环境，提升付费意愿",
+        "引导到支付/下单页面：外部收款与跳转链接（按可用性）",
+      ],
+    },
+    {
+      title: "交付：把服务做成可复制",
+      desc: "用自动化与内容排期支撑交付，让同样的人力服务更多成员。",
+      bullets: [
+        "频道排期与素材管理：课程/更新/活动节奏化输出",
+        "智能回复覆盖高频问答：减少重复咨询，提高满意度",
+        "反垃圾与风险策略：避免广告与钓鱼干扰交付体验",
+      ],
+    },
+    {
+      title: "复盘：把一次成交做成长期收入",
+      desc: "用数据与总结抓住“下一次增长点”，持续提高转化率与留存。",
+      bullets: [
+        "统一看板与关键指标：增长、互动、触达与线索（按可用性）",
+        "AI 总结热点与问题：定位需求变化与产品机会",
+        "跟进清单与流程化执行：把经验变成团队标准作业",
+      ],
+    },
+  ];
+
+  const monetizationOptions = [
+    "会员订阅/付费社群",
+    "课程/训练营/资料包",
+    "咨询/陪跑/服务交付",
+    "赞助与品牌合作",
+    "联盟/返佣分销",
+    "线索获客与导流",
+  ];
+
+  const allianceRoles = [
+    "流量方：群组/频道/媒体矩阵",
+    "产品方：课程/工具/服务交付",
+    "服务方：运营/增长/内容与客服",
+  ];
+
+  const alliancePillars = [
+    {
+      title: "供需撮合",
+      desc: "把合适的变现产品匹配到合适的流量场景，让合作更可复制。",
+      bullets: ["人群与场景标签化", "产品权益与素材包", "可控频率与触达策略"],
+    },
+    {
+      title: "标准分发",
+      desc: "用统一的话术、入口与流程承接流量，减少反复沟通与漏单。",
+      bullets: ["关键词/欢迎语入口（按可用性）", "模板化活动与落地页", "分流到私聊/表单/工单"],
+    },
+    {
+      title: "追踪归因",
+      desc: "把转化路径数据化，明确来源与效果，帮助双方持续优化。",
+      bullets: ["渠道与素材维度追踪（按可用性）", "关键指标看板（按可用性）", "复盘热点与问题（按可用性）"],
+    },
+    {
+      title: "结算协作",
+      desc: "用权限与记录保障合作过程透明可审计，支持规模化协作。",
+      bullets: ["角色权限与最小授权", "操作记录与审计", "返佣/结算对账（按可用性）"],
     },
   ];
 
@@ -360,6 +438,123 @@ export default function BusinessCategories() {
                   <div className="mt-3 text-sm text-gray-700">{m.desc}</div>
                 </div>
               ))}
+            </div>
+          </div>
+
+          <div className="mt-16 rounded-3xl bg-white p-8 ring-1 ring-gray-200">
+            <div className="mx-auto max-w-3xl text-center">
+              <h3 className="text-2xl font-bold text-gray-900 md:text-3xl">
+                社群变现：从运营到收入的闭环
+              </h3>
+              <p className="mt-3 text-base text-gray-700">
+                Telemaster 把“承接-转化-交付-复盘”做成可执行的流程，帮助 Telegram
+                社群运营者更稳定地获得收入与增长。
+              </p>
+            </div>
+
+            <div className="mt-8 flex flex-wrap justify-center gap-2">
+              {monetizationOptions.map((label) => (
+                <span
+                  key={label}
+                  className="rounded-full bg-gray-50 px-3 py-1 text-xs font-medium text-gray-700 ring-1 ring-gray-200"
+                >
+                  {label}
+                </span>
+              ))}
+            </div>
+
+            <div className="mt-10 grid gap-6 lg:grid-cols-2">
+              {monetizationModel.map((s) => (
+                <div
+                  key={s.title}
+                  className="rounded-2xl bg-gray-50 p-6 ring-1 ring-gray-200"
+                >
+                  <div className="text-sm font-semibold text-gray-900">
+                    {s.title}
+                  </div>
+                  <div className="mt-2 text-sm text-gray-700">{s.desc}</div>
+                  <ul className="mt-4 space-y-2 text-sm text-gray-700">
+                    {s.bullets.map((b) => (
+                      <li key={b} className="flex gap-2">
+                        <span
+                          className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-600/70"
+                          aria-hidden="true"
+                        />
+                        <span>{b}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-16 overflow-hidden rounded-3xl bg-gray-900 p-8 text-white ring-1 ring-gray-900/10">
+            <div className="mx-auto max-w-3xl text-center">
+              <h3 className="text-2xl font-bold md:text-3xl">
+                Telegram 生态流量运营变现联盟
+              </h3>
+              <p className="mt-3 text-base text-white/80">
+                Telemaster 在做一件更长期的事：连接流量与变现产品，让合作从“单次对接”
+                变成“可复制的联盟协作”。
+              </p>
+            </div>
+
+            <div className="mt-8 flex flex-wrap justify-center gap-2">
+              {allianceRoles.map((label) => (
+                <span
+                  key={label}
+                  className="rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-white/90 ring-1 ring-white/10"
+                >
+                  {label}
+                </span>
+              ))}
+            </div>
+
+            <div className="mt-10 grid gap-6 lg:grid-cols-2">
+              {alliancePillars.map((p) => (
+                <div
+                  key={p.title}
+                  className="rounded-2xl bg-white/5 p-6 ring-1 ring-white/10"
+                >
+                  <div className="text-sm font-semibold text-white">
+                    {p.title}
+                  </div>
+                  <div className="mt-2 text-sm text-white/80">{p.desc}</div>
+                  <ul className="mt-4 space-y-2 text-sm text-white/80">
+                    {p.bullets.map((b) => (
+                      <li key={b} className="flex gap-2">
+                        <span
+                          className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-400/80"
+                          aria-hidden="true"
+                        />
+                        <span>{b}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center rounded-lg bg-linear-to-t from-blue-600 to-blue-500 px-5 py-3 text-sm font-medium text-white shadow-sm hover:from-blue-600 hover:to-blue-600"
+              >
+                加入联盟
+              </Link>
+              <Link
+                href="/alliance"
+                className="inline-flex items-center justify-center rounded-lg bg-white/10 px-5 py-3 text-sm font-medium text-white ring-1 ring-white/10 hover:bg-white/15"
+              >
+                了解联盟
+              </Link>
+              <Link
+                href="/integrations"
+                className="inline-flex items-center justify-center rounded-lg bg-white/10 px-5 py-3 text-sm font-medium text-white ring-1 ring-white/10 hover:bg-white/15"
+              >
+                查看集成能力
+              </Link>
             </div>
           </div>
         </div>
