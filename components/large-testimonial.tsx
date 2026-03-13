@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import TestimonialImg from "@/public/images/large-testimonial.jpg";
 
 export default function LargeTestimonial() {
@@ -30,17 +31,15 @@ export default function LargeTestimonial() {
               />
             </div>
             <p className="text-2xl font-bold text-gray-900">
-              “Simple has simplified my life in more ways than one. From
-              managing my sites to{" "}
-              <em className="italic text-gray-500">keeping track of tasks</em>,
-              it&apos;s become my go-to tool for everything.”
+              “以前我们每天花大量时间在清理广告、回答重复问题、同步信息。现在用
+              Telemaster 的自动化 + AI 助理，先总结、再分流、最后一键执行，运营节奏更稳。”
             </p>
             <div className="text-sm font-medium text-gray-500">
-              <span className="text-gray-700">Mary Sullivan</span>{" "}
+              <span className="text-gray-700">社群运营负责人</span>{" "}
               <span className="text-gray-400">/</span>{" "}
-              <a className="text-blue-500" href="#0">
-                CTO at Microsoft
-              </a>
+              <Link className="text-blue-500" href="/use-cases">
+                查看使用场景
+              </Link>
             </div>
           </div>
         </div>

@@ -4,9 +4,10 @@ import Link from "next/link";
 import { formatTutorialDate, getAllTutorials } from "@/lib/tutorials";
 
 export const metadata: Metadata = {
-  title: "Tutorials - Telemaster",
+  title: "教程",
   description:
     "Telemaster 教学文章与最佳实践，覆盖 Telegram 群组、频道与机器人运营。",
+  alternates: { canonical: "/tutorials" },
 };
 
 export default async function TutorialsIndexPage() {

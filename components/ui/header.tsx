@@ -49,27 +49,59 @@ export default function Header() {
                   href="/"
                   className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
                 >
-                  Home
+                  首页
                 </Link>
               </li>
 
               <li>
                 <Link
-                  href="/tutorials"
+                  href="/features"
                   className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
                 >
-                  Tutorials
+                  功能
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  href="/use-cases"
+                  className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
+                >
+                  使用场景
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  href="/pricing"
+                  className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
+                >
+                  定价
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Blog</Link>
-              </li>              
-              {/* 1st level: hover */}
-              <li>
-                <Link href="/resources" className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Resources</Link>
+                <Link
+                  href="/tutorials"
+                  className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
+                >
+                  教程
+                </Link>
               </li>
               <li>
-                <Link href="/about" className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">About us</Link>
+                <Link
+                  href="/faq"
+                  className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
+                >
+                  常见问题
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
+                >
+                  联系我们
+                </Link>
               </li>
             </ul>
           {/* Desktop sign in links */}
@@ -79,7 +111,7 @@ export default function Header() {
                 href="/signin"
                 className="btn-sm bg-white text-gray-800 shadow-sm hover:bg-gray-50"
               >
-                Login
+                登录
               </Link>
             </li>
             <li>
@@ -87,7 +119,7 @@ export default function Header() {
                 href="/signup"
                 className="btn-sm bg-gray-800 text-gray-200 shadow-sm hover:bg-gray-900"
               >
-                Register
+                注册
               </Link>
             </li>
           </ul>
@@ -96,7 +128,7 @@ export default function Header() {
               <button
                 type="button"
                 className="inline-flex items-center justify-center p-2"
-                aria-label="Open main menu"
+                aria-label="打开主菜单"
                 onClick={handleMenuToggle}
               >
                 <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -118,21 +150,49 @@ export default function Header() {
                 className="rounded-lg px-3 py-2 text-gray-800 hover:bg-gray-100"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Home
+                首页
+              </Link>
+              <Link
+                href="/features"
+                className="rounded-lg px-3 py-2 text-gray-800 hover:bg-gray-100"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                功能
+              </Link>
+              <Link
+                href="/use-cases"
+                className="rounded-lg px-3 py-2 text-gray-800 hover:bg-gray-100"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                使用场景
+              </Link>
+              <Link
+                href="/pricing"
+                className="rounded-lg px-3 py-2 text-gray-800 hover:bg-gray-100"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                定价
               </Link>
               <Link
                 href="/tutorials"
                 className="rounded-lg px-3 py-2 text-gray-800 hover:bg-gray-100"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Tutorials
+                教程
               </Link>
               <Link
                 href="/faq"
                 className="rounded-lg px-3 py-2 text-gray-800 hover:bg-gray-100"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                FAQ
+                常见问题
+              </Link>
+              <Link
+                href="/contact"
+                className="rounded-lg px-3 py-2 text-gray-800 hover:bg-gray-100"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                联系我们
               </Link>
               <div className="mt-2 grid grid-cols-2 gap-2">
                 <Link
@@ -140,14 +200,14 @@ export default function Header() {
                   className="btn-sm w-full justify-center bg-white text-gray-800 shadow-sm hover:bg-gray-50"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  Login
+                  登录
                 </Link>
                 <Link
                   href="/signup"
                   className="btn-sm w-full justify-center bg-gray-800 text-gray-200 shadow-sm hover:bg-gray-900"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  Register
+                  注册
                 </Link>
               </div>
             </div>

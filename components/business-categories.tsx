@@ -10,12 +10,40 @@ import Logo08 from "@/public/images/logo-08.svg";
 import Logo09 from "@/public/images/logo-09.svg";
 
 export default function BusinessCategories() {
+  const aiModules = [
+    {
+      title: "AI 对话总结",
+      desc: "自动提炼热点、未解决问题与待跟进事项，减少人工翻群记录。",
+    },
+    {
+      title: "意图识别与分流",
+      desc: "识别咨询、投诉、合作等意图，自动引导到表单/工单/人工支持。",
+    },
+    {
+      title: "智能回复与话术",
+      desc: "基于模板与知识库生成回复，保持口径一致并支持多语言（按可用性）。",
+    },
+    {
+      title: "风险提示",
+      desc: "对广告、钓鱼链接与敏感内容进行提示与拦截建议（按可用性）。",
+    },
+  ];
+
   return (
     <section>
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="pb-12 md:pb-20">
-          {/* Tab panels */}
-          <div className="relative flex h-[324px] items-center justify-center">
+        <div className="py-12 md:py-20">
+          <div className="mx-auto max-w-3xl pb-12 text-center md:pb-16">
+            <h2 className="text-3xl font-bold text-gray-900 md:text-4xl">
+              加入 AI 助理，让运营可编排
+            </h2>
+            <p className="mt-4 text-lg text-gray-700">
+              AI 负责理解与建议，系统负责执行与审计，让团队在规模化下依然稳定。
+            </p>
+          </div>
+
+          <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+            <div className="relative flex h-[324px] items-center justify-center">
             {/* Small blue dots */}
             <div className="absolute -z-10">
               <svg
@@ -295,6 +323,43 @@ export default function BusinessCategories() {
                   </div>
                 </div>
               </article>
+            </div>
+          </div>
+
+            <div className="grid gap-4 sm:grid-cols-2">
+              {aiModules.map((m) => (
+                <div
+                  key={m.title}
+                  className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-gray-200"
+                >
+                  <div className="flex items-center gap-3">
+                    <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-blue-500/10 text-blue-700">
+                      <svg
+                        width={18}
+                        height={18}
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M8 1.5c-2.9 0-5.25 2.35-5.25 5.25S5.1 12 8 12s5.25-2.35 5.25-5.25S10.9 1.5 8 1.5Z"
+                          fill="currentColor"
+                          opacity="0.25"
+                        />
+                        <path
+                          d="M8 4a1 1 0 0 1 1 1v.2a2 2 0 1 1-2 0V5a1 1 0 0 1 1-1Zm0 9.5c-1.37 0-2.6-.56-3.5-1.46a1 1 0 0 1 1.41-1.41c.54.54 1.29.88 2.09.88.8 0 1.55-.34 2.09-.88a1 1 0 0 1 1.41 1.41A4.97 4.97 0 0 1 8 13.5Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </span>
+                    <div className="text-sm font-semibold text-gray-900">
+                      {m.title}
+                    </div>
+                  </div>
+                  <div className="mt-3 text-sm text-gray-700">{m.desc}</div>
+                </div>
+              ))}
             </div>
           </div>
         </div>

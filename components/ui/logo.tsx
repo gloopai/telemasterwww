@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Logo() {
   return (
-    <Link href="/" className="inline-flex" aria-label="Cruip">
+    <Link href="/" className="inline-flex" aria-label="Telemaster">
 <svg xmlns="http://www.w3.org/2000/svg" width="151" height="21" viewBox="0 0 151 21" fill="none" className="fill-blue-500">
  
  <path d="M112.479 16.5525V4.13257H115.812V6.30995H115.945C116.167 5.53972 116.545 4.95834 117.078 4.56582C117.612 4.1659 118.226 3.96593 118.922 3.96593C119.093 3.96593 119.278 3.97704 119.478 3.99926C119.678 4.02148 119.852 4.0511 120 4.08813V7.13202C119.837 7.08017 119.611 7.03944 119.322 7.00982C119.041 6.97279 118.782 6.95427 118.545 6.95427C117.789 6.95427 117.163 7.19497 116.667 7.67636C116.171 8.15035 115.923 8.76875 115.923 9.53157V16.5525H112.479Z" />

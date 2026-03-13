@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Stripes from "@/public/images/stripes-dark.svg";
 
 export default function Cta() {
@@ -31,20 +32,26 @@ export default function Cta() {
           </div>
           <div className="px-4 py-12 md:px-12 md:py-20">
             <h2 className="mb-6 border-y text-3xl font-bold text-gray-200 [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-700/.7),transparent)1] md:mb-12 md:text-4xl">
-              Create your next project with Simple
+              用 AI 把 Telegram 运营做成系统
             </h2>
             <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
-              <a
+              <Link
                 className="btn group mb-4 w-full bg-linear-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
-                href="#0"
+                href="/pricing"
               >
                 <span className="relative inline-flex items-center">
-                  Start Free Trial{" "}
+                  查看定价{" "}
                   <span className="ml-1 tracking-normal text-blue-300 transition-transform group-hover:translate-x-0.5">
                     -&gt;
                   </span>
                 </span>
-              </a>
+              </Link>
+              <Link
+                className="btn w-full bg-white text-gray-900 shadow-sm hover:bg-gray-100 sm:ml-4 sm:w-auto"
+                href="/contact"
+              >
+                联系我们
+              </Link>
             </div>
           </div>
         </div>

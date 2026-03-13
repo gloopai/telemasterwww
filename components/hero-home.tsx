@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import PageIllustration from "@/components/page-illustration";
 import Avatar01 from "@/public/images/avatar-01.jpg";
 import Avatar02 from "@/public/images/avatar-02.jpg";
@@ -70,10 +71,7 @@ export default function HeroHome() {
               data-aos="zoom-y-out"
               data-aos-delay={150}
             >
-              {/* The website builder you're <br className="max-lg:hidden" />
-              looking for
-               */}
-               Smart Telegram Management, Unleashed
+              AI 驱动的 Telegram 运营中枢
             </h1>
             <div className="mx-auto max-w-3xl">
               <p
@@ -81,70 +79,53 @@ export default function HeroHome() {
                 data-aos="zoom-y-out"
                 data-aos-delay={300}
               >
-               All-in-one Telegram bot management tool to streamline group and channel operations.
+                把群组治理、自动回复、内容排期与数据复盘统一到一个控制台。内置 AI
+                助理，支持总结对话、识别意图、生成回复与风险提示（按可用性）。
               </p>
+              <div
+                className="mb-8 flex flex-wrap justify-center gap-2"
+                data-aos="zoom-y-out"
+                data-aos-delay={350}
+              >
+                {[
+                  "对话总结",
+                  "意图识别",
+                  "智能回复",
+                  "风险提示",
+                  "知识库（按可用性）",
+                ].map((label) => (
+                  <span
+                    key={label}
+                    className="rounded-full bg-white px-3 py-1 text-xs font-medium text-gray-700 shadow-sm ring-1 ring-gray-200"
+                  >
+                    {label}
+                  </span>
+                ))}
+              </div>
               <div className="relative before:absolute before:inset-0 before:border-y before:[border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1]">
                 <div
                   className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center"
                   data-aos="zoom-y-out"
                   data-aos-delay={450}
                 >
-                  <a
+                  <Link
                     className="btn group mb-4 w-full bg-linear-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
-                    href="#0"
+                    href="/pricing"
                   >
                     <span className="relative inline-flex items-center">
-                      Start Free Trial{" "}
+                      查看定价{" "}
                       <span className="ml-1 tracking-normal text-blue-300 transition-transform group-hover:translate-x-0.5">
                         -&gt;
                       </span>
                     </span>
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     className="btn w-full bg-white text-gray-800 shadow-sm hover:bg-gray-50 sm:ml-4 sm:w-auto"
-                    href="#0"
+                    href="/use-cases"
                   >
-                    Learn More
-                  </a>
+                    查看使用场景
+                  </Link>
                 </div>
-              </div>
-            </div>
-          </div>
-          {/* Hero image */}
-          <div
-            className="mx-auto max-w-3xl"
-            data-aos="zoom-y-out"
-            data-aos-delay={600}
-          >
-            <div className="relative aspect-video rounded-2xl bg-gray-900 px-5 py-3 shadow-xl before:pointer-events-none before:absolute before:-inset-5 before:border-y before:[border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1] after:absolute after:-inset-5 after:-z-10 after:border-x after:[border-image:linear-gradient(to_bottom,transparent,--theme(--color-slate-300/.8),transparent)1]">
-              <div className="relative mb-8 flex items-center justify-between before:block before:h-[9px] before:w-[41px] before:bg-[length:16px_9px] before:[background-image:radial-gradient(circle_at_4.5px_4.5px,var(--color-gray-600)_4.5px,transparent_0)] after:w-[41px]">
-                <span className="text-[13px] font-medium text-white">
-                  telemaster.io
-                </span>
-              </div>
-              <div className="font-mono text-gray-500 [&_span]:opacity-0">
-                <span className="animate-[code-1_10s_infinite] text-gray-200">
-                  npm login
-                </span>{" "}
-                <span className="animate-[code-2_10s_infinite]">
-                  --registry=https://npm.pkg.github.com
-                </span>
-                <br />
-                <span className="animate-[code-3_10s_infinite]">
-                  --scope=@phanatic
-                </span>{" "}
-                <span className="animate-[code-4_10s_infinite]">
-                  Successfully logged-in.
-                </span>
-                <br />
-                <br />
-                <span className="animate-[code-5_10s_infinite] text-gray-200">
-                  npm publish
-                </span>
-                <br />
-                <span className="animate-[code-6_10s_infinite]">
-                  Package published.
-                </span>
               </div>
             </div>
           </div>

@@ -23,6 +23,51 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 1,
     },
     {
+      url: new URL("/pricing", siteUrl).toString(),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: new URL("/features", siteUrl).toString(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: new URL("/use-cases", siteUrl).toString(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: new URL("/integrations", siteUrl).toString(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: new URL("/changelog", siteUrl).toString(),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
+      url: new URL("/about", siteUrl).toString(),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
+      url: new URL("/contact", siteUrl).toString(),
+      changeFrequency: "monthly",
+      priority: 0.5,
+    },
+    {
+      url: new URL("/terms", siteUrl).toString(),
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+    {
+      url: new URL("/privacy", siteUrl).toString(),
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+    {
       url: new URL("/faq", siteUrl).toString(),
       changeFrequency: "monthly",
       priority: 0.6,

@@ -1,13 +1,18 @@
-export const metadata = {
-  title: "Sign Up - Simple",
-  description: "Page description",
+import type { Metadata } from "next";
+import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "注册",
+  description: "创建 Telemaster 账号。",
+  alternates: { canonical: "/signup" },
+  robots: { index: false, follow: false },
 };
 
 export default function SignUp() {
   return (
     <>
       <div className="mb-10">
-        <h1 className="text-4xl font-bold">Create your account</h1>
+        <h1 className="text-4xl font-bold">创建账号</h1>
       </div>
 
       {/* Form */}
@@ -18,13 +23,13 @@ export default function SignUp() {
               className="mb-1 block text-sm font-medium text-gray-700"
               htmlFor="name"
             >
-              Full name
+              姓名
             </label>
             <input
               id="name"
               className="form-input w-full py-2"
               type="text"
-              placeholder="Corey Barker"
+              placeholder="你的名字"
               required
             />
           </div>
@@ -33,13 +38,13 @@ export default function SignUp() {
               className="mb-1 block text-sm font-medium text-gray-700"
               htmlFor="email"
             >
-              Email
+              邮箱
             </label>
             <input
               id="email"
               className="form-input w-full py-2"
               type="email"
-              placeholder="corybarker@email.com"
+              placeholder="name@example.com"
               required
             />
           </div>
@@ -48,14 +53,13 @@ export default function SignUp() {
               className="mb-1 block text-sm font-medium text-gray-700"
               htmlFor="phone"
             >
-              Phone
+              手机号
             </label>
             <input
               id="phone"
               className="form-input w-full py-2"
               type="text"
-              placeholder="(+750) 932-8907"
-              required
+              placeholder="选填"
             />
           </div>
           <div>
@@ -63,7 +67,7 @@ export default function SignUp() {
               className="mb-1 block text-sm font-medium text-gray-700"
               htmlFor="password"
             >
-              Password
+              密码
             </label>
             <input
               id="password"
@@ -77,11 +81,11 @@ export default function SignUp() {
         </div>
         <div className="mt-6 space-y-3">
           <button className="btn w-full bg-linear-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%]">
-            Register
+            注册
           </button>
-          <div className="text-center text-sm italic text-gray-400">Or</div>
+          <div className="text-center text-sm italic text-gray-400">或</div>
           <button className="btn w-full bg-linear-to-t from-gray-900 to-gray-700 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%]">
-            Continue with GitHub
+            使用 GitHub 继续
           </button>
         </div>
       </form>
@@ -89,21 +93,21 @@ export default function SignUp() {
       {/* Bottom link */}
       <div className="mt-6 text-center">
         <p className="text-sm text-gray-500">
-          By signing up, you agree to the{" "}
-          <a
+          注册即表示你同意{" "}
+          <Link
             className="whitespace-nowrap font-medium text-gray-700 underline hover:no-underline"
-            href="#0"
+            href="/terms"
           >
-            Terms of Service
-          </a>{" "}
-          and{" "}
-          <a
+            服务条款
+          </Link>{" "}
+          和{" "}
+          <Link
             className="whitespace-nowrap font-medium text-gray-700 underline hover:no-underline"
-            href="#0"
+            href="/privacy"
           >
-            Privacy Policy
-          </a>
-          .
+            隐私政策
+          </Link>
+          。
         </p>
       </div>
     </>
