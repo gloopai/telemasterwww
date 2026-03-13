@@ -61,7 +61,14 @@ export default function Header() {
                   功能
                 </Link>
               </li>
-
+ <li>
+                <Link
+                  href="/pricing"
+                  className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
+                >
+                  定价
+                </Link>
+              </li>
               <li>
                 <Link
                   href="/use-cases"
@@ -73,36 +80,32 @@ export default function Header() {
 
               <li>
                 <Link
-                  href="/pricing"
+                  href="/mini-apps"
                   className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
                 >
-                  定价
+                  小程序
                 </Link>
               </li>
+
               <li>
                 <Link
-                  href="/tutorials"
+                  href="/mini-games"
                   className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
                 >
-                  教程
+                  小游戏
                 </Link>
               </li>
+
               <li>
                 <Link
-                  href="/faq"
+                  href="/ton"
                   className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
                 >
-                  常见问题
+                  TON
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/contact"
-                  className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
-                >
-                  联系我们
-                </Link>
-              </li>
+
+             
             </ul>
           {/* Desktop sign in links */}
           <ul className=" flex-1 items-center justify-end gap-3 hidden md:flex">
@@ -167,32 +170,32 @@ export default function Header() {
                 使用场景
               </Link>
               <Link
+                href="/mini-apps"
+                className="rounded-lg px-3 py-2 text-gray-800 hover:bg-gray-100"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                小程序
+              </Link>
+              <Link
+                href="/mini-games"
+                className="rounded-lg px-3 py-2 text-gray-800 hover:bg-gray-100"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                小游戏
+              </Link>
+              <Link
+                href="/ton"
+                className="rounded-lg px-3 py-2 text-gray-800 hover:bg-gray-100"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                TON
+              </Link>
+              <Link
                 href="/pricing"
                 className="rounded-lg px-3 py-2 text-gray-800 hover:bg-gray-100"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 定价
-              </Link>
-              <Link
-                href="/tutorials"
-                className="rounded-lg px-3 py-2 text-gray-800 hover:bg-gray-100"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                教程
-              </Link>
-              <Link
-                href="/faq"
-                className="rounded-lg px-3 py-2 text-gray-800 hover:bg-gray-100"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                常见问题
-              </Link>
-              <Link
-                href="/contact"
-                className="rounded-lg px-3 py-2 text-gray-800 hover:bg-gray-100"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                联系我们
               </Link>
               <div className="mt-2 grid grid-cols-2 gap-2">
                 <Link
