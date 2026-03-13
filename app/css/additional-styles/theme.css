@@ -1,0 +1,153 @@
+/* Scrollspy links */
+[data-scrollspy-link].scrollspy-active {
+  @apply text-blue-500 font-medium;
+}
+
+/* Custom AOS animations */
+[data-aos="zoom-y-out"] {
+transform: scaleX(1.03);
+opacity: 0;
+transition-property: transform, opacity;
+}
+
+@media screen {
+  html:not(.no-js) body [data-aos=fade-up] {
+      -webkit-transform: translate3d(0, 10px, 0);
+      transform: translate3d(0, 10px, 0);
+  }
+
+  html:not(.no-js) body [data-aos=fade-down] {
+      -webkit-transform: translate3d(0, -10px, 0);
+      transform: translate3d(0, -10px, 0);
+  }
+
+  html:not(.no-js) body [data-aos=fade-right] {
+      -webkit-transform: translate3d(-10px, 0, 0);
+      transform: translate3d(-10px, 0, 0);
+  }
+
+  html:not(.no-js) body [data-aos=fade-left] {
+      -webkit-transform: translate3d(10px, 0, 0);
+      transform: translate3d(10px, 0, 0);
+  }
+
+  html:not(.no-js) body [data-aos=fade-up-right] {
+      -webkit-transform: translate3d(-10px, 10px, 0);
+      transform: translate3d(-10px, 10px, 0);
+  }
+
+  html:not(.no-js) body [data-aos=fade-up-left] {
+      -webkit-transform: translate3d(10px, 10px, 0);
+      transform: translate3d(10px, 10px, 0);
+  }
+
+  html:not(.no-js) body [data-aos=fade-down-right] {
+      -webkit-transform: translate3d(-10px, -10px, 0);
+      transform: translate3d(-10px, -10px, 0);
+  }
+
+  html:not(.no-js) body [data-aos=fade-down-left] {
+      -webkit-transform: translate3d(10px, -10px, 0);
+      transform: translate3d(10px, -10px, 0);
+  }
+
+  html:not(.no-js) body [data-aos=zoom-in-up] {
+      -webkit-transform: translate3d(0, 10px, 0) scale(.6);
+      transform: translate3d(0, 10px, 0) scale(.6);
+  }
+
+  html:not(.no-js) body [data-aos=zoom-in-down] {
+      -webkit-transform: translate3d(0, -10px, 0) scale(.6);
+      transform: translate3d(0, -10px, 0) scale(.6);
+  }
+
+  html:not(.no-js) body [data-aos=zoom-in-right] {
+      -webkit-transform: translate3d(-10px, 0, 0) scale(.6);
+      transform: translate3d(-10px, 0, 0) scale(.6);
+  }
+
+  html:not(.no-js) body [data-aos=zoom-in-left] {
+      -webkit-transform: translate3d(10px, 0, 0) scale(.6);
+      transform: translate3d(10px, 0, 0) scale(.6);
+  }
+
+  html:not(.no-js) body [data-aos=zoom-out-up] {
+      -webkit-transform: translate3d(0, 10px, 0) scale(1.2);
+      transform: translate3d(0, 10px, 0) scale(1.2);
+  }
+
+  html:not(.no-js) body [data-aos=zoom-out-down] {
+      -webkit-transform: translate3d(0, -10px, 0) scale(1.2);
+      transform: translate3d(0, -10px, 0) scale(1.2);
+  }
+
+  html:not(.no-js) body [data-aos=zoom-out-right] {
+      -webkit-transform: translate3d(-10px, 0, 0) scale(1.2);
+      transform: translate3d(-10px, 0, 0) scale(1.2);
+  }
+
+  html:not(.no-js) body [data-aos=zoom-out-left] {
+      -webkit-transform: translate3d(10px, 0, 0) scale(1.2);
+      transform: translate3d(10px, 0, 0) scale(1.2);
+  }
+}
+
+.markdown {
+  @apply text-gray-700 leading-7;
+}
+
+.markdown p {
+  @apply my-4;
+}
+
+.markdown h2 {
+  @apply mt-10 mb-4 text-2xl font-semibold tracking-tight text-gray-900;
+}
+
+.markdown h3 {
+  @apply mt-8 mb-3 text-xl font-semibold tracking-tight text-gray-900;
+}
+
+.markdown ul {
+  @apply my-4 list-disc pl-6;
+}
+
+.markdown ol {
+  @apply my-4 list-decimal pl-6;
+}
+
+.markdown li {
+  @apply my-2;
+}
+
+.markdown a {
+  @apply text-blue-600 underline underline-offset-2 hover:text-blue-700;
+}
+
+.markdown strong {
+  @apply font-semibold text-gray-900;
+}
+
+.markdown code {
+  @apply rounded bg-gray-100 px-1.5 py-0.5 font-mono text-[0.95em] text-gray-900;
+}
+
+.markdown pre {
+  @apply my-6 overflow-x-auto rounded-xl bg-gray-900 p-4 text-gray-100;
+}
+
+.markdown pre code {
+  @apply bg-transparent p-0 text-gray-100;
+}
+
+.markdown blockquote {
+  @apply my-6 border-l-4 border-gray-200 pl-4 text-gray-700;
+}
+
+.markdown hr {
+  @apply my-10 border-gray-200;
+}
+
+.markdown img {
+  @apply my-6 rounded-xl;
+}
