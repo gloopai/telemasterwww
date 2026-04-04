@@ -22,42 +22,44 @@
         </p>
       </header>
 
-      <div
-        class="overflow-hidden rounded-xl bg-white shadow-[0_2px_16px_rgba(0,0,0,0.06)] ring-1 ring-black/[0.04]"
-        role="listbox"
-        :aria-label="t('site.language.title')"
-      >
-        <button
-          v-for="opt in localeOptions"
-          :key="opt.code"
-          type="button"
-          role="option"
-          :aria-selected="locale === opt.code"
-          class="flex w-full items-center justify-between gap-4 border-b border-gray-100 px-5 py-4 text-left transition last:border-b-0 hover:bg-gray-50 active:bg-gray-100/80"
-          @click="selectLocale(opt.code)"
+      <nav :aria-label="t('site.language.title')">
+        <ul
+          class="overflow-hidden rounded-xl bg-white shadow-[0_2px_16px_rgba(0,0,0,0.06)] ring-1 ring-black/[0.04]"
         >
-          <span class="text-[17px] text-gray-900">{{ opt.nativeLabel }}</span>
-          <span
-            v-if="locale === opt.code"
-            class="flex h-6 w-6 shrink-0 items-center justify-center text-blue-600"
-            aria-hidden="true"
+          <li
+            v-for="opt in localeOptions"
+            :key="opt.code"
+            class="border-b border-gray-100 last:border-b-0"
           >
-            <svg
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="2.5"
+            <NuxtLink
+              :to="localeLink(opt.code)"
+              class="flex w-full items-center justify-between gap-4 px-5 py-4 text-left text-[17px] text-gray-900 outline-none ring-inset transition hover:bg-gray-50 focus-visible:bg-gray-50 focus-visible:ring-2 focus-visible:ring-blue-500/40 active:bg-gray-100/80"
+              :aria-current="locale === opt.code ? 'page' : undefined"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M5 13l4 4L19 7"
-              />
-            </svg>
-          </span>
-        </button>
-      </div>
+              <span>{{ opt.nativeLabel }}</span>
+              <span
+                v-if="locale === opt.code"
+                class="flex h-6 w-6 shrink-0 items-center justify-center text-blue-600"
+                aria-hidden="true"
+              >
+                <svg
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              </span>
+            </NuxtLink>
+          </li>
+        </ul>
+      </nav>
 
       <p class="mt-8 text-center text-[12px] leading-relaxed text-gray-400">
         {{ t("site.language.hint") }}
@@ -78,21 +80,19 @@ const localeOptions = [
   { code: "ko", nativeLabel: "한국어" },
 ] as const;
 
-function selectLocale(code: string) {
+function localeLink(code: string) {
   const path = switchLocalePath(code);
-  if (path) void navigateTo(path);
+  return path || localePath("/language");
 }
 
 const siteUrl = useSiteUrl();
+
 useSeoMeta({
   title: computed(() => t("seo.language.title")),
   description: computed(() => t("seo.language.description")),
   ogTitle: computed(() => t("seo.language.ogTitle")),
   ogDescription: computed(() => t("seo.language.ogDescription")),
   ogUrl: computed(() => `${siteUrl}${localePath("/language")}`),
-  robots: "noindex, follow",
+  robots: "index, follow",
 });
-useHead(() => ({
-  link: [{ rel: "canonical", href: `${siteUrl}${localePath("/language")}` }],
-}));
 </script>
