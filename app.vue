@@ -17,6 +17,9 @@ const jsonLdInLanguage: Record<string, string> = {
   zh: "zh-CN",
   ja: "ja",
   ko: "ko",
+  ru: "ru",
+  es: "es",
+  hi: "hi",
 };
 
 const jsonLd = computed(() => ({

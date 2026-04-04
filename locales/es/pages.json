@@ -1,0 +1,61 @@
+{
+  "pages": {
+    "auth": {
+      "signin": {
+        "heading": "Iniciar sesión",
+        "email": "Correo",
+        "password": "Contraseña",
+        "submit": "Iniciar sesión",
+        "forgotPassword": "¿Olvidaste la contraseña?"
+      },
+      "signup": {
+        "heading": "Crear cuenta",
+        "name": "Nombre",
+        "namePlaceholder": "Tu nombre",
+        "email": "Correo",
+        "phone": "Teléfono",
+        "phoneOptional": "Opcional",
+        "password": "Contraseña",
+        "submit": "Registrarse",
+        "or": "o",
+        "continueWithGithub": "Continuar con GitHub",
+        "agreePrefix": "Al registrarte aceptas los",
+        "terms": "Términos del servicio",
+        "and": "y la",
+        "privacy": "Política de privacidad",
+        "agreeSuffix": "."
+      },
+      "resetPassword": {
+        "heading": "Restablecer contraseña",
+        "email": "Correo",
+        "submit": "Enviar correo de restablecimiento"
+      }
+    },
+    "faq": {
+      "title": "FAQ",
+      "items": [
+        {
+          "q": "¿Qué es Telemaster?",
+          "a": "Telemaster es una plataforma de operaciones para grupos, canales y bots de Telegram: automatiza y revisa el trabajo con un equipo más pequeño."
+        },
+        {
+          "q": "¿Cómo empiezo?",
+          "a": "Crea una cuenta y sigue los pasos en la app para autorizar y configurar; luego podrás gestionar grupos/canales y activar la automatización (según plan y disponibilidad)."
+        },
+        {
+          "q": "¿Varias cuentas o espacios de trabajo?",
+          "a": "Sí. Puedes gestionar varios grupos/canales y ajustes por espacio de trabajo (según plan y disponibilidad)."
+        },
+        {
+          "q": "¿Cómo contacto al soporte?",
+          "a": "Usa la página de contacto por correo o formulario; te responderemos lo antes posible."
+        }
+      ]
+    },
+    "tutorialsIndex": {
+      "heading": "Tutoriales",
+      "lead": "Guías prácticas y buenas prácticas para sacar más partido a Telemaster en Telegram.",
+      "empty": "Aún no hay artículos."
+    }
+  }
+}

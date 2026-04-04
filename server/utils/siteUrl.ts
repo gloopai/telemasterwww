@@ -1,3 +1,6 @@
+/** Used by sitemap.xml and robots.txt so URLs stay correct regardless of deploy env (avoids invalid bases and 500s). */
+export const CANONICAL_SITE_ORIGIN = "https://telemaster.io";
+
 export function getSiteUrl(): string {
   const explicit =
     process.env.NUXT_PUBLIC_SITE_URL ||

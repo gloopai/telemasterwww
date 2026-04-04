@@ -1,0 +1,55 @@
+{
+  "seo": {
+    "defaultTitle": "Telemaster · Платформа операций в Telegram с ИИ",
+    "defaultDescription": "Платформа для групп, каналов и ботов в Telegram — модерация, автоответы, планирование и аналитика в одной панели.",
+    "titleTemplate": "{title} · Telemaster",
+    "defaultOgImageAlt": "Telemaster — платформа операций в Telegram с ИИ",
+    "home": {
+      "title": "Платформа операций в Telegram с ИИ",
+      "description": "Объедините модерацию, автоответы, планирование и аналитику с ИИ — в одной консоли.",
+      "ogTitle": "Telemaster — платформа операций в Telegram с ИИ",
+      "ogDescription": "Объедините модерацию, автоответы, планирование и аналитику с ИИ — в одной консоли."
+    },
+    "tutorials": {
+      "breadcrumb": "Руководства",
+      "titleFallback": "Руководства",
+      "titleSuffix": "· Руководства Telemaster"
+    },
+    "faq": {
+      "title": "FAQ",
+      "description": "Ответы о Telemaster: что это, как начать, рабочие пространства и как с нами связаться.",
+      "ogTitle": "Telemaster — FAQ",
+      "ogDescription": "Ответы о Telemaster: что это, как начать, рабочие пространства и как с нами связаться."
+    },
+    "signin": {
+      "title": "Вход",
+      "description": "Войдите в Telemaster.",
+      "ogTitle": "Telemaster — Вход",
+      "ogDescription": "Войдите в Telemaster."
+    },
+    "signup": {
+      "title": "Регистрация",
+      "description": "Создайте аккаунт Telemaster.",
+      "ogTitle": "Telemaster — Регистрация",
+      "ogDescription": "Создайте аккаунт Telemaster."
+    },
+    "resetPassword": {
+      "title": "Сброс пароля",
+      "description": "Сбросьте пароль аккаунта Telemaster.",
+      "ogTitle": "Telemaster — Сброс пароля",
+      "ogDescription": "Сбросьте пароль аккаунта Telemaster."
+    },
+    "tutorialsIndex": {
+      "title": "Руководства",
+      "description": "Руководства и лучшие практики Telemaster для групп, каналов и ботов в Telegram.",
+      "ogTitle": "Telemaster — Руководства",
+      "ogDescription": "Руководства и лучшие практики Telemaster для групп, каналов и ботов в Telegram."
+    },
+    "language": {
+      "title": "Язык и регион",
+      "description": "Выберите язык для Telemaster.",
+      "ogTitle": "Telemaster — Язык и регион",
+      "ogDescription": "Выберите язык для Telemaster."
+    }
+  }
+}

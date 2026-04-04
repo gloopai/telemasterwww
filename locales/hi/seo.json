@@ -1,0 +1,55 @@
+{
+  "seo": {
+    "defaultTitle": "Telemaster · AI से चलने वाला Telegram संचालन मंच",
+    "defaultDescription": "Telegram समूह, चैनल और बॉट्स के लिए संचालन मंच — मॉडरेशन, ऑटो-रिप्लाई, शेड्यूलिंग और एक कंसोल में विश्लेषण।",
+    "titleTemplate": "{title} · Telemaster",
+    "defaultOgImageAlt": "Telemaster — AI से चलने वाला Telegram संचालन मंच",
+    "home": {
+      "title": "AI से चलने वाला Telegram संचालन मंच",
+      "description": "एक कंसोल में AI के साथ मॉडरेशन, ऑटो-रिप्लाई, शेड्यूलिंग और विश्लेषण को एकीकृत करें।",
+      "ogTitle": "Telemaster — AI से चलने वाला Telegram संचालन मंच",
+      "ogDescription": "एक कंसोल में AI के साथ मॉडरेशन, ऑटो-रिप्लाई, शेड्यूलिंग और विश्लेषण को एकीकृत करें।"
+    },
+    "tutorials": {
+      "breadcrumb": "ट्यूटोरियल",
+      "titleFallback": "ट्यूटोरियल",
+      "titleSuffix": "· Telemaster ट्यूटोरियल"
+    },
+    "faq": {
+      "title": "FAQ",
+      "description": "Telemaster के बारे में उत्तर: यह क्या है, कैसे शुरू करें, वर्कस्पेस और हमसे कैसे संपर्क करें।",
+      "ogTitle": "Telemaster — FAQ",
+      "ogDescription": "Telemaster के बारे में उत्तर: यह क्या है, कैसे शुरू करें, वर्कस्पेस और हमसे कैसे संपर्क करें।"
+    },
+    "signin": {
+      "title": "साइन इन",
+      "description": "Telemaster में साइन इन करें।",
+      "ogTitle": "Telemaster — साइन इन",
+      "ogDescription": "Telemaster में साइन इन करें।"
+    },
+    "signup": {
+      "title": "साइन अप",
+      "description": "अपना Telemaster खाता बनाएँ।",
+      "ogTitle": "Telemaster — साइन अप",
+      "ogDescription": "अपना Telemaster खाता बनाएँ।"
+    },
+    "resetPassword": {
+      "title": "पासवर्ड रीसेट",
+      "description": "अपना Telemaster खाता पासवर्ड रीसेट करें।",
+      "ogTitle": "Telemaster — पासवर्ड रीसेट",
+      "ogDescription": "अपना Telemaster खाता पासवर्ड रीसेट करें।"
+    },
+    "tutorialsIndex": {
+      "title": "ट्यूटोरियल",
+      "description": "Telegram समूह, चैनल और बॉट्स के लिए Telemaster ट्यूटोरियल और सर्वोत्तम अभ्यास।",
+      "ogTitle": "Telemaster — ट्यूटोरियल",
+      "ogDescription": "Telegram समूह, चैनल और बॉट्स के लिए Telemaster ट्यूटोरियल और सर्वोत्तम अभ्यास।"
+    },
+    "language": {
+      "title": "भाषा और क्षेत्र",
+      "description": "Telemaster के लिए भाषा चुनें।",
+      "ogTitle": "Telemaster — भाषा और क्षेत्र",
+      "ogDescription": "Telemaster के लिए भाषा चुनें।"
+    }
+  }
+}

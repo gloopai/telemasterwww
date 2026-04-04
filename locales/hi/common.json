@@ -1,0 +1,52 @@
+{
+  "brand": "Telemaster",
+  "nav": {
+    "home": "होम",
+    "features": "सुविधाएँ",
+    "pricing": "मूल्य निर्धारण",
+    "useCases": "उपयोग के मामले",
+    "miniApps": "मिनी ऐप्स",
+    "miniGames": "मिनी गेम्स",
+    "ton": "TON",
+    "integrations": "एकीकरण",
+    "alliance": "गठबंधन",
+    "changelog": "परिवर्तन लॉग",
+    "about": "परिचय",
+    "contact": "संपर्क",
+    "tutorials": "ट्यूटोरियल",
+    "faq": "FAQ",
+    "terms": "नियम",
+    "privacy": "गोपनीयता",
+    "signin": "साइन इन",
+    "signup": "साइन अप"
+  },
+  "navAria": {
+    "mobile": "मुख्य नेविगेशन (मोबाइल)",
+    "desktop": "मुख्य नेविगेशन (डेस्कटॉप)",
+    "openMenu": "मेनू खोलें",
+    "closeMenu": "मेनू बंद करें",
+    "close": "बंद करें",
+    "menu": "मेनू",
+    "drawerTitle": "नेविगेशन"
+  },
+  "lang": {
+    "en": "English",
+    "zh": "中文",
+    "ja": "日本語",
+    "ko": "한국어",
+    "ru": "Русский",
+    "es": "Español",
+    "hi": "हिन्दी",
+    "selectLabel": "भाषा",
+    "switchTo": "भाषा"
+  },
+  "footer": {
+    "rights": "© telemaster.io — सर्वाधिकार सुरक्षित।",
+    "product": "उत्पाद",
+    "company": "कंपनी",
+    "resources": "संसाधन",
+    "pricingPlans": "योजनाएँ",
+    "languageLink": "भाषा और क्षेत्र",
+    "languageHint": "telemaster.io के लिए भाषा चुनें।"
+  }
+}

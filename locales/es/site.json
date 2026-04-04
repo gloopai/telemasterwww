@@ -1,0 +1,10 @@
+{
+  "site": {
+    "language": {
+      "title": "Idioma y región",
+      "subtitle": "Elige un idioma para telemaster.io y el contenido relacionado.",
+      "backHome": "Inicio",
+      "hint": "Tu elección se aplica en todo el sitio. Puedes cambiarla en cualquier momento."
+    }
+  }
+}

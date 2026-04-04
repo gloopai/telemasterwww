@@ -40,7 +40,7 @@ const staticPrerenderRoutes = [
 export default defineNuxtConfig(async () => {
   const tutorialRoutes = await tutorialPaths();
   const allBaseRoutes = [...staticPrerenderRoutes, ...tutorialRoutes];
-  const prefixedLocales = ["zh", "ja", "ko"] as const;
+  const prefixedLocales = ["zh", "ja", "ko", "ru", "es", "hi"] as const;
   const prefixedRoutes = prefixedLocales.flatMap((prefix) =>
     allBaseRoutes.map((r) => (r === "/" ? `/${prefix}` : `/${prefix}${r}`)),
   );
@@ -102,6 +102,45 @@ export default defineNuxtConfig(async () => {
             "ko/pages.json",
             "ko/site.json",
             "ko/site-content.json",
+          ],
+        },
+        {
+          code: "ru",
+          language: "ru-RU",
+          name: "Русский",
+          files: [
+            "ru/common.json",
+            "ru/home.json",
+            "ru/seo.json",
+            "ru/pages.json",
+            "ru/site.json",
+            "ru/site-content.json",
+          ],
+        },
+        {
+          code: "es",
+          language: "es",
+          name: "Español",
+          files: [
+            "es/common.json",
+            "es/home.json",
+            "es/seo.json",
+            "es/pages.json",
+            "es/site.json",
+            "es/site-content.json",
+          ],
+        },
+        {
+          code: "hi",
+          language: "hi-IN",
+          name: "हिन्दी",
+          files: [
+            "hi/common.json",
+            "hi/home.json",
+            "hi/seo.json",
+            "hi/pages.json",
+            "hi/site.json",
+            "hi/site-content.json",
           ],
         },
       ],

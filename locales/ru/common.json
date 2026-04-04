@@ -1,0 +1,52 @@
+{
+  "brand": "Telemaster",
+  "nav": {
+    "home": "Главная",
+    "features": "Возможности",
+    "pricing": "Тарифы",
+    "useCases": "Сценарии",
+    "miniApps": "Мини-приложения",
+    "miniGames": "Мини-игры",
+    "ton": "TON",
+    "integrations": "Интеграции",
+    "alliance": "Альянс",
+    "changelog": "История изменений",
+    "about": "О продукте",
+    "contact": "Контакты",
+    "tutorials": "Руководства",
+    "faq": "FAQ",
+    "terms": "Условия",
+    "privacy": "Конфиденциальность",
+    "signin": "Вход",
+    "signup": "Регистрация"
+  },
+  "navAria": {
+    "mobile": "Основная навигация (мобильная)",
+    "desktop": "Основная навигация (десктоп)",
+    "openMenu": "Открыть меню",
+    "closeMenu": "Закрыть меню",
+    "close": "Закрыть",
+    "menu": "Меню",
+    "drawerTitle": "Навигация"
+  },
+  "lang": {
+    "en": "English",
+    "zh": "中文",
+    "ja": "日本語",
+    "ko": "한국어",
+    "ru": "Русский",
+    "es": "Español",
+    "hi": "हिन्दी",
+    "selectLabel": "Язык",
+    "switchTo": "Язык"
+  },
+  "footer": {
+    "rights": "© telemaster.io — Все права защищены.",
+    "product": "Продукт",
+    "company": "Компания",
+    "resources": "Материалы",
+    "pricingPlans": "Тарифы",
+    "languageLink": "Язык и регион",
+    "languageHint": "Выберите язык для telemaster.io."
+  }
+}

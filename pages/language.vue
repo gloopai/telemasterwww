@@ -78,6 +78,9 @@ const localeOptions = [
   { code: "zh", nativeLabel: "中文" },
   { code: "ja", nativeLabel: "日本語" },
   { code: "ko", nativeLabel: "한국어" },
+  { code: "ru", nativeLabel: "Русский" },
+  { code: "es", nativeLabel: "Español" },
+  { code: "hi", nativeLabel: "हिन्दी" },
 ] as const;
 
 function localeLink(code: string) {

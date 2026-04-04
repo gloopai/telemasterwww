@@ -1,0 +1,1006 @@
+{
+  "site": {
+    "contact": {
+      "title": "Contáctanos",
+      "lead": "Producto, necesidades a medida, integraciones y soporte técnico: escríbenos aquí.",
+      "productTitle": "Producto",
+      "productDesc": "Pregunta por funciones, casos de uso y cómo empezar.",
+      "productCta": "Escríbenos",
+      "bizTitle": "Negocio",
+      "bizDesc": "Alianzas con canales, medios y campañas conjuntas.",
+      "bizCta": "Contacto comercial",
+      "supportTitle": "Soporte técnico",
+      "supportDesc": "Primero revisa tutoriales y FAQ para respuestas más rápidas.",
+      "tutorialsCta": "Tutoriales",
+      "faqCta": "FAQ",
+      "bannerTitle": "¿Necesitas una demo o revisión de solución?",
+      "bannerLead": "Cuéntanos la escala de tus grupos/canales y tus objetivos: te proponemos siguientes pasos.",
+      "bannerPricing": "Ver precios",
+      "seoTitle": "Contacto",
+      "seoDescription": "Contacta con Telemaster para producto, negocio, integraciones y soporte."
+    },
+    "about": {
+      "title": "Acerca de Telemaster",
+      "lead": "Queremos que las operaciones en Telegram pasen del “heroísmo” a sistemas repetibles.",
+      "missionTitle": "Misión",
+      "missionDesc": "Automatización y visibilidad para reducir la complejidad de operar comunidades y canales.",
+      "valuesTitle": "Valores",
+      "valuesDesc": "Seguridad primero, centrado en el usuario, iteración basada en datos.",
+      "audienceTitle": "Para quién es",
+      "audienceDesc": "Admins de comunidad, equipos de contenido, soporte, crecimiento y operaciones.",
+      "problemsTitle": "Qué problemas resolvemos",
+      "p1Title": "Alto coste de moderación",
+      "p1Desc": "Spam y ruido dañan la experiencia; los admins dedican horas a tareas repetitivas.",
+      "p2Title": "Cadencia de contenido inestable",
+      "p2Desc": "Sin programación y revisión, cuesta mantener contenido de calidad con regularidad.",
+      "p3Title": "Riesgo de colaboración en equipo",
+      "p3Desc": "Permisos poco claros y falta de auditoría generan errores y abusos.",
+      "p4Title": "Sin bucle de datos",
+      "p4Desc": "Intuición sin métricas: es difícil mejorar y replicar lo que funciona.",
+      "ctaPricing": "Ver precios",
+      "ctaContact": "Contáctanos",
+      "seoTitle": "Acerca de",
+      "seoDescription": "Telemaster ayuda a equipos a operar comunidades y canales de Telegram con automatización y claridad."
+    },
+    "integrations": {
+      "title": "Integraciones y extensiones",
+      "lead": "Conecta Telemaster a tu cadena de herramientas para que acciones y datos fluyan entre sistemas.",
+      "ctaTitle": "¿Necesitas una integración más profunda?",
+      "ctaLead": "Cuéntanos tu escenario: podemos diseñar un flujo de trabajo juntos.",
+      "ctaContact": "Contáctanos",
+      "seoTitle": "Integraciones",
+      "seoDescription": "Webhooks, colaboración e integraciones de datos para Telemaster (la disponibilidad varía).",
+      "cards": {
+        "0": {
+          "title": "Webhooks (disponibilidad variable)",
+          "description": "Envía eventos clave a tus servicios: alertas, automatización y sincronización.",
+          "bullets": {
+            "0": "Disparadores de eventos y verificación de firma (cuando aplique)",
+            "1": "Callbacks configurables y políticas de reintento (cuando aplique)",
+            "2": "Tickets, alertas y pipelines de datos"
+          }
+        },
+        "1": {
+          "title": "Colaboración en equipo",
+          "description": "Roles y permisos para operaciones multiusuario más seguras.",
+          "bullets": {
+            "0": "Acceso basado en roles y mínimo privilegio",
+            "1": "Trazas de auditoría para acciones críticas",
+            "2": "Aislamiento de espacio de trabajo y límites de recursos"
+          }
+        },
+        "2": {
+          "title": "Contenido y datos (disponibilidad variable)",
+          "description": "Usa datos operativos para revisión y crecimiento.",
+          "bullets": {
+            "0": "Exportaciones e informes (cuando aplique)",
+            "1": "APIs y callbacks (cuando aplique)",
+            "2": "Paneles de engagement y conversión (cuando aplique)"
+          }
+        }
+      }
+    },
+    "pricing": {
+      "title": "Planes y precios",
+      "lead": "Plataforma de gestión para grupos, canales y bots de Telegram. Elige un plan según el tamaño del equipo y tus necesidades de automatización.",
+      "includedLabel": "Qué incluye",
+      "enterpriseTitle": "¿Necesitas un plan enterprise?",
+      "enterpriseLead": "Mayor concurrencia, permisos más estrictos e integraciones más amplias.",
+      "enterpriseCta": "Reservar demo",
+      "faq": {
+        "0": {
+          "q": "¿Ofrecéis facturación anual?",
+          "a": "Sí: los planes anuales suelen tener mejor precio y presupuesto predecible."
+        },
+        "1": {
+          "q": "¿Puedo subir o bajar de plan en cualquier momento?",
+          "a": "Sí. Las subidas aplican al instante; las bajadas en el siguiente ciclo de facturación para mantener estabilidad operativa."
+        },
+        "2": {
+          "q": "¿Cómo gestionáis seguridad de datos y permisos?",
+          "a": "Los planes Business añaden roles más finos, registros de auditoría y políticas de riesgo para colaboración en equipo."
+        }
+      },
+      "plans": {
+        "0": {
+          "name": "Free",
+          "price": "$0",
+          "period": "/mes",
+          "description": "Para personas y grupos pequeños que exploran funciones básicas.",
+          "badge": "",
+          "cta": "Empezar gratis",
+          "features": {
+            "0": "Gestión básica de bots y grupos",
+            "1": "Respuestas automáticas por palabras clave (básico)",
+            "2": "Resumen básico de métricas (últimos 7 días)",
+            "3": "1 espacio de trabajo / 1 admin",
+            "4": "Soporte de la comunidad"
+          }
+        },
+        "1": {
+          "name": "Pro",
+          "price": "$49",
+          "period": "/mes",
+          "description": "Para comunidades en crecimiento y equipos de contenido: más automatización y control.",
+          "badge": "Más popular",
+          "cta": "Pasarse a Pro",
+          "features": {
+            "0": "Respuestas automáticas avanzadas y reglas",
+            "1": "Publicaciones programadas y calendario de contenido",
+            "2": "Panel unificado en grupos/canales",
+            "3": "Permisos detallados y auditoría",
+            "4": "Retención de datos más larga (90 días)",
+            "5": "Soporte prioritario por correo"
+          }
+        },
+        "2": {
+          "name": "Business",
+          "price": "$199",
+          "period": "/mes",
+          "description": "Para organizaciones y operaciones multiequipo centradas en seguridad y escala.",
+          "badge": "",
+          "cta": "Hablar con ventas",
+          "features": {
+            "0": "Miembros ilimitados del espacio (según políticas)",
+            "1": "Colaboración en equipo: roles, aprobaciones, registros de auditoría",
+            "2": "Antispam avanzado y políticas de riesgo",
+            "3": "Exportaciones completas y APIs (cuando aplique)",
+            "4": "Callbacks en dominio propio e integraciones (cuando aplique)",
+            "5": "Canal de soporte dedicado"
+          }
+        }
+      },
+      "seoTitle": "Precios",
+      "seoDescription": "Planes Telemaster: Free, Pro y Business para gestionar grupos, canales y bots de Telegram."
+    },
+    "features": {
+      "title": "Resumen de funciones",
+      "lead": "Telemaster hace las operaciones en Telegram más automatizadas, controladas y medibles.",
+      "ctaPricing": "Ver precios",
+      "ctaTutorials": "Ver tutoriales",
+      "bottomTitle": "¿Quieres una configuración adaptada a tu escenario?",
+      "bottomLead": "Empieza por casos de uso y buenas prácticas: elige primero las herramientas adecuadas.",
+      "bottomCta": "Ver casos de uso",
+      "seoTitle": "Funciones",
+      "seoDescription": "Bots, moderación, programación, respuestas automáticas y paneles para operaciones en Telegram.",
+      "groups": {
+        "0": {
+          "title": "Automatización",
+          "description": "Deja el trabajo repetitivo al sistema: ahorra tiempo para crecimiento y contenido.",
+          "items": {
+            "0": {
+              "title": "Respuestas automáticas por palabras clave",
+              "desc": "Cubre FAQs, recordatorios de reglas y entrega de recursos."
+            },
+            "1": {
+              "title": "Publicaciones programadas",
+              "desc": "Cadencia y ritmo del canal."
+            },
+            "2": {
+              "title": "Mensajería masiva",
+              "desc": "Alcanza grupos/canales con frecuencia controlada."
+            }
+          }
+        },
+        "1": {
+          "title": "Grupos y canales",
+          "description": "Construye gobernanza repetible sobre seguridad y orden.",
+          "items": {
+            "0": {
+              "title": "Permisos por capas",
+              "desc": "Asigna roles para reducir errores y abusos."
+            },
+            "1": {
+              "title": "Antispam",
+              "desc": "Verificación, límites de tasa y reglas de palabras clave y enlaces."
+            },
+            "2": {
+              "title": "Bienvenida e incorporación",
+              "desc": "Flujos estructurados para retención y claridad."
+            }
+          }
+        },
+        "2": {
+          "title": "Datos e información",
+          "description": "Revisa qué funciona y dónde mejorar.",
+          "items": {
+            "0": {
+              "title": "Panel unificado",
+              "desc": "Métricas clave de grupos/canales en un solo lugar."
+            },
+            "1": {
+              "title": "Rendimiento del contenido",
+              "desc": "Lecturas, engagement y leads (disponibilidad variable)."
+            },
+            "2": {
+              "title": "Registros de auditoría",
+              "desc": "Rastrea acciones críticas para trabajo en equipo y cumplimiento."
+            }
+          }
+        }
+      }
+    },
+    "useCases": {
+      "title": "Casos de uso",
+      "lead": "Cada equipo tiene objetivos distintos. Elige un flujo de trabajo que encaje con el tuyo.",
+      "quickStartTitle": "Inicio rápido",
+      "quickStartLead": "Prueba primero el plan Free y pasa a Pro o Business al escalar.",
+      "quickStartCta": "Ver precios",
+      "seoTitle": "Casos de uso",
+      "seoDescription": "Operaciones en Telegram: moderación, canales, soporte, monetización y distribución.",
+      "cases": {
+        "0": {
+          "title": "Moderación de comunidad (grupos)",
+          "description": "Mejora señal/ruido y reduce la carga manual de los admins.",
+          "bullets": {
+            "0": "Verificación al unirse y límites de tasa para reducir bots y spam",
+            "1": "Respuestas automáticas por palabras clave para reglas y FAQs",
+            "2": "Permisos por capas y auditoría para colaboración más segura"
+          },
+          "links": {
+            "0": {
+              "label": "Tutorial de gestión de grupos",
+              "href": "/tutorials/telegram-group-management-basics"
+            },
+            "1": {
+              "label": "Ver precios",
+              "href": "/pricing"
+            }
+          }
+        },
+        "1": {
+          "title": "Operaciones de contenido (canales)",
+          "description": "Usa la programación para mantener la cadencia y convertir tu canal en un sistema de contenido.",
+          "bullets": {
+            "0": "Publicaciones programadas: menos caos de última hora",
+            "1": "Revisa métricas y estructura para crecer",
+            "2": "Sincroniza anuncios y actualizaciones: menos comunicación repetida"
+          },
+          "links": {
+            "0": {
+              "label": "Tutorial de programación en canal",
+              "href": "/tutorials/telegram-channel-scheduling"
+            },
+            "1": {
+              "label": "Resumen de funciones",
+              "href": "/features"
+            }
+          }
+        },
+        "2": {
+          "title": "Soporte y muchas preguntas",
+          "description": "Automatiza preguntas típicas y enruta lo complejo a personas.",
+          "bullets": {
+            "0": "Respuestas por palabras clave para rutas frecuentes",
+            "1": "Enrutar a tickets/formularios/grupos privados (disponibilidad variable)",
+            "2": "Plantillas unificadas: menos idas y venidas"
+          },
+          "links": {
+            "0": {
+              "label": "Tutorial de respuestas automáticas",
+              "href": "/tutorials/telegram-auto-reply-keywords"
+            },
+            "1": {
+              "label": "Contáctanos",
+              "href": "/contact"
+            }
+          }
+        },
+        "3": {
+          "title": "Monetización y conversión",
+          "description": "Empaqueta contenido, beneficios y servicios; luego opera adquirir → convertir → entregar → revisar.",
+          "bullets": {
+            "0": "Puntos de entrada por palabras clave a registro/consulta/pago (disponibilidad variable)",
+            "1": "Reglas y antispam para proteger la experiencia y la disposición a pagar",
+            "2": "Programación y respuestas inteligentes para bajar coste de entrega: itera con datos"
+          },
+          "links": {
+            "0": {
+              "label": "Ver precios",
+              "href": "/pricing"
+            },
+            "1": {
+              "label": "Resumen de funciones",
+              "href": "/features"
+            }
+          }
+        }
+      }
+    },
+    "changelog": {
+      "title": "Novedades",
+      "lead": "Actualizaciones de funciones y correcciones para seguir el ritmo de lanzamientos.",
+      "bottomTitle": "¿Quieres guías prácticas?",
+      "bottomLead": "Los tutoriales se actualizan con buenas prácticas.",
+      "bottomCta": "Ver tutoriales",
+      "seoTitle": "Novedades",
+      "seoDescription": "Actualizaciones del producto Telemaster y notas de versión.",
+      "entries": {
+        "0": {
+          "version": "v0.2.0",
+          "date": "2026-03-13",
+          "changes": {
+            "0": "Módulo de tutoriales (Markdown, generación estática, metadatos SEO)",
+            "1": "Página de precios (Free / Pro / Business)",
+            "2": "Páginas de marketing: Funciones, Casos de uso, Integraciones, Novedades",
+            "3": "sitemap.xml y robots.txt"
+          }
+        },
+        "1": {
+          "version": "v0.1.0",
+          "date": "2026-03-01",
+          "changes": {
+            "0": "Proyecto inicial y páginas de aterrizaje"
+          }
+        }
+      }
+    },
+    "terms": {
+      "breadcrumbHome": "Inicio",
+      "breadcrumb": "Términos del servicio",
+      "title": "Términos del servicio",
+      "disclaimer": "Este es un texto legal de ejemplo para el sitio de marketing y la estructura SEO. Sustitúyelo por una versión revisada por asesoría legal antes del lanzamiento.",
+      "s1h": "1. Alcance del servicio",
+      "s1p": "Telemaster proporciona herramientas e interfaces para gestionar grupos, canales y bots de Telegram (según las capacidades reales del producto). Podemos actualizar, ajustar o añadir funciones periódicamente.",
+      "s2h": "2. Cuentas y uso",
+      "s2l1": "Debes proporcionar información precisa y lícita y mantener seguras las credenciales.",
+      "s2l2": "No debes usar el servicio para actividades ilegales ni para vulnerar derechos de terceros.",
+      "s2l3": "Eres responsable de las acciones y el contenido bajo tu cuenta.",
+      "s3h": "3. Facturación y reembolsos",
+      "s3p": "Los precios y derechos se muestran en la página de precios. Los reembolsos y ciclos de facturación siguen los términos comerciales y acuerdos aplicables.",
+      "s4h": "4. Datos y cumplimiento",
+      "s4p": "Debes asegurar que la gestión y automatización en Telegram cumplan las leyes aplicables y las reglas de Telegram. Eres responsable del contenido y el cumplimiento en los grupos/canales que gestionas.",
+      "s5h": "5. Exención de responsabilidad",
+      "s5p": "En la medida permitida por la ley, Telemaster no es responsable de daños indirectos, lucro cesante ni pérdida de datos. El servicio puede interrumpirse por redes, plataformas de terceros o fuerza mayor.",
+      "s6h": "6. Contacto",
+      "s6p": "Si tienes dudas sobre estos términos, visita",
+      "s6link": "Contáctanos",
+      "seoTitle": "Términos del servicio",
+      "seoDescription": "Términos de uso, responsabilidad y cumplimiento de Telemaster."
+    },
+    "privacy": {
+      "breadcrumbHome": "Inicio",
+      "breadcrumb": "Política de privacidad",
+      "title": "Política de privacidad",
+      "disclaimer": "Este es un texto de privacidad de ejemplo para el sitio de marketing y la estructura SEO. Añade detalles reales del tratamiento y revísalo con legal/cumplimiento antes del lanzamiento.",
+      "h1": "1. Información que podemos recopilar",
+      "l1": "Datos de cuenta: correo y otros datos para registrarte e iniciar sesión.",
+      "l2": "Datos de uso: uso de funciones y registros de operación (seguridad y mejora del producto).",
+      "l3": "Dispositivo y técnica: tipo de navegador e información básica de red (diagnóstico y seguridad).",
+      "h2": "2. Cómo usamos la información",
+      "u1": "Proporcionar, mantener y mejorar el servicio.",
+      "u2": "Proteger la seguridad y prevenir abusos.",
+      "u3": "Comunicarnos contigo (p. ej. soporte y avisos).",
+      "h3": "3. Compartición",
+      "p3": "No vendemos tu información personal. Solo compartimos cuando es necesario para el servicio, por ley o con tu consentimiento.",
+      "h4": "4. Seguridad",
+      "p4": "Aplicamos medidas técnicas y organizativas razonables, pero ninguna transmisión por internet es totalmente segura.",
+      "h5": "5. Tus derechos",
+      "p5": "Puedes solicitar acceso, corrección o eliminación de tu información. Visita",
+      "plink": "Contáctanos",
+      "seoTitle": "Política de privacidad",
+      "seoDescription": "Cómo Telemaster recopila, usa y protege la información."
+    },
+    "alliance": {
+      "breadcrumbHome": "Inicio",
+      "breadcrumb": "Alianza",
+      "title": "Alianza de crecimiento y monetización del ecosistema Telegram",
+      "lead": "Conecta tráfico con productos de monetización: convierte emparejamiento, distribución, atribución y colaboración en playbooks repetibles.",
+      "ctaApply": "Solicitar unirse",
+      "ctaIntegrations": "Ver integraciones",
+      "roles": {
+        "0": {
+          "title": "Tráfico",
+          "desc": "Propietarios de grupos y canales, matrices de medios y líderes de comunidad.",
+          "bullets": {
+            "0": "Mejora la conversión en cada punto de contacto",
+            "1": "Controla frecuencia y experiencia: no dañes la comunidad",
+            "2": "Convierte acuerdos puntuales en ingresos a largo plazo"
+          }
+        },
+        "1": {
+          "title": "Producto",
+          "desc": "Cursos, herramientas, suscripciones, entrega de servicio y ofertas monetizables.",
+          "bullets": {
+            "0": "Alcanza audiencias y escenarios mejor emparejados",
+            "1": "Escala la distribución con activos y puntos de entrada estándar",
+            "2": "Itera ofertas y mensajes con retroalimentación de datos"
+          }
+        },
+        "2": {
+          "title": "Servicios",
+          "desc": "Equipos de operaciones, crecimiento, contenido, soporte y entrega.",
+          "bullets": {
+            "0": "Convierte la entrega en procesos y plantillas",
+            "1": "Usa automatización para reducir coste y mejorar la experiencia",
+            "2": "Coordina a varias partes con menos comunicación repetida"
+          }
+        }
+      },
+      "opsLabel": "Modelo operativo",
+      "opsTitle": "Del emparejamiento a liquidación y revisión: un bucle cerrado",
+      "opsLead": "La alianza es más que enlaces. Estandarizamos lo que funciona, protege la experiencia y escala de forma sostenible.",
+      "steps": {
+        "0": {
+          "title": "Incorporación y perfiles",
+          "desc": "Estructura información de tráfico y producto en datos emparejables.",
+          "bullets": {
+            "0": "Tráfico: etiquetas de audiencia, reglas y formatos de contenido",
+            "1": "Producto: beneficios, precios y rutas de conversión",
+            "2": "Servicios: capacidad de entrega y SLAs (cuando esté disponible)"
+          }
+        },
+        "1": {
+          "title": "Emparejamiento oferta-demanda",
+          "desc": "Empareja productos con audiencias y escenarios con planes accionables.",
+          "bullets": {
+            "0": "Recomendaciones de escenario: incorporación, campañas, imanes de leads",
+            "1": "Paquetes de activos unificados y plantillas de mensajes",
+            "2": "Estrategia de toques: frecuencia, alcance y cadencia controlados"
+          }
+        },
+        "2": {
+          "title": "Distribución estándar",
+          "desc": "Usa puntos de entrada unificados para captar tráfico: menos leads perdidos.",
+          "bullets": {
+            "0": "Puntos de entrada de bienvenida / palabras clave (cuando esté disponible)",
+            "1": "Landings, formularios y enrutamiento a MD (cuando esté disponible)",
+            "2": "Respuestas automáticas y guías para reducir carga de soporte"
+          }
+        },
+        "3": {
+          "title": "Atribución",
+          "desc": "Conecta origen → acción → conversión para que los resultados sean medibles.",
+          "bullets": {
+            "0": "Seguimiento de canal y creatividad (cuando esté disponible)",
+            "1": "Paneles de alcance, leads y conversión (cuando esté disponible)",
+            "2": "Destacados de IA para revisión (cuando esté disponible)"
+          }
+        },
+        "4": {
+          "title": "Liquidación y revisión",
+          "desc": "Conciliación transparente y colaboración auditable: crecimiento repetible.",
+          "bullets": {
+            "0": "Rev-share y conciliación de pagos (cuando esté disponible)",
+            "1": "Roles y trazas de auditoría para trabajo en equipo más seguro",
+            "2": "Convierte victorias en plantillas y SOP"
+          }
+        }
+      },
+      "benefits": {
+        "0": {
+          "title": "Para socios de tráfico",
+          "desc": "Monetización más estable sin sacrificar la experiencia.",
+          "bullets": {
+            "0": "Productos y socios mejor emparejados",
+            "1": "Menor coste de gestión de conversión",
+            "2": "Expectativas más claras de rendimiento e ingresos (cuando esté disponible)"
+          }
+        },
+        "1": {
+          "title": "Para socios de producto",
+          "desc": "Distribución más controlable y crecimiento medible.",
+          "bullets": {
+            "0": "Fuentes de tráfico de mayor calidad",
+            "1": "Activos estandarizados + puntos de entrada escalables",
+            "2": "Retroalimentación de datos para producto y mensajes (cuando esté disponible)"
+          }
+        },
+        "2": {
+          "title": "Para socios de servicio",
+          "desc": "Colaboración más eficiente: convierte la experiencia en activos reutilizables.",
+          "bullets": {
+            "0": "Entrega basada en procesos con colaboración permisada",
+            "1": "Automatización de preguntas y soporte frecuentes",
+            "2": "Más proyectos con la misma plantilla"
+          }
+        }
+      },
+      "principlesLabel": "Principios",
+      "principlesTitle": "Sostenible, auditable, experiencia primero",
+      "principles": {
+        "0": {
+          "q": "Experiencia primero",
+          "a": "Postura por defecto: respetar la comunidad: frecuencia controlada, contenido revisable y rutas de exclusión."
+        },
+        "1": {
+          "q": "Cumplimiento y seguridad",
+          "a": "Sigue las reglas de la plataforma y las leyes locales; usa permisos, registros y políticas de riesgo para reducir errores y abusos."
+        },
+        "2": {
+          "q": "Colaboración transparente",
+          "a": "Flujos rastreables y revisables; conciliación estandarizada y auditable donde sea posible (cuando esté disponible)."
+        },
+        "3": {
+          "q": "Crecimiento repetible",
+          "a": "Convierte lo que funciona en plantillas y SOP: reutiliza el éxito entre escenarios."
+        }
+      },
+      "faqLabel": "FAQ",
+      "faqTitle": "Lo que quizá te interese",
+      "faq": {
+        "0": {
+          "q": "¿Para qué equipos es la alianza?",
+          "a": "Propietarios de tráfico consolidados y equipos de producto que buscan canales, siempre que ejecuten alianzas como proceso y revisen resultados de forma continua."
+        },
+        "1": {
+          "q": "¿Telemaster cobra o liquida pagos por mí?",
+          "a": "No por defecto. La alianza se centra en emparejamiento + distribución + seguimiento + colaboración. La liquidación depende de disponibilidad y acuerdos."
+        },
+        "2": {
+          "q": "¿Cómo no dañar la experiencia de la comunidad?",
+          "a": "Límites de frecuencia, puntos de entrada estructurados, guías creativas y políticas antispam reducen ruido; preferimos conversión basada en escenarios (incorporación, imanes de leads, registros a eventos)."
+        },
+        "3": {
+          "q": "¿Cómo me uno?",
+          "a": "Contáctanos con detalles de tráfico, producto o servicio: propondremos coincidencias y una ruta de colaboración."
+        }
+      },
+      "nextTitle": "Siguientes pasos",
+      "nextLead": "Comparte detalles de tráfico, producto o servicio: propondremos coincidencias y una ruta de colaboración.",
+      "nextCtaApply": "Solicitar unirse",
+      "nextCtaPricing": "Ver precios",
+      "seoTitle": "Alianza",
+      "seoDescription": "Alianza Telemaster en Telegram: tráfico y monetización — emparejamiento, distribución estándar, atribución y colaboración en liquidación."
+    },
+    "ton": {
+      "breadcrumbHome": "Inicio",
+      "breadcrumb": "TON",
+      "title": "Blockchain TON y el ecosistema Telegram",
+      "lead": "Convierte pagos, membresías e incentivos en operaciones verificables: haz el tráfico y la monetización en Telegram más repetibles.",
+      "ctaConsult": "Hablemos de TON",
+      "ctaAlliance": "Ver alianza",
+      "highlights": {
+        "0": {
+          "title": "Hecho para Telegram",
+          "description": "Encaja en comunidades y distribución de contenido: las capacidades on-chain llegan más de forma natural.",
+          "bullets": {
+            "0": "Puntos de entrada naturales de monedero y pago",
+            "1": "Apto para micropagos y suscripciones",
+            "2": "Activos y beneficios programables"
+          }
+        },
+        "1": {
+          "title": "Acciones on-chain con baja fricción",
+          "description": "Pagos, pruebas y recompensas como acciones verificables: menos fricción de confianza.",
+          "bullets": {
+            "0": "Transacciones y pruebas verificables",
+            "1": "Lógica de liquidación automatizada cuando aplique",
+            "2": "Mejor encaje con rev-share estilo alianza"
+          }
+        },
+        "2": {
+          "title": "Crecimiento e incentivos",
+          "description": "Tokens, NFT o puntos para construir bucles de crecimiento sostenibles.",
+          "bullets": {
+            "0": "Misiones y operaciones de campaña",
+            "1": "Beneficios de membresía por niveles",
+            "2": "Cuantifica la contribución de la comunidad (cuando esté disponible)"
+          }
+        }
+      },
+      "sectionTelemasterLabel": "Telemaster en TON",
+      "sectionTelemasterTitle": "Lleva capacidades on-chain a tu pila de operaciones",
+      "sectionTelemasterLead": "De la adquisición a la atribución: cierra el bucle en tráfico, conversión, entrega y liquidación (cuando esté disponible).",
+      "telemasterCards": {
+        "0": {
+          "title": "Pagos y checkout TON (cuando esté disponible)",
+          "description": "Incrusta acciones de pago en flujos de Telegram para una conversión más fluida.",
+          "bullets": {
+            "0": "Puntos de entrada estándar para enlaces y pedidos",
+            "1": "Entrega de derechos y guía tras el pago",
+            "2": "Flujos de conciliación (cuando esté disponible)"
+          }
+        },
+        "1": {
+          "title": "Acceso con token/NFT y membresía (cuando esté disponible)",
+          "description": "Activos on-chain como membresía verificable: beneficios por niveles.",
+          "bullets": {
+            "0": "Acceso con token o pase NFT",
+            "1": "Los niveles se mapean a contenido y servicios",
+            "2": "Funciona con reglas, bienvenidas y puntos de entrada (cuando esté disponible)"
+          }
+        },
+        "2": {
+          "title": "Misiones y campañas de crecimiento (cuando esté disponible)",
+          "description": "Convierte adquisición, actividad y contribución en mecánicas repetibles.",
+          "bullets": {
+            "0": "Cadencia de campaña y programación de contenido",
+            "1": "Recompensas y pruebas al completar tareas",
+            "2": "Resúmenes de IA para iterar más rápido (cuando esté disponible)"
+          }
+        },
+        "3": {
+          "title": "Atribución de alianza y rev-share (cuando esté disponible)",
+          "description": "Conecta tráfico con monetización: colaboración rastreable y conciliable.",
+          "bullets": {
+            "0": "Seguimiento de canal / creatividad / entrada (cuando esté disponible)",
+            "1": "Rev-share y conciliación de pagos (cuando esté disponible)",
+            "2": "Permisos y registros para trabajo en equipo más seguro"
+          }
+        },
+        "4": {
+          "title": "Pruebas on-chain y cumplimiento (cuando esté disponible)",
+          "description": "Fija compra/participación como pruebas: entrega y upsell más sencillos.",
+          "bullets": {
+            "0": "Entrega de derechos y puntos de canje",
+            "1": "Políticas de riesgo y listas de bloqueo (cuando esté disponible)",
+            "2": "Cumplimiento estandarizado para reducir trabajo manual"
+          }
+        },
+        "5": {
+          "title": "Control de riesgos y experiencia",
+          "description": "Crecimiento sostenible sobre orden y buena UX.",
+          "bullets": {
+            "0": "Antispam y reglas reducen ruido",
+            "1": "Frecuencia y alcance controlados: no dañes las comunidades",
+            "2": "Acciones críticas rastreables para auditoría"
+          }
+        }
+      },
+      "scenariosLabel": "Escenarios típicos",
+      "scenariosTitle": "Productiza la monetización con TON",
+      "scenariosLead": "Evita narrativas complejas de cadena: primero puntos de entrada y beneficios clave, luego itera con datos.",
+      "scenarios": {
+        "0": {
+          "title": "Comunidades de pago / suscripciones",
+          "bullets": {
+            "0": "TON como entrada de pago unificada (cuando esté disponible)",
+            "1": "Guía automática y entrega de derechos tras el pago (cuando esté disponible)",
+            "2": "Reglas y antispam para proteger experiencia y retención"
+          }
+        },
+        "1": {
+          "title": "Cursos, bootcamps y paquetes de recursos",
+          "bullets": {
+            "0": "Programación en canal y entrega rítmica",
+            "1": "Respuestas inteligentes para preguntas frecuentes",
+            "2": "Pruebas on-chain para derechos (cuando esté disponible)"
+          }
+        },
+        "2": {
+          "title": "Campañas de crecimiento y misiones",
+          "bullets": {
+            "0": "Entrada de campaña estandarizada para reducir pérdidas en el embudo",
+            "1": "Recompensas al completar tareas (cuando esté disponible)",
+            "2": "Revisión en panel para mejorar ROI (cuando esté disponible)"
+          }
+        },
+        "3": {
+          "title": "Alianzas en el ecosistema y rev-share",
+          "bullets": {
+            "0": "Emparejamiento de alianza: productos a audiencias",
+            "1": "Atribución de canal y conciliación (cuando esté disponible)",
+            "2": "Convierte victorias en SOP"
+          }
+        }
+      },
+      "faqLabel": "FAQ",
+      "faqTitle": "TON en operaciones reales",
+      "faqs": {
+        "0": {
+          "q": "¿Qué problemas resuelve TON aquí?",
+          "a": "En Telegram, TON actúa como capa de pagos y beneficios de confianza: transacciones, pruebas y recompensas se vuelven acciones verificables con menos coste de confianza y colaboración más escalable."
+        },
+        "1": {
+          "q": "¿Telemaster ofrece todas las funciones TON listadas?",
+          "a": "Esta página describe dirección y extensibilidad; la disponibilidad real depende del producto. Cuéntanos tu escenario para un plan a medida."
+        },
+        "2": {
+          "q": "¿Cómo evitar que la mecánica on-chain dañe la UX?",
+          "a": "Prefiere acciones en cadena en capas de entrada y derechos; combina controles de frecuencia, gobernanza y antispam para proteger la comunidad."
+        }
+      },
+      "ctaBook": "Reservar llamada",
+      "ctaFeatures": "Resumen de funciones",
+      "seoTitle": "TON",
+      "seoDescription": "TON y Telegram: planes Telemaster para pagos, membresía, incentivos y atribución (cuando esté disponible) para operativizar crecimiento y monetización."
+    },
+    "miniApps": {
+      "breadcrumbHome": "Inicio",
+      "breadcrumb": "Telegram Mini Apps",
+      "title": "Ecosistema y operaciones de Telegram Mini Apps",
+      "lead": "Usa Mini Apps para conversión: Telemaster orquesta puntos de entrada, automatización y analítica para un crecimiento más estable y repetible.",
+      "ctaConsult": "Hablemos de Mini Apps",
+      "ctaFeatures": "Resumen de funciones",
+      "ecosystem": {
+        "0": {
+          "title": "Caminos de conversión más cortos",
+          "description": "Los usuarios navegan e interactúan dentro de Telegram: menos abandono al salir de la app.",
+          "bullets": {
+            "0": "Del mensaje a la acción en un solo flujo",
+            "1": "Ideal para campañas y entrega de servicio",
+            "2": "Encaje natural en escenarios de comunidad"
+          }
+        },
+        "1": {
+          "title": "Sistema de entrada operable",
+          "description": "Las Mini Apps pueden ser una capa de aterrizaje unificada: puntos de entrada y flujos estándar para muchas acciones de negocio.",
+          "bullets": {
+            "0": "Incorporación y canje de beneficios",
+            "1": "Registros, reservas y solicitudes de consulta",
+            "2": "Hub de miembros y catálogo de contenido"
+          }
+        },
+        "2": {
+          "title": "Contenido e interacción juntos",
+          "description": "La distribución en canal/grupo impulsa acciones en la app y engagement repetido.",
+          "bullets": {
+            "0": "Cadencia de campaña y programación de contenido",
+            "1": "Interacción estilo misión para mejorar retención",
+            "2": "Revisión de datos para iterar (cuando esté disponible)"
+          }
+        }
+      },
+      "sectionLabel": "Telemaster en el ecosistema Mini App",
+      "sectionTitle": "Convierte puntos de entrada y flujos en un sistema",
+      "sectionLead": "Del alcance al soporte, riesgo y atribución: haz las operaciones reutilizables (cuando esté disponible).",
+      "capabilities": {
+        "0": {
+          "title": "Orquestación de entrada y embudo (cuando esté disponible)",
+          "description": "Trata las Mini Apps como capa de conversión: cada toque lleva a un siguiente paso claro.",
+          "bullets": {
+            "0": "Entrada unificada de bienvenida / palabra clave / menú (cuando esté disponible)",
+            "1": "Enruta audiencias a distintas páginas Mini App (cuando esté disponible)",
+            "2": "Campañas y landings plantilla para reutilizar"
+          }
+        },
+        "1": {
+          "title": "Soporte automático y copiloto de ops",
+          "description": "Automatiza preguntas frecuentes y rutas estándar: menor coste, mayor coherencia.",
+          "bullets": {
+            "0": "Palabras clave + plantillas + respuestas IA (cuando esté disponible)",
+            "1": "Enrutamiento de intención a formularios, tickets o personas (cuando esté disponible)",
+            "2": "Resúmenes de conversación y listas de seguimiento: menos tickets perdidos"
+          }
+        },
+        "2": {
+          "title": "Identidad y permisos",
+          "description": "Roles y permisos para colaboración multiusuario más segura.",
+          "bullets": {
+            "0": "Aislamiento de espacio de trabajo para varios equipos",
+            "1": "Acceso basado en roles y mínimo privilegio",
+            "2": "Registros de auditoría para acciones críticas"
+          }
+        },
+        "3": {
+          "title": "Riesgos y abusos",
+          "description": "Protege la experiencia al escalar: anuncios, phishing y spam dañan la conversión.",
+          "bullets": {
+            "0": "Antispam: verificación, límites de tasa, reglas de palabras clave y enlaces",
+            "1": "Pistas de riesgo y listas de bloqueo (cuando esté disponible)",
+            "2": "Control de frecuencia y alcance en puntos de entrada de riesgo"
+          }
+        },
+        "4": {
+          "title": "Atribución y analítica (cuando esté disponible)",
+          "description": "Conecta origen → acción → conversión en un bucle medible.",
+          "bullets": {
+            "0": "Seguimiento de canal y entrada (cuando esté disponible)",
+            "1": "Paneles de alcance, leads y conversión (cuando esté disponible)",
+            "2": "Destacados de IA para la siguiente iteración (cuando esté disponible)"
+          }
+        },
+        "5": {
+          "title": "Alianza + pagos combinados (cuando esté disponible)",
+          "description": "Mini Apps como capa de conversión, alianza para emparejar y distribuir, pagos para derechos.",
+          "bullets": {
+            "0": "Alianza: distribución y rev-share (cuando esté disponible)",
+            "1": "Pagos / membresía: cumplimiento estandarizado (cuando esté disponible)",
+            "2": "Convierte victorias en SOP"
+          }
+        }
+      },
+      "scenariosLabel": "Escenarios típicos",
+      "scenariosTitle": "Jugadas repetibles de adquisición a revisión",
+      "scenariosLead": "Convierte una campaña o entrega exitosa en plantillas y SOP: escala en grupos y canales.",
+      "scenarios": {
+        "0": {
+          "title": "Registros a eventos y captura de leads",
+          "bullets": {
+            "0": "Alcance del canal → página de registro en Mini App",
+            "1": "Enrutamiento automático a grupo, MD o formulario (cuando esté disponible)",
+            "2": "Revisa datos de registro y conversión (cuando esté disponible)"
+          }
+        },
+        "1": {
+          "title": "Hub de miembros y canje de beneficios",
+          "bullets": {
+            "0": "Entrada unificada de beneficios en Mini App",
+            "1": "Enrutamiento basado en reglas a contenido y servicios",
+            "2": "Menos preguntas repetidas de soporte"
+          }
+        },
+        "2": {
+          "title": "Comunidad de pago y entrega de servicio",
+          "bullets": {
+            "0": "Checkout y entrada de entrega en Mini App (cuando esté disponible)",
+            "1": "Flujos operativos para bajar coste de entrega",
+            "2": "Políticas de riesgo para proteger la comunidad"
+          }
+        },
+        "3": {
+          "title": "Distribución multicanal y alianza",
+          "bullets": {
+            "0": "Creatividades de canal estandarizadas: menos idas y venidas",
+            "1": "Atribución y conciliación (cuando esté disponible)",
+            "2": "Plantillas y SOP para escala"
+          }
+        }
+      },
+      "faqLabel": "FAQ",
+      "faqTitle": "Mini Apps en la práctica",
+      "faqs": {
+        "0": {
+          "q": "¿Qué son aquí las Telegram Mini Apps?",
+          "a": "Telegram Mini Apps / Web Apps: experiencias web dentro de Telegram como aterrizajes de campaña, hubs de miembros y puntos de entrega."
+        },
+        "1": {
+          "q": "¿Telemaster desarrolla Mini Apps?",
+          "a": "Telemaster se centra en la orquestación de ops: entrada, enrutamiento, soporte, riesgo, colaboración y analítica. Los detalles de integración dependen de la disponibilidad y tu solución."
+        },
+        "2": {
+          "q": "¿Cómo convertir sin molestar al usuario?",
+          "a": "Prefiere entrada basada en escenarios (incorporación, imanes de leads, eventos, hubs); usa controles de frecuencia y gobernanza, luego itera con datos."
+        }
+      },
+      "ctaBook": "Reservar llamada",
+      "ctaAlliance": "Sobre la alianza",
+      "seoTitle": "Telegram Mini Apps",
+      "seoDescription": "Telegram Mini Apps: Telemaster para crecimiento, conversión, soporte, riesgos y atribución (cuando esté disponible): operaciones Mini App más repetibles."
+    },
+    "miniGames": {
+      "breadcrumbHome": "Inicio",
+      "breadcrumb": "Juegos de Telegram",
+      "title": "Ecosistema de juegos de Telegram",
+      "lead": "Sistematiza distribución, campañas, soporte, riesgos y revisión: haz el crecimiento de juegos más estable y repetible.",
+      "ctaConsult": "Hablemos de juegos",
+      "ctaAlliance": "Ver alianza",
+      "ecosystem": {
+        "0": {
+          "title": "Distribución social y viralidad",
+          "description": "Los juegos encajan en la difusión comunitaria: compartir, retos, tablas y escuadrones convierten el crecimiento en mecánicas.",
+          "bullets": {
+            "0": "Caminos más cortos dentro de grupos y canales",
+            "1": "Misiones y tablas refuerzan las visitas de retorno",
+            "2": "La cadencia de campaña impulsa retención y conversión"
+          }
+        },
+        "1": {
+          "title": "Retención impulsada por ops",
+          "description": "Los mini juegos necesitan ops diarias continuas, no picos puntuales.",
+          "bullets": {
+            "0": "Calendario de contenido: versiones, eventos, anuncios",
+            "1": "Soporte y moderación moldean el boca a boca",
+            "2": "Revisión de datos para optimizar el embudo (cuando esté disponible)"
+          }
+        },
+        "2": {
+          "title": "Monetización productizada",
+          "description": "Suscripciones, packs, pases, anuncios y alianzas necesitan entrada y entrega estables.",
+          "bullets": {
+            "0": "Textos de beneficio y puntos de entrada estandarizados",
+            "1": "Flujos de pago y entrega repetibles (cuando esté disponible)",
+            "2": "Políticas de riesgo para experiencia y cumplimiento"
+          }
+        }
+      },
+      "sectionLabel": "Telemaster para juegos",
+      "sectionTitle": "Sistemas operativos, no heroísmo",
+      "sectionLead": "De la orquestación de campañas a la automatización de soporte, moderación y atribución: más control (cuando esté disponible).",
+      "capabilities": {
+        "0": {
+          "title": "Orquestación de campañas y calendario de contenido",
+          "description": "Ejecuta tu calendario de ops como sistema: lanzamientos, eventos y anuncios en un solo ritmo.",
+          "bullets": {
+            "0": "Publicaciones programadas en canal y gestión de activos",
+            "1": "Entrada y reglas de eventos plantilla",
+            "2": "Panel unificado en grupos/canales (cuando esté disponible)"
+          }
+        },
+        "1": {
+          "title": "Embudo de crecimiento y captura de entrada (cuando esté disponible)",
+          "description": "Guía cada toque a un siguiente paso claro: adquisición, retorno, pago y repetición.",
+          "bullets": {
+            "0": "Captura de entrada de bienvenida / palabra clave (cuando esté disponible)",
+            "1": "Enrutar a MD, formularios o soporte (cuando esté disponible)",
+            "2": "Seguimiento de canal y creatividad (cuando esté disponible)"
+          }
+        },
+        "2": {
+          "title": "Soporte automático para jugadores",
+          "description": "Reduce Q&A repetido: lo complejo a personas; respuestas más rápidas y coherentes.",
+          "bullets": {
+            "0": "Respuestas automáticas FAQ por palabras clave",
+            "1": "Enrutamiento de intención (cuando esté disponible)",
+            "2": "Resúmenes de IA y listas de seguimiento (cuando esté disponible)"
+          }
+        },
+        "3": {
+          "title": "Moderación de comunidad y abusos",
+          "description": "Protege señal/ruido: anuncios, phishing y spam impulsan abandono.",
+          "bullets": {
+            "0": "Verificación, límites de tasa, reglas de palabras clave y enlaces",
+            "1": "Pistas de riesgo y listas de bloqueo (cuando esté disponible)",
+            "2": "Registros de auditoría para acciones críticas"
+          }
+        },
+        "4": {
+          "title": "Distribución de alianza y co-marketing (cuando esté disponible)",
+          "description": "Conecta tráfico con juegos: mecánicas de distribución repetibles.",
+          "bullets": {
+            "0": "Emparejamiento de alianza: tráfico a productos",
+            "1": "Atribución y conciliación (cuando esté disponible)",
+            "2": "Plantillas y SOP a escala"
+          }
+        },
+        "5": {
+          "title": "Revisión de datos e iteración (cuando esté disponible)",
+          "description": "Ops basada en métricas: alimenta resultados de campaña e incidencias en el siguiente ciclo.",
+          "bullets": {
+            "0": "Paneles de alcance, engagement y leads (cuando esté disponible)",
+            "1": "Temas candentes y puntos de dolor para arreglos de UX",
+            "2": "Flujos de colaboración para reducir coste"
+          }
+        }
+      },
+      "playbookLabel": "Playbook de ops",
+      "playbookTitle": "Cuatro segmentos para crecer",
+      "playbookLead": "Primero el camino crítico; luego escala con plantillas y SOP.",
+      "playbook": {
+        "0": {
+          "title": "Adquisición: campañas + compartir",
+          "bullets": {
+            "0": "Anuncios en canal → aterrizaje en grupo",
+            "1": "Tareas de compartir y recompensas (cuando esté disponible)",
+            "2": "Clona plantillas en más grupos/canales"
+          }
+        },
+        "1": {
+          "title": "Visitas de retorno: ritmo de lanzamiento + diarios",
+          "bullets": {
+            "0": "Recordatorios programados de versión/evento",
+            "1": "Respuestas automáticas a preguntas frecuentes para reducir abandono",
+            "2": "Revisa datos de retorno para iterar (cuando esté disponible)"
+          }
+        },
+        "2": {
+          "title": "Monetización: beneficios + entrada",
+          "bullets": {
+            "0": "Packs, suscripciones y entrada de pase estandarizados",
+            "1": "Enrutamiento y mensajería de soporte unificados",
+            "2": "Flujos de pago, entrega y conciliación (cuando esté disponible)"
+          }
+        },
+        "3": {
+          "title": "Reputación: moderación + riesgo + UX",
+          "bullets": {
+            "0": "Antispam y políticas de riesgo protegen la comunidad",
+            "1": "Acciones rastreables para colaboración",
+            "2": "Resúmenes de temas candentes para mejorar la experiencia (cuando esté disponible)"
+          }
+        }
+      },
+      "faqLabel": "FAQ",
+      "faqTitle": "Juegos en la práctica",
+      "faqs": {
+        "0": {
+          "q": "¿Mini juegos frente a Mini Apps?",
+          "a": "Aquí las Mini Apps se inclinan a landing y servicios; los juegos al juego y bucles de crecimiento. Ambos necesitan entrada, ops, soporte, riesgos y revisión."
+        },
+        "1": {
+          "q": "¿Telemaster entrega código de juego o SDK?",
+          "a": "Telemaster se centra en ops: programación, captura de entrada, automatización de soporte, moderación y analítica. La integración del juego depende de tu solución."
+        },
+        "2": {
+          "q": "¿Cómo evitar eventos spam que dañen la comunidad?",
+          "a": "Límites de frecuencia, gobernanza y enrutamiento reducen ruido; prefiera anuncios y ritmo en canales, soporte en grupos e itere la estrategia de toques con datos."
+        }
+      },
+      "ctaBook": "Reservar llamada",
+      "ctaMiniApps": "Sobre Mini Apps",
+      "seoTitle": "Juegos de Telegram",
+      "seoDescription": "Juegos de Telegram: distribución, crecimiento, campañas y monetización. Telemaster para orquestación, automatización de soporte, riesgos y analítica (cuando esté disponible)."
+    }
+  }
+}

@@ -31,18 +31,22 @@
           <div class="flex min-w-0 shrink-0 items-center">
             <UiLogo />
           </div>
-          <ul
-            class="flex flex-wrap items-center justify-center gap-0 text-sm xl:grow"
+          <div
+            class="min-w-0 flex-1 lg:flex lg:min-w-0 lg:justify-center"
           >
-            <li v-for="link in mainNavLinks" :key="link.to">
-              <NuxtLink
-                :to="link.to"
-                class="flex items-center px-2 py-2 text-gray-800 transition duration-150 ease-in-out hover:text-gray-950 xl:px-4"
-              >
-                {{ link.label }}
-              </NuxtLink>
-            </li>
-          </ul>
+            <ul
+              class="tm-desktop-nav flex max-w-full flex-nowrap items-center justify-center gap-0 overflow-x-auto overscroll-x-contain text-sm lg:grow"
+            >
+              <li v-for="link in mainNavLinks" :key="link.to" class="shrink-0">
+                <NuxtLink
+                  :to="link.to"
+                  class="flex items-center whitespace-nowrap px-1.5 py-2 text-gray-800 transition duration-150 ease-in-out hover:text-gray-950 sm:px-2 xl:px-3"
+                >
+                  {{ link.label }}
+                </NuxtLink>
+              </li>
+            </ul>
+          </div>
           <ul class="flex shrink-0 items-center justify-end gap-2 xl:gap-3">
             <li>
               <NuxtLink

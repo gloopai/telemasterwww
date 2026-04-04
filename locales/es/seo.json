@@ -1,0 +1,55 @@
+{
+  "seo": {
+    "defaultTitle": "Telemaster · Plataforma de operaciones en Telegram con IA",
+    "defaultDescription": "Plataforma para grupos, canales y bots de Telegram: moderación, respuestas automáticas, programación y analítica en una sola consola.",
+    "titleTemplate": "{title} · Telemaster",
+    "defaultOgImageAlt": "Telemaster — plataforma de operaciones en Telegram con IA",
+    "home": {
+      "title": "Plataforma de operaciones en Telegram con IA",
+      "description": "Unifica moderación, respuestas automáticas, programación y analítica con IA en una sola consola.",
+      "ogTitle": "Telemaster — plataforma de operaciones en Telegram con IA",
+      "ogDescription": "Unifica moderación, respuestas automáticas, programación y analítica con IA en una sola consola."
+    },
+    "tutorials": {
+      "breadcrumb": "Tutoriales",
+      "titleFallback": "Tutoriales",
+      "titleSuffix": "· Tutoriales Telemaster"
+    },
+    "faq": {
+      "title": "FAQ",
+      "description": "Respuestas sobre Telemaster: qué es, cómo empezar, espacios de trabajo y cómo contactarnos.",
+      "ogTitle": "Telemaster — FAQ",
+      "ogDescription": "Respuestas sobre Telemaster: qué es, cómo empezar, espacios de trabajo y cómo contactarnos."
+    },
+    "signin": {
+      "title": "Iniciar sesión",
+      "description": "Inicia sesión en Telemaster.",
+      "ogTitle": "Telemaster — Iniciar sesión",
+      "ogDescription": "Inicia sesión en Telemaster."
+    },
+    "signup": {
+      "title": "Registrarse",
+      "description": "Crea tu cuenta de Telemaster.",
+      "ogTitle": "Telemaster — Registrarse",
+      "ogDescription": "Crea tu cuenta de Telemaster."
+    },
+    "resetPassword": {
+      "title": "Restablecer contraseña",
+      "description": "Restablece la contraseña de tu cuenta Telemaster.",
+      "ogTitle": "Telemaster — Restablecer contraseña",
+      "ogDescription": "Restablece la contraseña de tu cuenta Telemaster."
+    },
+    "tutorialsIndex": {
+      "title": "Tutoriales",
+      "description": "Tutoriales y buenas prácticas de Telemaster para grupos, canales y bots de Telegram.",
+      "ogTitle": "Telemaster — Tutoriales",
+      "ogDescription": "Tutoriales y buenas prácticas de Telemaster para grupos, canales y bots de Telegram."
+    },
+    "language": {
+      "title": "Idioma y región",
+      "description": "Elige un idioma para Telemaster.",
+      "ogTitle": "Telemaster — Idioma y región",
+      "ogDescription": "Elige un idioma para Telemaster."
+    }
+  }
+}

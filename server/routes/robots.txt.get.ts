@@ -1,7 +1,7 @@
-import { getSiteUrl } from "../utils/siteUrl";
+import { CANONICAL_SITE_ORIGIN } from "../utils/siteUrl";
 
 export default defineEventHandler((event) => {
-  const siteUrl = getSiteUrl();
+  const siteUrl = CANONICAL_SITE_ORIGIN;
   const sitemap = new URL("/sitemap.xml", siteUrl).toString();
   const body = `User-Agent: *
 Allow: /

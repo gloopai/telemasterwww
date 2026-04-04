@@ -1,5 +1,5 @@
 import { getAllTutorials } from "../utils/tutorials";
-import { getSiteUrl } from "../utils/siteUrl";
+import { CANONICAL_SITE_ORIGIN } from "../utils/siteUrl";
 
 type Entry = {
   loc: string;
@@ -17,7 +17,7 @@ function xmlEscape(s: string): string {
 }
 
 export default defineEventHandler(async (event) => {
-  const siteUrl = getSiteUrl();
+  const siteUrl = CANONICAL_SITE_ORIGIN;
   const tutorials = await getAllTutorials();
 
   const staticEntries: Entry[] = [
@@ -47,7 +47,7 @@ export default defineEventHandler(async (event) => {
   }));
 
   const base = [...staticEntries, ...tutorialEntries];
-  const prefixes = ["zh", "ja", "ko"] as const;
+  const prefixes = ["zh", "ja", "ko", "ru", "es", "hi"] as const;
   const prefixed = prefixes.flatMap((prefix) => [
     ...staticEntries.map((e) => ({
       ...e,

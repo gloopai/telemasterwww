@@ -1,0 +1,179 @@
+{
+  "home": {
+    "hero": {
+      "eyebrow": "Operaciones en Telegram · Copiloto IA",
+      "title": "Grupos, canales y bots en una consola orquestada",
+      "subtitle": "Gobernanza, respuestas automáticas, programación y analítica en un solo lugar, con un copiloto de IA para resúmenes, enrutamiento de intenciones, respuestas inteligentes y alertas de riesgo (cuando esté disponible).",
+      "tags": [
+        "Resúmenes de conversación",
+        "Enrutamiento de intenciones",
+        "Respuestas inteligentes",
+        "Alertas de riesgo",
+        "Base de conocimiento (cuando esté disponible)"
+      ],
+      "ctaPricing": "Ver precios",
+      "ctaUseCases": "Casos de uso",
+      "socialProof": "Infraestructura operativa para equipos de comunidad y crecimiento",
+      "cardTitle": "Un solo flujo para operaciones",
+      "cardSubtitle": "Del alcance a la conversión y la revisión: flujos configurables y acciones auditables.",
+      "bullets": {
+        "governance": "Gobernanza",
+        "governanceText": "Antispam, permisos y reglas: menos ruido y menos riesgo.",
+        "automation": "Automatización",
+        "automationText": "Palabras clave, plantillas y calendarios: la rutina la lleva el sistema.",
+        "ai": "IA",
+        "aiText": "Resúmenes y sugerencias de enrutamiento: céntrate en lo que importa."
+      }
+    },
+    "business": {
+      "aiLabel": "Copiloto IA",
+      "aiTitle": "Añade un copiloto de IA: haz las operaciones programables",
+      "aiSubtitle": "La IA entiende y recomienda; el sistema ejecuta y audita: estable a escala.",
+      "orchestrationTitle": "Orquestación central y coordinación multicanal",
+      "orchestrationDesc": "Bots, grupos, canales y automatización en un solo lugar: la IA sugiere, el sistema ejecuta con trazabilidad.",
+      "commerceLabel": "Monetización",
+      "commerceTitle": "De operaciones a ingresos: cierra el ciclo",
+      "commerceSubtitle": "Telemaster convierte adquirir → convertir → entregar → revisar en flujos repetibles para operadores de comunidades en Telegram.",
+      "allianceLabel": "Alianza",
+      "allianceTitle": "Alianza de crecimiento y monetización en Telegram",
+      "allianceSubtitle": "Apuesta a largo plazo: conecta tráfico con productos de monetización y convierte acuerdos puntuales en playbooks de alianza repetibles.",
+      "ctaJoin": "Unirse a la alianza",
+      "ctaLearnAlliance": "Sobre la alianza",
+      "ctaIntegrations": "Integraciones",
+      "aiModules": [
+        {
+          "title": "Resúmenes de conversación con IA",
+          "desc": "Temas candentes, preguntas abiertas y seguimientos: menos scroll manual."
+        },
+        {
+          "title": "Enrutamiento de intenciones",
+          "desc": "Detecta soporte, quejas, alianzas y enruta a formularios, tickets o personas."
+        },
+        {
+          "title": "Respuestas inteligentes y playbooks",
+          "desc": "Plantilla + base de conocimiento: tono coherente y multilingüe (cuando esté disponible)."
+        },
+        {
+          "title": "Alertas de riesgo",
+          "desc": "Señales para anuncios, phishing y contenido sensible: sugerir bloqueos (cuando esté disponible)."
+        }
+      ],
+      "monetizationModel": [
+        {
+          "title": "Adquirir: tráfico en miembros",
+          "desc": "Entrada y reglas claras para incorporar personas a tu embudo.",
+          "bullets": [
+            "Bienvenida + entrada fija: beneficios, FAQ, siguientes pasos",
+            "Flujos por palabras clave: imanes de leads, registros, alianzas",
+            "Enrutamiento de intenciones a MD, formularios o personas (cuando esté disponible)"
+          ]
+        },
+        {
+          "title": "Convertir: interés en pedidos",
+          "desc": "Sustituye el ida y vuelta por playbooks repetibles: menos leads perdidos.",
+          "bullets": [
+            "Ofertas y paquetes estándar: multilingüe (cuando esté disponible)",
+            "Roles y reglas: debates más sanos y mayor disposición a pagar",
+            "Paso a enlaces de pago/checkout (cuando esté disponible)"
+          ]
+        },
+        {
+          "title": "Entregar: servicio repetible",
+          "desc": "La automatización y los calendarios sostienen la entrega: atiende a más miembros con el mismo equipo.",
+          "bullets": [
+            "Calendarios de canal y activos: cursos, actualizaciones, campañas",
+            "Respuestas inteligentes para FAQs: mayor satisfacción",
+            "Antispam y riesgos: protege la experiencia de entrega"
+          ]
+        },
+        {
+          "title": "Revisar: una venta en ingresos recurrentes",
+          "desc": "Datos y resúmenes muestran dónde crecer: itera conversión y retención.",
+          "bullets": [
+            "Paneles unificados: crecimiento, engagement, leads (cuando esté disponible)",
+            "La IA destaca necesidades y oportunidades de producto",
+            "Seguimientos y SOP: convierte victorias en hábitos de equipo"
+          ]
+        }
+      ],
+      "monetizationOptions": [
+        "Membresía / comunidad de pago",
+        "Cursos, bootcamps, packs",
+        "Consultoría y servicios",
+        "Patrocinios",
+        "Afiliados / rev-share",
+        "Generación de leads y referidos"
+      ],
+      "allianceRoles": [
+        "Tráfico: grupos, canales, medios",
+        "Productos: cursos, herramientas, servicios",
+        "Servicios: ops, crecimiento, contenido, soporte"
+      ],
+      "alliancePillars": [
+        {
+          "title": "Emparejamiento",
+          "desc": "Ofertas adecuadas para audiencias adecuadas: alianzas repetibles.",
+          "bullets": ["Etiquetas de audiencia y escenario", "Kits de oferta y activos", "Control de cadencia y alcance"]
+        },
+        {
+          "title": "Distribución estándar",
+          "desc": "Guiones, puntos de entrada y flujos unificados: menos retrabajo y menos leads perdidos.",
+          "bullets": ["Entrada por palabra clave / bienvenida (cuando esté disponible)", "Campañas y landings plantilla", "Enrutar a MD, formularios, tickets"]
+        },
+        {
+          "title": "Atribución",
+          "desc": "Mide rutas y resultados: optimiza ambos lados.",
+          "bullets": ["Seguimiento de canal y creativo (cuando esté disponible)", "Paneles KPI (cuando esté disponible)", "Temas de revisión (cuando esté disponible)"]
+        },
+        {
+          "title": "Liquidación y colaboración",
+          "desc": "Roles y registros transparentes: escala operaciones de partner con confianza.",
+          "bullets": ["Roles y mínimo privilegio", "Trazas de auditoría", "Rev-share y conciliación (cuando esté disponible)"]
+        }
+      ]
+    },
+    "features": {
+      "label": "Producto",
+      "title": "IA + sistema operativo: capacidades clave",
+      "subtitle": "Convierte la rutina en flujos controlados: el conocimiento individual en playbooks de equipo.",
+      "items": [
+        {
+          "title": "Bots y espacios de trabajo",
+          "desc": "Gestiona bots, permisos y entornos en un solo lugar: colaboración más segura entre equipos."
+        },
+        {
+          "title": "Respuestas inteligentes con IA",
+          "desc": "Palabras clave + plantillas + IA: cubre preguntas frecuentes con tono uniforme."
+        },
+        {
+          "title": "Moderación de grupos y antispam",
+          "desc": "Verificación, límites de tasa y reglas: menos spam y más orden."
+        },
+        {
+          "title": "Programación en canal",
+          "desc": "Publicaciones programadas y activos: ritmo estable con seguimiento del rendimiento (cuando esté disponible)."
+        },
+        {
+          "title": "Difusiones y distribución",
+          "desc": "Alcance basado en plantillas a grupos/canales: controla frecuencia y alcance."
+        },
+        {
+          "title": "Analítica e información",
+          "desc": "Métricas clave, temas candentes y señales de riesgo: detecta problemas y oportunidades antes."
+        }
+      ]
+    },
+    "testimonial": {
+      "quote": "Antes dedicábamos horas a limpiar spam, repetir respuestas y sincronizar actualizaciones. Con la automatización de Telemaster y el copiloto de IA — primero resumir, luego enrutar, ejecutar en un clic — nuestro ritmo es más estable.",
+      "role": "Responsable de operaciones de comunidad",
+      "link": "Ver casos de uso"
+    },
+    "cta": {
+      "label": "Siguiente paso",
+      "title": "Convierte las operaciones de Telegram en un sistema con IA",
+      "subtitle": "De precios a ventas: te ayudamos a ejecutar el playbook de punta a punta.",
+      "pricing": "Ver precios",
+      "contact": "Contáctanos"
+    }
+  }
+}
