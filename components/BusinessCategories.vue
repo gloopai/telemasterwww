@@ -1,235 +1,38 @@
 <template>
-    <section>
+    <section class="border-t border-gray-200/80 bg-gray-50">
       <div class="mx-auto max-w-6xl px-4 sm:px-6">
-        <div class="py-12 md:py-20">
-          <div class="mx-auto max-w-3xl pb-12 text-center md:pb-16">
-            <h2 class="text-3xl font-bold text-gray-900 md:text-4xl">
+        <div class="py-16 md:py-24">
+          <div class="mx-auto max-w-2xl pb-12 text-center md:pb-16">
+            <p class="text-sm font-semibold text-blue-600">AI 助理</p>
+            <h2 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 md:text-4xl">
               加入 AI 助理，让运营可编排
             </h2>
-            <p class="mt-4 text-lg text-gray-700">
+            <p class="mt-4 text-lg text-gray-600">
               AI 负责理解与建议，系统负责执行与审计，让团队在规模化下依然稳定。
             </p>
           </div>
 
-          <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
-            <div class="relative flex h-[324px] items-center justify-center">
-            <div class="absolute -z-10 opacity-[0.14]">
-              <svg
-                class="fill-slate-400"
-                xmlns="http://www.w3.org/2000/svg"
-                width="164"
-                height="41"
-                viewBox="0 0 164 41"
-                fill="none"
+          <div class="grid gap-10 lg:grid-cols-2 lg:items-stretch lg:gap-12">
+            <div
+              class="flex min-h-[280px] flex-col items-center justify-center rounded-3xl border border-gray-200 bg-white p-10 text-center shadow-sm"
+            >
+              <div
+                class="flex h-20 w-20 items-center justify-center rounded-2xl bg-blue-600/10 ring-1 ring-blue-600/10"
               >
-                <circle cx="1" cy="8" r="1" fill-opacity="0.24" />
-                <circle cx="1" cy="1" r="1" fill-opacity="0.16" />
-                <circle cx="1" cy="15" r="1" />
-                <circle cx="1" cy="26" r="1" fill-opacity="0.64" />
-                <circle cx="1" cy="33" r="1" fill-opacity="0.24" />
-                <circle cx="8" cy="8" r="1" />
-                <circle cx="8" cy="15" r="1" />
-                <circle cx="8" cy="26" r="1" fill-opacity="0.24" />
-                <circle cx="15" cy="15" r="1" fill-opacity="0.64" />
-                <circle cx="15" cy="26" r="1" fill-opacity="0.16" />
-                <circle cx="8" cy="33" r="1" />
-                <circle cx="1" cy="40" r="1" />
-                <circle
-                  cx="1"
-                  cy="1"
-                  r="1"
-                  transform="matrix(-1 0 0 1 164 7)"
-                  fill-opacity="0.24"
+                <img
+                  src="/images/telemaster-mark.svg"
+                  width="40"
+                  height="40"
+                  alt=""
                 />
-                <circle
-                  cx="1"
-                  cy="1"
-                  r="1"
-                  transform="matrix(-1 0 0 1 164 0)"
-                  fill-opacity="0.16"
-                />
-                <circle
-                  cx="1"
-                  cy="1"
-                  r="1"
-                  transform="matrix(-1 0 0 1 164 14)"
-                />
-                <circle
-                  cx="1"
-                  cy="1"
-                  r="1"
-                  transform="matrix(-1 0 0 1 164 25)"
-                  fill-opacity="0.64"
-                />
-                <circle
-                  cx="1"
-                  cy="1"
-                  r="1"
-                  transform="matrix(-1 0 0 1 164 32)"
-                  fill-opacity="0.24"
-                />
-                <circle
-                  cx="1"
-                  cy="1"
-                  r="1"
-                  transform="matrix(-1 0 0 1 157 7)"
-                />
-                <circle
-                  cx="1"
-                  cy="1"
-                  r="1"
-                  transform="matrix(-1 0 0 1 157 14)"
-                />
-                <circle
-                  cx="1"
-                  cy="1"
-                  r="1"
-                  transform="matrix(-1 0 0 1 157 25)"
-                  fill-opacity="0.24"
-                />
-                <circle
-                  cx="1"
-                  cy="1"
-                  r="1"
-                  transform="matrix(-1 0 0 1 150 14)"
-                  fill-opacity="0.64"
-                />
-                <circle
-                  cx="1"
-                  cy="1"
-                  r="1"
-                  transform="matrix(-1 0 0 1 150 25)"
-                  fill-opacity="0.16"
-                />
-                <circle
-                  cx="1"
-                  cy="1"
-                  r="1"
-                  transform="matrix(-1 0 0 1 157 32)"
-                />
-                <circle
-                  cx="1"
-                  cy="1"
-                  r="1"
-                  transform="matrix(-1 0 0 1 164 39)"
-                />
-              </svg>
-            </div>
-            
-            <div class="absolute before:absolute before:-inset-3 before:animate-[spin_3s_linear_infinite] before:rounded-full before:border before:border-transparent before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] before:[background:conic-gradient(from_180deg,transparent,var(--color-blue-500))_border-box]">
-              <div class="animate-[breath_8s_ease-in-out_infinite_both]">
-                <div class="flex h-24 w-24 items-center justify-center rounded-full bg-white shadow-md ring-1 ring-gray-200/60">
-                  <img class="relative"
-                    src="/images/logo-01.svg"
-                    width="32"
-                    height="32"
-                    alt="Logo 01"
-                  />
-                </div>
               </div>
+              <p class="mt-6 text-base font-semibold text-gray-900">
+                中枢编排，多触点协同
+              </p>
+              <p class="mt-2 max-w-sm text-sm leading-relaxed text-gray-600">
+                Bot、群组、频道与自动化规则统一接入；建议由 AI 给出，执行由系统落地并留痕。
+              </p>
             </div>
-
-            <div class="relative flex flex-col">
-              <article class="flex h-full w-full items-center justify-center focus-visible:outline-hidden focus-visible:ring-3 focus-visible:ring-indigo-300">
-                <div class="absolute -translate-x-[136px]">
-                  <div class="animate-[breath_7s_ease-in-out_3s_infinite_both]">
-                    <div class="flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-md ring-1 ring-gray-200/60">
-                      <img class="relative"
-                        src="/images/logo-02.svg"
-                        width="23"
-                        height="22"
-                        alt="Logo 02"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="absolute translate-x-[136px]">
-                  <div class="animate-[breath_7s_ease-in-out_3.5s_infinite_both]">
-                    <div class="flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-md ring-1 ring-gray-200/60">
-                      <img class="relative"
-                        src="/images/logo-03.svg"
-                        width="22"
-                        height="22"
-                        alt="Logo 03"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="absolute -translate-x-[216px] -translate-y-[82px]">
-                  <div class="animate-[breath_6s_ease-in-out_3.5s_infinite_both]">
-                    <div class="flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-md ring-1 ring-gray-200/60">
-                      <img class="relative"
-                        src="/images/logo-04.svg"
-                        width="24"
-                        height="22"
-                        alt="Logo 04"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="absolute -translate-y-[82px] translate-x-[216px]">
-                  <div class="animate-[breath_6s_ease-in-out_1.5s_infinite_both]">
-                    <div class="flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-md ring-1 ring-gray-200/60">
-                      <img class="relative"
-                        src="/images/logo-05.svg"
-                        width="25"
-                        height="25"
-                        alt="Logo 05"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="absolute translate-x-[216px] translate-y-[82px]">
-                  <div class="animate-[breath_6s_ease-in-out_2s_infinite_both]">
-                    <div class="flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-md ring-1 ring-gray-200/60">
-                      <img class="relative"
-                        src="/images/logo-06.svg"
-                        width="20"
-                        height="18"
-                        alt="Logo 06"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="absolute -translate-x-[216px] translate-y-[82px]">
-                  <div class="animate-[breath_6s_ease-in-out_2.5s_infinite_both]">
-                    <div class="flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-md ring-1 ring-gray-200/60">
-                      <img class="relative"
-                        src="/images/logo-07.svg"
-                        width="25"
-                        height="25"
-                        alt="Logo 07"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="absolute -translate-x-[292px] opacity-40">
-                  <div class="animate-[breath_6s_ease-in-out_2s_infinite_both]">
-                    <div class="flex h-12 w-12 items-center justify-center rounded-full border border-gray-200/70 bg-white shadow-md shadow-slate-900/5">
-                      <img class="relative"
-                        src="/images/logo-08.svg"
-                        width="20"
-                        height="20"
-                        alt="Logo 08"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="absolute translate-x-[292px] opacity-40">
-                  <div class="animate-[breath_6s_ease-in-out_4s_infinite_both]">
-                    <div class="flex h-12 w-12 items-center justify-center rounded-full border border-gray-200/70 bg-white shadow-md shadow-slate-900/5">
-                      <img class="relative"
-                        src="/images/logo-09.svg"
-                        width="21"
-                        height="13"
-                        alt="Logo 09"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
 
             <div class="grid gap-4 sm:grid-cols-2">
               <div
@@ -269,9 +72,10 @@
             </div>
           </div>
 
-          <div class="mt-16 rounded-3xl bg-white p-8 ring-1 ring-gray-200">
+          <div class="mt-16 rounded-3xl border border-gray-200/80 bg-white p-8 shadow-sm md:p-10">
             <div class="mx-auto max-w-3xl text-center">
-              <h3 class="text-2xl font-bold text-gray-900 md:text-3xl">
+              <p class="text-sm font-semibold text-blue-600">商业化</p>
+              <h3 class="mt-2 text-2xl font-bold tracking-tight text-gray-900 md:text-3xl">
                 社群变现：从运营到收入的闭环
               </h3>
               <p class="mt-3 text-base text-gray-700">
@@ -313,9 +117,10 @@
             </div>
           </div>
 
-          <div class="mt-16 overflow-hidden rounded-3xl bg-gray-900 p-8 text-white ring-1 ring-gray-900/10">
+          <div class="mt-16 overflow-hidden rounded-3xl bg-gray-900 p-8 text-white shadow-lg ring-1 ring-white/10 md:p-10">
             <div class="mx-auto max-w-3xl text-center">
-              <h3 class="text-2xl font-bold md:text-3xl">
+              <p class="text-sm font-semibold text-blue-300/90">联盟</p>
+              <h3 class="mt-2 text-2xl font-bold tracking-tight md:text-3xl">
                 Telegram 生态流量运营变现联盟
               </h3>
               <p class="mt-3 text-base text-white/80">

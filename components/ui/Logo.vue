@@ -1,9 +1,25 @@
 <template>
   <NuxtLink
     to="/"
-    class="inline-flex text-blue-600 hover:text-blue-700"
+    class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700"
     aria-label="Telemaster"
   >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 32 32"
+      fill="none"
+      class="block h-[22px] w-[22px] shrink-0"
+      aria-hidden="true"
+    >
+      <g stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.38">
+        <path d="M16 9v2M16 21v2M9 16h2M21 16h2" />
+      </g>
+      <circle cx="16" cy="16" r="5" fill="currentColor" />
+      <circle cx="16" cy="6" r="3" fill="currentColor" opacity="0.92" />
+      <circle cx="16" cy="26" r="3" fill="currentColor" opacity="0.92" />
+      <circle cx="6" cy="16" r="3" fill="currentColor" opacity="0.92" />
+      <circle cx="26" cy="16" r="3" fill="currentColor" opacity="0.92" />
+    </svg>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="151"
