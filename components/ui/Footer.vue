@@ -1,5 +1,7 @@
 <template>
-  <footer class="pb-[max(1rem,env(safe-area-inset-bottom))]">
+  <footer
+    class="min-w-0 overflow-x-clip pb-[max(1rem,env(safe-area-inset-bottom))]"
+  >
     <div class="mx-auto max-w-6xl px-4 sm:px-6">
       <div
         :class="[

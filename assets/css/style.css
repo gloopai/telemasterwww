@@ -205,14 +205,12 @@
     border-color: var(--color-gray-200, currentColor);
   }
 
-  /* 防止未正确设置 viewport 时出现横向滚动；并避免 iOS 横竖屏时文字被系统放大破坏布局 */
+  /*
+    横向溢出：不要写在 html/body 上（会破坏 position:fixed 顶栏在设备模拟器里的定位）。
+    在 default 布局的 main / footer 上用 overflow-x-clip 约束正文区域即可。
+  */
   html {
-    overflow-x: hidden;
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
-  }
-
-  body {
-    overflow-x: hidden;
   }
 }

@@ -259,6 +259,8 @@ onUnmounted(() => {
   left: 0;
   right: 0;
   z-index: 100;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* 默认：移动端可见（与常见手机优先一致） */

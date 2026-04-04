@@ -66,7 +66,6 @@ export default defineNuxtConfig(async () => {
       head: {
         htmlAttrs: { lang: "zh-CN" },
         charset: "utf-8",
-        title: "Telemaster - AI 驱动的 Telegram 运营平台",
         meta: [
           /* 必须显式写出 meta：仅依赖 app.head.viewport 时，部分环境设备模式/内嵌 WebView 下可能不生效，导致布局宽度≈980px、md 断点误触发 */
           {
@@ -85,6 +84,12 @@ export default defineNuxtConfig(async () => {
           { name: "twitter:card", content: "summary_large_image" },
         ],
         link: [
+          { rel: "preconnect", href: "https://fonts.googleapis.com" },
+          {
+            rel: "preconnect",
+            href: "https://fonts.gstatic.com",
+            crossorigin: "",
+          },
           {
             rel: "icon",
             href: "/favicon.svg",

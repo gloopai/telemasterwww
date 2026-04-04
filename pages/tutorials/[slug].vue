@@ -32,6 +32,7 @@
 </template>
 
 <script setup lang="ts">
+import { DEFAULT_OG_IMAGE_ALT } from "~/composables/useDefaultOgImage";
 import { formatTutorialDate } from "~/utils/formatTutorialDate";
 
 type TutorialPage = {
@@ -72,17 +73,25 @@ const pageUrl = computed(
     tutorial.value ? `${siteUrl}/tutorials/${tutorial.value.slug}` : siteUrl,
 );
 
+const defaultOgUrl = useDefaultOgImageUrl();
+
 const ogImageAbsolute = computed(() => {
   const img = tutorial.value?.ogImage;
-  if (!img) return undefined;
+  if (!img) return defaultOgUrl;
   if (img.startsWith("http://") || img.startsWith("https://")) return img;
   if (img.startsWith("/")) return `${siteUrl}${img}`;
   return `${siteUrl}/${img}`;
 });
 
+const ogImageAltText = computed(() =>
+  tutorial.value?.ogImage
+    ? tutorial.value.title
+    : DEFAULT_OG_IMAGE_ALT,
+);
+
 useSeoMeta({
   title: computed(() =>
-    tutorial.value ? `${tutorial.value.title} - Telemaster 教程` : "教程",
+    tutorial.value ? `${tutorial.value.title} · 教程` : "教程",
   ),
   description: computed(() => tutorial.value?.description ?? ""),
   ogTitle: computed(() => tutorial.value?.title ?? ""),
@@ -90,6 +99,9 @@ useSeoMeta({
   ogUrl: pageUrl,
   ogType: "article",
   ogImage: ogImageAbsolute,
+  ogImageAlt: ogImageAltText,
+  twitterImage: ogImageAbsolute,
+  twitterImageAlt: ogImageAltText,
   keywords: computed(() => tutorial.value?.keywords?.join(", ") ?? undefined),
 });
 
@@ -105,6 +117,7 @@ useHead(() => ({
             headline: tutorial.value.title,
             description: tutorial.value.description,
             datePublished: tutorial.value.date,
+            image: ogImageAbsolute.value,
             mainEntityOfPage: {
               "@type": "WebPage",
               "@id": pageUrl.value,
@@ -116,6 +129,11 @@ useHead(() => ({
             publisher: {
               "@type": "Organization",
               name: "Telemaster",
+              url: siteUrl,
+              logo: {
+                "@type": "ImageObject",
+                url: `${siteUrl}/images/telemaster-mark.svg`,
+              },
             },
           }),
         },
