@@ -224,6 +224,13 @@ export default defineNuxtConfig(async () => {
     },
     nitro: {
       preset: "vercel",
+      /** Bundled into the server — sitemap & /api/tutorials read markdown without repo FS on Vercel. */
+      serverAssets: [
+        {
+          baseName: "tutorials-md",
+          dir: "content/tutorials",
+        },
+      ],
       prerender: {
         crawlLinks: true,
         routes: [...allBaseRoutes, ...prefixedRoutes],
