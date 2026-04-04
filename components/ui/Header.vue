@@ -1,7 +1,6 @@
 <template>
   <header class="tm-root">
-    <!-- 移动端专用：扁平顶栏，无圆角卡片、无 backdrop-filter，避免内嵌 WebKit 合成层问题 -->
-    <div class="tm-mobile" aria-label="主导航（移动）">
+    <div class="tm-mobile" :aria-label="t('navAria.mobile')">
       <div class="tm-mobile-inner">
         <div class="tm-mobile-logo">
           <UiLogo />
@@ -9,7 +8,7 @@
         <button
           type="button"
           class="tm-mobile-open"
-          aria-label="打开菜单"
+          :aria-label="t('navAria.openMenu')"
           :aria-expanded="mobileMenuOpen"
           aria-controls="mobile-nav-panel"
           @click="mobileMenuOpen = true"
@@ -19,13 +18,12 @@
             <span />
             <span />
           </span>
-          <span class="tm-mobile-open-text">菜单</span>
+          <span class="tm-mobile-open-text">{{ t("navAria.menu") }}</span>
         </button>
       </div>
     </div>
 
-    <!-- 桌面端专用：保留原有圆角 + 横向导航 -->
-    <div class="tm-desktop" aria-label="主导航（桌面）">
+    <div class="tm-desktop" :aria-label="t('navAria.desktop')">
       <div class="mx-auto max-w-6xl px-6">
         <div
           class="flex min-h-14 min-w-0 items-center justify-between gap-2 rounded-2xl border border-gray-200/90 bg-white/85 px-3 text-gray-900 shadow-sm shadow-gray-900/5 backdrop-blur-md backdrop-saturate-150 xl:px-4"
@@ -36,78 +34,30 @@
           <ul
             class="flex flex-wrap items-center justify-center gap-0 text-sm xl:grow"
           >
-            <li>
+            <li v-for="link in mainNavLinks" :key="link.to">
               <NuxtLink
-                to="/"
+                :to="link.to"
                 class="flex items-center px-2 py-2 text-gray-800 transition duration-150 ease-in-out hover:text-gray-950 xl:px-4"
               >
-                首页
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink
-                to="/features"
-                class="flex items-center px-2 py-2 text-gray-800 transition duration-150 ease-in-out hover:text-gray-950 xl:px-4"
-              >
-                功能
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink
-                to="/pricing"
-                class="flex items-center px-2 py-2 text-gray-800 transition duration-150 ease-in-out hover:text-gray-950 xl:px-4"
-              >
-                定价
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink
-                to="/use-cases"
-                class="flex items-center px-2 py-2 text-gray-800 transition duration-150 ease-in-out hover:text-gray-950 xl:px-4"
-              >
-                使用场景
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink
-                to="/mini-apps"
-                class="flex items-center px-2 py-2 text-gray-800 transition duration-150 ease-in-out hover:text-gray-950 xl:px-4"
-              >
-                小程序
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink
-                to="/mini-games"
-                class="flex items-center px-2 py-2 text-gray-800 transition duration-150 ease-in-out hover:text-gray-950 xl:px-4"
-              >
-                小游戏
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink
-                to="/ton"
-                class="flex items-center px-2 py-2 text-gray-800 transition duration-150 ease-in-out hover:text-gray-950 xl:px-4"
-              >
-                TON
+                {{ link.label }}
               </NuxtLink>
             </li>
           </ul>
           <ul class="flex shrink-0 items-center justify-end gap-2 xl:gap-3">
             <li>
               <NuxtLink
-                to="/signin"
+                :to="localePath('/signin')"
                 class="btn-sm bg-white text-gray-800 shadow-sm hover:bg-gray-50"
               >
-                登录
+                {{ t("nav.signin") }}
               </NuxtLink>
             </li>
             <li>
               <NuxtLink
-                to="/signup"
+                :to="localePath('/signup')"
                 class="btn-sm bg-gray-800 text-gray-200 shadow-sm hover:bg-gray-900"
               >
-                注册
+                {{ t("nav.signup") }}
               </NuxtLink>
             </li>
           </ul>
@@ -122,13 +72,13 @@
         class="tm-drawer-root"
         role="dialog"
         aria-modal="true"
-        aria-label="主导航"
+        :aria-label="t('navAria.drawerTitle')"
       >
         <button
           type="button"
           tabindex="-1"
           class="tm-drawer-scrim"
-          aria-label="关闭菜单"
+          :aria-label="t('navAria.closeMenu')"
           @click="mobileMenuOpen = false"
         />
         <nav
@@ -138,14 +88,16 @@
           }"
         >
           <div class="tm-drawer-head">
-            <span class="text-sm font-semibold text-gray-900">导航</span>
+            <span class="text-sm font-semibold text-gray-900">{{
+              t("navAria.drawerTitle")
+            }}</span>
             <button
               type="button"
               class="tm-drawer-close"
-              aria-label="关闭"
+              :aria-label="t('navAria.close')"
               @click="mobileMenuOpen = false"
             >
-              关闭
+              {{ t("navAria.close") }}
             </button>
           </div>
           <div
@@ -167,18 +119,18 @@
               class="mt-4 grid grid-cols-2 gap-2 border-t border-gray-100 pt-4"
             >
               <NuxtLink
-                to="/signin"
+                :to="localePath('/signin')"
                 class="btn-sm flex w-full justify-center bg-white text-gray-800 shadow-sm"
                 @click="mobileMenuOpen = false"
               >
-                登录
+                {{ t("nav.signin") }}
               </NuxtLink>
               <NuxtLink
-                to="/signup"
+                :to="localePath('/signup')"
                 class="btn-sm flex w-full justify-center bg-gray-800 text-gray-200 shadow-sm"
                 @click="mobileMenuOpen = false"
               >
-                注册
+                {{ t("nav.signup") }}
               </NuxtLink>
             </div>
           </div>
@@ -190,16 +142,37 @@
 
 <script setup lang="ts">
 const mobileMenuOpen = ref(false);
+const { t } = useI18n();
+const localePath = useLocalePath();
 
-const mobileLinks = [
-  { to: "/", label: "首页" },
-  { to: "/features", label: "功能" },
-  { to: "/pricing", label: "定价" },
-  { to: "/use-cases", label: "使用场景" },
-  { to: "/mini-apps", label: "小程序" },
-  { to: "/mini-games", label: "小游戏" },
-  { to: "/ton", label: "TON" },
+const pathKeys = [
+  "/",
+  "/features",
+  "/pricing",
+  "/use-cases",
+  "/mini-apps",
+  "/mini-games",
+  "/ton",
 ] as const;
+
+const labelKeys = [
+  "nav.home",
+  "nav.features",
+  "nav.pricing",
+  "nav.useCases",
+  "nav.miniApps",
+  "nav.miniGames",
+  "nav.ton",
+] as const;
+
+const mobileLinks = computed(() =>
+  pathKeys.map((p, i) => ({
+    to: localePath(p),
+    label: t(labelKeys[i]),
+  })),
+);
+
+const mainNavLinks = computed(() => mobileLinks.value);
 
 function onKeyDown(event: KeyboardEvent) {
   if (event.key === "Escape") mobileMenuOpen.value = false;
@@ -263,7 +236,6 @@ onUnmounted(() => {
   box-sizing: border-box;
 }
 
-/* 默认：移动端可见（与常见手机优先一致） */
 .tm-mobile {
   display: block;
   width: 100%;
@@ -302,7 +274,6 @@ onUnmounted(() => {
   overflow: hidden;
 }
 
-/* 三横线 + 文案，避免 SVG 在部分环境不渲染时无入口 */
 .tm-mobile-open {
   display: inline-flex;
   flex-shrink: 0;
@@ -353,7 +324,6 @@ onUnmounted(() => {
   }
 }
 
-/* 抽屉：纯色遮罩，不用 backdrop-filter */
 .tm-drawer-root {
   position: fixed;
   inset: 0;

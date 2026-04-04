@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="mb-10">
-      <h1 class="text-4xl font-bold">创建账号</h1>
+      <h1 class="text-4xl font-bold">{{ t("pages.auth.signup.heading") }}</h1>
     </div>
 
     <form>
@@ -11,13 +11,13 @@
             class="mb-1 block text-sm font-medium text-gray-700"
             for="name"
           >
-            姓名
+            {{ t("pages.auth.signup.name") }}
           </label>
           <input
             id="name"
             class="form-input w-full py-2"
             type="text"
-            placeholder="你的名字"
+            :placeholder="t('pages.auth.signup.namePlaceholder')"
             required
           />
         </div>
@@ -26,7 +26,7 @@
             class="mb-1 block text-sm font-medium text-gray-700"
             for="email"
           >
-            邮箱
+            {{ t("pages.auth.signup.email") }}
           </label>
           <input
             id="email"
@@ -41,13 +41,13 @@
             class="mb-1 block text-sm font-medium text-gray-700"
             for="phone"
           >
-            手机号
+            {{ t("pages.auth.signup.phone") }}
           </label>
           <input
             id="phone"
             class="form-input w-full py-2"
             type="text"
-            placeholder="选填"
+            :placeholder="t('pages.auth.signup.phoneOptional')"
           />
         </div>
         <div>
@@ -55,7 +55,7 @@
             class="mb-1 block text-sm font-medium text-gray-700"
             for="password"
           >
-            密码
+            {{ t("pages.auth.signup.password") }}
           </label>
           <input
             id="password"
@@ -72,35 +72,37 @@
           type="button"
           class="btn w-full bg-linear-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%]"
         >
-          注册
+          {{ t("pages.auth.signup.submit") }}
         </button>
-        <div class="text-center text-sm italic text-gray-400">或</div>
+        <div class="text-center text-sm italic text-gray-400">
+          {{ t("pages.auth.signup.or") }}
+        </div>
         <button
           type="button"
           class="btn w-full bg-linear-to-t from-gray-900 to-gray-700 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%]"
         >
-          使用 GitHub 继续
+          {{ t("pages.auth.signup.continueWithGithub") }}
         </button>
       </div>
     </form>
 
     <div class="mt-6 text-center">
       <p class="text-sm text-gray-500">
-        注册即表示你同意
+        {{ t("pages.auth.signup.agreePrefix") }}
         <NuxtLink
           class="whitespace-nowrap font-medium text-gray-700 underline hover:no-underline"
-          to="/terms"
+          :to="localePath('/terms')"
         >
-          服务条款
+          {{ t("pages.auth.signup.terms") }}
         </NuxtLink>
-        和
+        {{ t("pages.auth.signup.and") }}
         <NuxtLink
           class="whitespace-nowrap font-medium text-gray-700 underline hover:no-underline"
-          to="/privacy"
+          :to="localePath('/privacy')"
         >
-          隐私政策
+          {{ t("pages.auth.signup.privacy") }}
         </NuxtLink>
-        。
+        {{ t("pages.auth.signup.agreeSuffix") }}
       </p>
     </div>
   </div>
@@ -109,16 +111,18 @@
 <script setup lang="ts">
 definePageMeta({ layout: "auth" });
 
+const { t } = useI18n();
+const localePath = useLocalePath();
 const siteUrl = useSiteUrl();
 useSeoMeta({
-  title: "注册",
-  description: "创建 Telemaster 账号。",
-  ogTitle: "Telemaster - 注册",
-  ogDescription: "创建 Telemaster 账号。",
-  ogUrl: `${siteUrl}/signup`,
+  title: computed(() => t("seo.signup.title")),
+  description: computed(() => t("seo.signup.description")),
+  ogTitle: computed(() => t("seo.signup.ogTitle")),
+  ogDescription: computed(() => t("seo.signup.ogDescription")),
+  ogUrl: computed(() => `${siteUrl}${localePath("/signup")}`),
   robots: "noindex, nofollow",
 });
-useHead({
-  link: [{ rel: "canonical", href: `${siteUrl}/signup` }],
-});
+useHead(() => ({
+  link: [{ rel: "canonical", href: `${siteUrl}${localePath("/signup")}` }],
+}));
 </script>

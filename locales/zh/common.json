@@ -1,0 +1,49 @@
+{
+  "brand": "Telemaster",
+  "nav": {
+    "home": "首页",
+    "features": "功能",
+    "pricing": "定价",
+    "useCases": "使用场景",
+    "miniApps": "小程序",
+    "miniGames": "小游戏",
+    "ton": "TON",
+    "integrations": "集成",
+    "alliance": "联盟",
+    "changelog": "更新日志",
+    "about": "关于我们",
+    "contact": "联系我们",
+    "tutorials": "教程",
+    "faq": "常见问题",
+    "terms": "服务条款",
+    "privacy": "隐私政策",
+    "signin": "登录",
+    "signup": "注册"
+  },
+  "navAria": {
+    "mobile": "主导航（移动）",
+    "desktop": "主导航（桌面）",
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单",
+    "close": "关闭",
+    "menu": "菜单",
+    "drawerTitle": "导航"
+  },
+  "lang": {
+    "en": "English",
+    "zh": "中文",
+    "ja": "日本語",
+    "ko": "한국어",
+    "selectLabel": "语言",
+    "switchTo": "语言"
+  },
+  "footer": {
+    "rights": "© telemaster.io — 保留所有权利。",
+    "product": "产品",
+    "company": "公司",
+    "resources": "资源",
+    "pricingPlans": "价格方案",
+    "languageLink": "语言与地区",
+    "languageHint": "为 telemaster.io 选择显示语言。"
+  }
+}

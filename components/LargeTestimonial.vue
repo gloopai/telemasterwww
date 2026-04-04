@@ -18,15 +18,19 @@
                 class="text-base font-semibold leading-relaxed text-gray-900 sm:text-xl md:text-2xl md:leading-snug"
               >
                 <span class="text-blue-600/90">“</span>
-                以前我们每天花大量时间在清理广告、回答重复问题、同步信息。现在用
-                Telemaster 的自动化 + AI 助理，先总结、再分流、最后一键执行，运营节奏更稳。
+                {{ t("home.testimonial.quote") }}
                 <span class="text-blue-600/90">”</span>
               </blockquote>
               <figcaption class="mt-6 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-gray-500">
-                <span class="font-medium text-gray-800">社群运营负责人</span>
+                <span class="font-medium text-gray-800">{{
+                  t("home.testimonial.role")
+                }}</span>
                 <span class="text-gray-300">·</span>
-                <NuxtLink class="font-medium text-blue-600 hover:text-blue-700" to="/use-cases">
-                  查看使用场景
+                <NuxtLink
+                  class="font-medium text-blue-600 hover:text-blue-700"
+                  :to="localePath('/use-cases')"
+                >
+                  {{ t("home.testimonial.link") }}
                 </NuxtLink>
               </figcaption>
             </div>
@@ -36,3 +40,8 @@
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+const { t } = useI18n();
+const localePath = useLocalePath();
+</script>

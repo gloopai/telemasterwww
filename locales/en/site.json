@@ -1,0 +1,10 @@
+{
+  "site": {
+    "language": {
+      "title": "Language & region",
+      "subtitle": "Choose a language for telemaster.io and related content.",
+      "backHome": "Home",
+      "hint": "Your selection applies across the site. You can change it anytime."
+    }
+  }
+}

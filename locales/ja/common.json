@@ -1,0 +1,49 @@
+{
+  "brand": "Telemaster",
+  "nav": {
+    "home": "ホーム",
+    "features": "機能",
+    "pricing": "料金",
+    "useCases": "活用例",
+    "miniApps": "ミニアプリ",
+    "miniGames": "ミニゲーム",
+    "ton": "TON",
+    "integrations": "連携",
+    "alliance": "アライアンス",
+    "changelog": "更新履歴",
+    "about": "会社情報",
+    "contact": "お問い合わせ",
+    "tutorials": "チュートリアル",
+    "faq": "よくある質問",
+    "terms": "利用規約",
+    "privacy": "プライバシー",
+    "signin": "ログイン",
+    "signup": "新規登録"
+  },
+  "navAria": {
+    "mobile": "メインナビゲーション（モバイル）",
+    "desktop": "メインナビゲーション（デスクトップ）",
+    "openMenu": "メニューを開く",
+    "closeMenu": "メニューを閉じる",
+    "close": "閉じる",
+    "menu": "メニュー",
+    "drawerTitle": "ナビゲーション"
+  },
+  "lang": {
+    "en": "English",
+    "zh": "中文",
+    "ja": "日本語",
+    "ko": "한국어",
+    "selectLabel": "言語",
+    "switchTo": "言語"
+  },
+  "footer": {
+    "rights": "© telemaster.io — 無断転載を禁じます。",
+    "product": "製品",
+    "company": "会社",
+    "resources": "リソース",
+    "pricingPlans": "料金プラン",
+    "languageLink": "言語と地域",
+    "languageHint": "telemaster.io の表示言語を選択します。"
+  }
+}

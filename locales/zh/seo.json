@@ -1,0 +1,55 @@
+{
+  "seo": {
+    "defaultTitle": "Telemaster · AI 驱动的 Telegram 运营平台",
+    "defaultDescription": "面向 Telegram 群组、频道与机器人的运营平台：群组治理、自动回复、内容排期与数据复盘。",
+    "titleTemplate": "{title} · Telemaster",
+    "defaultOgImageAlt": "Telemaster — AI 驱动的 Telegram 运营平台",
+    "home": {
+      "title": "AI 驱动的 Telegram 运营平台",
+      "description": "用 AI + 自动化把群组治理、自动回复、内容排期与数据复盘统一到一个控制台。",
+      "ogTitle": "Telemaster - AI 驱动的 Telegram 运营平台",
+      "ogDescription": "用 AI + 自动化把群组治理、自动回复、内容排期与数据复盘统一到一个控制台。"
+    },
+    "tutorials": {
+      "breadcrumb": "教学文章",
+      "titleFallback": "教程",
+      "titleSuffix": "· Telemaster 教程"
+    },
+    "faq": {
+      "title": "常见问题",
+      "description": "Telemaster 常见问题解答：产品定位、上手方式、管理范围与联系方式。",
+      "ogTitle": "Telemaster - 常见问题",
+      "ogDescription": "Telemaster 常见问题解答：产品定位、上手方式、管理范围与联系方式。"
+    },
+    "signin": {
+      "title": "登录",
+      "description": "登录 Telemaster。",
+      "ogTitle": "Telemaster - 登录",
+      "ogDescription": "登录 Telemaster。"
+    },
+    "signup": {
+      "title": "注册",
+      "description": "创建 Telemaster 账号。",
+      "ogTitle": "Telemaster - 注册",
+      "ogDescription": "创建 Telemaster 账号。"
+    },
+    "resetPassword": {
+      "title": "重置密码",
+      "description": "重置 Telemaster 账号密码。",
+      "ogTitle": "Telemaster - 重置密码",
+      "ogDescription": "重置 Telemaster 账号密码。"
+    },
+    "tutorialsIndex": {
+      "title": "教程",
+      "description": "Telemaster 教学文章与最佳实践，覆盖 Telegram 群组、频道与机器人运营。",
+      "ogTitle": "Telemaster - 教程",
+      "ogDescription": "Telemaster 教学文章与最佳实践，覆盖 Telegram 群组、频道与机器人运营。"
+    },
+    "language": {
+      "title": "语言与地区",
+      "description": "为 Telemaster 选择显示语言。",
+      "ogTitle": "Telemaster - 语言与地区",
+      "ogDescription": "为 Telemaster 选择显示语言。"
+    }
+  }
+}

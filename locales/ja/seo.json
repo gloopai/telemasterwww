@@ -1,0 +1,55 @@
+{
+  "seo": {
+    "defaultTitle": "Telemaster · AI搭載のTelegram運用プラットフォーム",
+    "defaultDescription": "Telegramのグループ・チャンネル・Bot向け運用基盤。モデレーション、自動返信、予約投稿、分析をひとつのコンソールに。",
+    "titleTemplate": "{title} · Telemaster",
+    "defaultOgImageAlt": "Telemaster — AI搭載のTelegram運用プラットフォーム",
+    "home": {
+      "title": "AI搭載のTelegram運用プラットフォーム",
+      "description": "モデレーション、自動返信、スケジュール、分析をAIとともに一元管理。",
+      "ogTitle": "Telemaster — AI搭載のTelegram運用プラットフォーム",
+      "ogDescription": "モデレーション、自動返信、スケジュール、分析をAIとともに一元管理。"
+    },
+    "tutorials": {
+      "breadcrumb": "チュートリアル",
+      "titleFallback": "チュートリアル",
+      "titleSuffix": "· Telemaster チュートリアル"
+    },
+    "faq": {
+      "title": "よくある質問",
+      "description": "Telemasterについて：概要、始め方、ワークスペース、サポート連絡先。",
+      "ogTitle": "Telemaster — よくある質問",
+      "ogDescription": "Telemasterについて：概要、始め方、ワークスペース、サポート連絡先。"
+    },
+    "signin": {
+      "title": "ログイン",
+      "description": "Telemasterにログインします。",
+      "ogTitle": "Telemaster — ログイン",
+      "ogDescription": "Telemasterにログインします。"
+    },
+    "signup": {
+      "title": "新規登録",
+      "description": "Telemasterアカウントを作成します。",
+      "ogTitle": "Telemaster — 新規登録",
+      "ogDescription": "Telemasterアカウントを作成します。"
+    },
+    "resetPassword": {
+      "title": "パスワード再設定",
+      "description": "Telemasterアカウントのパスワードを再設定します。",
+      "ogTitle": "Telemaster — パスワード再設定",
+      "ogDescription": "Telemasterアカウントのパスワードを再設定します。"
+    },
+    "tutorialsIndex": {
+      "title": "チュートリアル",
+      "description": "Telegramのグループ・チャンネル・Bot運用に関するチュートリアルとベストプラクティス。",
+      "ogTitle": "Telemaster — チュートリアル",
+      "ogDescription": "Telegramのグループ・チャンネル・Bot運用に関するチュートリアルとベストプラクティス。"
+    },
+    "language": {
+      "title": "言語と地域",
+      "description": "Telemasterの表示言語を選択します。",
+      "ogTitle": "Telemaster — 言語と地域",
+      "ogDescription": "Telemasterの表示言語を選択します。"
+    }
+  }
+}

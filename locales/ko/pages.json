@@ -1,0 +1,61 @@
+{
+  "pages": {
+    "auth": {
+      "signin": {
+        "heading": "로그인",
+        "email": "이메일",
+        "password": "비밀번호",
+        "submit": "로그인",
+        "forgotPassword": "비밀번호 찾기"
+      },
+      "signup": {
+        "heading": "계정 만들기",
+        "name": "이름",
+        "namePlaceholder": "이름을 입력하세요",
+        "email": "이메일",
+        "phone": "전화번호",
+        "phoneOptional": "선택",
+        "password": "비밀번호",
+        "submit": "가입",
+        "or": "또는",
+        "continueWithGithub": "GitHub로 계속",
+        "agreePrefix": "가입 시 다음에 동의하는 것으로 간주됩니다:",
+        "terms": "서비스 약관",
+        "and": "및",
+        "privacy": "개인정보 처리방침",
+        "agreeSuffix": "."
+      },
+      "resetPassword": {
+        "heading": "비밀번호 재설정",
+        "email": "이메일",
+        "submit": "재설정 메일 보내기"
+      }
+    },
+    "faq": {
+      "title": "자주 묻는 질문",
+      "items": [
+        {
+          "q": "Telemaster란 무엇인가요?",
+          "a": "Telemaster는 Telegram 그룹·채널·봇 운영을 위한 플랫폼으로, 더 적은 인력으로 자동화와 점검이 가능해집니다."
+        },
+        {
+          "q": "어떻게 시작하나요?",
+          "a": "계정을 만든 뒤 안내에 따라 인증과 설정을 완료하면 그룹·채널 관리와 자동화를 사용할 수 있습니다(요금제·제공 여부에 따름)."
+        },
+        {
+          "q": "여러 계정이나 워크스페이스를 지원하나요?",
+          "a": "네. 워크스페이스별로 여러 그룹·채널과 관련 설정을 관리할 수 있습니다(요금제·제공 여부에 따름)."
+        },
+        {
+          "q": "고객 지원은 어떻게 연락하나요?",
+          "a": "문의 페이지에서 이메일을 보내거나 요청을 제출해 주세요. 가능한 빨리 답변드립니다."
+        }
+      ]
+    },
+    "tutorialsIndex": {
+      "heading": "튜토리얼",
+      "lead": "Telemaster로 Telegram 운용을 더 효율적으로 하기 위한 가이드와 모범 사례입니다.",
+      "empty": "아직 글이 없습니다."
+    }
+  }
+}

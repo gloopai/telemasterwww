@@ -1,0 +1,49 @@
+{
+  "brand": "Telemaster",
+  "nav": {
+    "home": "Home",
+    "features": "Features",
+    "pricing": "Pricing",
+    "useCases": "Use cases",
+    "miniApps": "Mini apps",
+    "miniGames": "Mini games",
+    "ton": "TON",
+    "integrations": "Integrations",
+    "alliance": "Alliance",
+    "changelog": "Changelog",
+    "about": "About",
+    "contact": "Contact",
+    "tutorials": "Tutorials",
+    "faq": "FAQ",
+    "terms": "Terms",
+    "privacy": "Privacy",
+    "signin": "Sign in",
+    "signup": "Sign up"
+  },
+  "navAria": {
+    "mobile": "Main navigation (mobile)",
+    "desktop": "Main navigation (desktop)",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "close": "Close",
+    "menu": "Menu",
+    "drawerTitle": "Navigation"
+  },
+  "lang": {
+    "en": "English",
+    "zh": "中文",
+    "ja": "日本語",
+    "ko": "한국어",
+    "selectLabel": "Language",
+    "switchTo": "Language"
+  },
+  "footer": {
+    "rights": "© telemaster.io — All rights reserved.",
+    "product": "Product",
+    "company": "Company",
+    "resources": "Resources",
+    "pricingPlans": "Plans",
+    "languageLink": "Language & region",
+    "languageHint": "Choose a language for telemaster.io."
+  }
+}

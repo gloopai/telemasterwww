@@ -5,18 +5,26 @@
 </template>
 
 <script setup lang="ts">
-import { DEFAULT_OG_IMAGE_ALT } from "~/composables/useDefaultOgImage";
-
 const siteUrl = useSiteUrl();
 const defaultOgUrl = useDefaultOgImageUrl();
 const logoUrl = `${siteUrl}/images/telemaster-mark.svg`;
 
-const jsonLd = {
+const { t, locale } = useI18n();
+const localeHead = useLocaleHead({ addSeoAttributes: true });
+
+const jsonLdInLanguage: Record<string, string> = {
+  en: "en",
+  zh: "zh-CN",
+  ja: "ja",
+  ko: "ko",
+};
+
+const jsonLd = computed(() => ({
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Telemaster",
   url: siteUrl,
-  inLanguage: "zh-CN",
+  inLanguage: jsonLdInLanguage[locale.value] ?? "en",
   publisher: {
     "@type": "Organization",
     name: "Telemaster",
@@ -26,34 +34,37 @@ const jsonLd = {
       url: logoUrl,
     },
   },
-};
+}));
 
 useSeoMeta({
   ogSiteName: "Telemaster",
   ogImage: defaultOgUrl,
-  ogImageAlt: DEFAULT_OG_IMAGE_ALT,
+  ogImageAlt: computed(() => t("seo.defaultOgImageAlt")),
   ogImageWidth: 1200,
   ogImageHeight: 630,
   ogImageType: "image/png",
   twitterImage: defaultOgUrl,
-  twitterImageAlt: DEFAULT_OG_IMAGE_ALT,
+  twitterImageAlt: computed(() => t("seo.defaultOgImageAlt")),
 });
 
-useHead({
+useHead(() => ({
   titleTemplate: (titleChunk?: string | null) => {
     const s = typeof titleChunk === "string" ? titleChunk.trim() : "";
-    if (s) return `${s} · Telemaster`;
-    return "Telemaster · AI 驱动的 Telegram 运营平台";
+    if (s) return t("seo.titleTemplate", { title: s });
+    return t("seo.defaultTitle");
   },
   bodyAttrs: {
     class:
       "bg-gray-50 font-inter tracking-tight text-gray-900 antialiased",
   },
+  htmlAttrs: localeHead.value.htmlAttrs,
+  link: localeHead.value.link,
+  meta: localeHead.value.meta,
   script: [
     {
       type: "application/ld+json",
-      children: JSON.stringify(jsonLd),
+      children: JSON.stringify(jsonLd.value),
     },
   ],
-});
+}));
 </script>

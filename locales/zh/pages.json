@@ -1,0 +1,61 @@
+{
+  "pages": {
+    "auth": {
+      "signin": {
+        "heading": "登录账号",
+        "email": "邮箱",
+        "password": "密码",
+        "submit": "登录",
+        "forgotPassword": "忘记密码"
+      },
+      "signup": {
+        "heading": "创建账号",
+        "name": "姓名",
+        "namePlaceholder": "你的名字",
+        "email": "邮箱",
+        "phone": "手机号",
+        "phoneOptional": "选填",
+        "password": "密码",
+        "submit": "注册",
+        "or": "或",
+        "continueWithGithub": "使用 GitHub 继续",
+        "agreePrefix": "注册即表示你同意",
+        "terms": "服务条款",
+        "and": "和",
+        "privacy": "隐私政策",
+        "agreeSuffix": "。"
+      },
+      "resetPassword": {
+        "heading": "重置密码",
+        "email": "邮箱",
+        "submit": "发送重置邮件"
+      }
+    },
+    "faq": {
+      "title": "常见问题",
+      "items": [
+        {
+          "q": "Telemaster是什么？",
+          "a": "Telemaster 是一款面向 Telegram 群组、频道与机器人的运营平台，帮助你用更少的人力实现自动化与可复盘的运营。"
+        },
+        {
+          "q": "如何开始使用？",
+          "a": "注册账号后，根据页面指引完成授权与配置，即可开始管理群组/频道并启用自动化能力。"
+        },
+        {
+          "q": "是否支持多账号管理？",
+          "a": "支持。你可以按工作区管理多个群组/频道与相关配置（按方案与可用性）。"
+        },
+        {
+          "q": "如何联系客服？",
+          "a": "你可以通过“联系我们”页面发送邮件或提交需求，我们会尽快回复。"
+        }
+      ]
+    },
+    "tutorialsIndex": {
+      "heading": "教学文章",
+      "lead": "面向搜索引擎与用户的高质量教程内容，帮助你更高效地使用 Telemaster 管理 Telegram。",
+      "empty": "暂无文章。"
+    }
+  }
+}

@@ -16,135 +16,152 @@
             <UiLogo />
           </div>
           <div class="text-sm text-gray-700">
-            &copy; telemaster.io - All rights reserved.
+            {{ t("footer.rights") }}
           </div>
         </div>
 
         <div class="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-2">
-          <h3 class="text-sm font-medium text-gray-900">产品</h3>
+          <h3 class="text-sm font-medium text-gray-900">{{ t("footer.product") }}</h3>
           <ul class="space-y-2 text-sm">
             <li>
               <NuxtLink
                 class="text-gray-700 transition hover:text-gray-950"
-                to="/features"
+                :to="localePath('/features')"
               >
-                功能
+                {{ t("nav.features") }}
               </NuxtLink>
             </li>
             <li>
               <NuxtLink
                 class="text-gray-700 transition hover:text-gray-950"
-                to="/integrations"
+                :to="localePath('/integrations')"
               >
-                集成
+                {{ t("nav.integrations") }}
               </NuxtLink>
             </li>
             <li>
               <NuxtLink
                 class="text-gray-700 transition hover:text-gray-950"
-                to="/pricing"
+                :to="localePath('/pricing')"
               >
-                定价
+                {{ t("nav.pricing") }}
               </NuxtLink>
             </li>
             <li>
               <NuxtLink
                 class="text-gray-700 transition hover:text-gray-950"
-                to="/changelog"
+                :to="localePath('/changelog')"
               >
-                更新日志
+                {{ t("nav.changelog") }}
               </NuxtLink>
             </li>
             <li>
               <NuxtLink
                 class="text-gray-700 transition hover:text-gray-950"
-                to="/use-cases"
+                :to="localePath('/use-cases')"
               >
-                使用场景
+                {{ t("nav.useCases") }}
               </NuxtLink>
             </li>
           </ul>
         </div>
 
         <div class="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-2">
-          <h3 class="text-sm font-medium text-gray-900">公司</h3>
+          <h3 class="text-sm font-medium text-gray-900">{{ t("footer.company") }}</h3>
           <ul class="space-y-2 text-sm">
             <li>
               <NuxtLink
                 class="text-gray-700 transition hover:text-gray-950"
-                to="/about"
+                :to="localePath('/about')"
               >
-                关于我们
+                {{ t("nav.about") }}
               </NuxtLink>
             </li>
             <li>
               <NuxtLink
                 class="text-gray-700 transition hover:text-gray-950"
-                to="/contact"
+                :to="localePath('/contact')"
               >
-                联系我们
+                {{ t("nav.contact") }}
               </NuxtLink>
             </li>
             <li>
               <NuxtLink
                 class="text-gray-700 transition hover:text-gray-950"
-                to="/tutorials"
+                :to="localePath('/tutorials')"
               >
-                教程
+                {{ t("nav.tutorials") }}
               </NuxtLink>
             </li>
             <li>
               <NuxtLink
                 class="text-gray-700 transition hover:text-gray-950"
-                to="/faq"
+                :to="localePath('/faq')"
               >
-                常见问题
+                {{ t("nav.faq") }}
               </NuxtLink>
             </li>
             <li>
               <NuxtLink
                 class="text-gray-700 transition hover:text-gray-950"
-                to="/pricing"
+                :to="localePath('/pricing')"
               >
-                价格方案
+                {{ t("footer.pricingPlans") }}
               </NuxtLink>
             </li>
           </ul>
         </div>
 
         <div class="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-2">
-          <h3 class="text-sm font-medium text-gray-900">资源</h3>
+          <h3 class="text-sm font-medium text-gray-900">{{ t("footer.resources") }}</h3>
           <ul class="space-y-2 text-sm">
             <li>
               <NuxtLink
                 class="text-gray-700 transition hover:text-gray-950"
-                to="/use-cases"
+                :to="localePath('/use-cases')"
               >
-                使用场景
+                {{ t("nav.useCases") }}
               </NuxtLink>
             </li>
             <li>
               <NuxtLink
                 class="text-gray-700 transition hover:text-gray-950"
-                to="/terms"
+                :to="localePath('/terms')"
               >
-                服务条款
+                {{ t("nav.terms") }}
               </NuxtLink>
             </li>
             <li>
               <NuxtLink
                 class="text-gray-700 transition hover:text-gray-950"
-                to="/privacy"
+                :to="localePath('/privacy')"
               >
-                隐私政策
+                {{ t("nav.privacy") }}
               </NuxtLink>
             </li>
           </ul>
         </div>
       </div>
+
+      <div
+        class="mt-10 flex flex-col gap-3 border-t border-gray-200 pt-8 sm:flex-row sm:items-center sm:justify-between"
+      >
+        <p class="text-xs text-gray-500">
+          {{ t("footer.languageHint") }}
+        </p>
+        <NuxtLink
+          :to="localePath('/language')"
+          class="text-sm font-medium text-blue-600 transition hover:text-blue-700 hover:underline"
+        >
+          {{ t("footer.languageLink") }}
+        </NuxtLink>
+      </div>
     </div>
 
-    <div class="relative -mt-16 h-60 w-full" aria-hidden="true">
+    <div
+      class="pointer-events-none relative -mt-16 h-60 w-full"
+      aria-hidden="true"
+    >
       <div
         class="pointer-events-none absolute left-1/2 -z-10 -translate-x-1/2 text-center text-[348px] font-bold leading-none before:bg-linear-to-b before:from-gray-200 before:to-gray-100/30 before:to-80% before:bg-clip-text before:text-transparent before:content-['Telemaster'] after:absolute after:inset-0 after:bg-gray-300/70 after:bg-clip-text after:text-transparent after:mix-blend-darken after:content-['Telemaster'] after:[text-shadow:0_1px_0_white]"
       />
@@ -159,6 +176,9 @@
 </template>
 
 <script setup lang="ts">
+const localePath = useLocalePath();
+const { t } = useI18n();
+
 withDefaults(
   defineProps<{
     border?: boolean;

@@ -1,7 +1,9 @@
 <template>
   <div v-if="tutorial" class="mx-auto max-w-3xl px-4 py-28 sm:px-6 sm:py-32">
     <div class="text-sm text-gray-500">
-      <NuxtLink class="hover:underline" to="/tutorials">教学文章</NuxtLink>
+      <NuxtLink class="hover:underline" :to="localePath('/tutorials')">{{
+        t("seo.tutorials.breadcrumb")
+      }}</NuxtLink>
       <span class="mx-2">/</span>
       <span class="text-gray-700">{{ tutorial.title }}</span>
     </div>
@@ -32,7 +34,6 @@
 </template>
 
 <script setup lang="ts">
-import { DEFAULT_OG_IMAGE_ALT } from "~/composables/useDefaultOgImage";
 import { formatTutorialDate } from "~/utils/formatTutorialDate";
 
 type TutorialPage = {
@@ -48,6 +49,8 @@ type TutorialPage = {
 
 const route = useRoute();
 const siteUrl = useSiteUrl();
+const { t } = useI18n();
+const localePath = useLocalePath();
 
 const asyncKey = computed(() => `tutorial-${String(route.params.slug)}`);
 
@@ -68,9 +71,10 @@ if (error.value) {
 
 const tutorial = computed(() => tutorialData.value ?? null);
 
-const pageUrl = computed(
-  () =>
-    tutorial.value ? `${siteUrl}/tutorials/${tutorial.value.slug}` : siteUrl,
+const pageUrl = computed(() =>
+  tutorial.value
+    ? `${siteUrl}${localePath(`/tutorials/${tutorial.value.slug}`)}`
+    : siteUrl,
 );
 
 const defaultOgUrl = useDefaultOgImageUrl();
@@ -86,12 +90,14 @@ const ogImageAbsolute = computed(() => {
 const ogImageAltText = computed(() =>
   tutorial.value?.ogImage
     ? tutorial.value.title
-    : DEFAULT_OG_IMAGE_ALT,
+    : t("seo.defaultOgImageAlt"),
 );
 
 useSeoMeta({
   title: computed(() =>
-    tutorial.value ? `${tutorial.value.title} · 教程` : "教程",
+    tutorial.value
+      ? `${tutorial.value.title} ${t("seo.tutorials.titleSuffix")}`
+      : t("seo.tutorials.titleFallback"),
   ),
   description: computed(() => tutorial.value?.description ?? ""),
   ogTitle: computed(() => tutorial.value?.title ?? ""),

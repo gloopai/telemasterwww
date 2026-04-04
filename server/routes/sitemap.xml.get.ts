@@ -46,7 +46,19 @@ export default defineEventHandler(async (event) => {
     lastmod: t.date,
   }));
 
-  const all = [...staticEntries, ...tutorialEntries];
+  const base = [...staticEntries, ...tutorialEntries];
+  const prefixes = ["zh", "ja", "ko"] as const;
+  const prefixed = prefixes.flatMap((prefix) => [
+    ...staticEntries.map((e) => ({
+      ...e,
+      loc: e.loc === "/" ? `/${prefix}` : `/${prefix}${e.loc}`,
+    })),
+    ...tutorialEntries.map((e) => ({
+      ...e,
+      loc: `/${prefix}${e.loc}`,
+    })),
+  ]);
+  const all = [...base, ...prefixed];
 
   const body = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

@@ -1,0 +1,179 @@
+{
+  "home": {
+    "hero": {
+      "eyebrow": "Telegram ops · AI copilot",
+      "title": "Groups, channels, and bots in one orchestrated console",
+      "subtitle": "Governance, auto-replies, scheduling, and analytics in one place—with an AI copilot for summaries, intent routing, smart replies, and risk hints (where available).",
+      "tags": [
+        "Conversation summaries",
+        "Intent routing",
+        "Smart replies",
+        "Risk hints",
+        "Knowledge base (where available)"
+      ],
+      "ctaPricing": "View pricing",
+      "ctaUseCases": "Use cases",
+      "socialProof": "Operations infrastructure for community and growth teams",
+      "cardTitle": "One pipeline for operations",
+      "cardSubtitle": "From reach to conversion to review—configurable flows and auditable actions.",
+      "bullets": {
+        "governance": "Governance",
+        "governanceText": "Anti-spam, permissions, and rules—less noise and risk.",
+        "automation": "Automation",
+        "automationText": "Keywords, templates, and schedules—hand repetitive work to the system.",
+        "ai": "AI",
+        "aiText": "Summaries and routing suggestions—focus on decisions that matter."
+      }
+    },
+    "business": {
+      "aiLabel": "AI copilot",
+      "aiTitle": "Add an AI copilot—make operations programmable",
+      "aiSubtitle": "AI understands and recommends; the system executes and audits—stable at scale.",
+      "orchestrationTitle": "Central orchestration, multi-touch coordination",
+      "orchestrationDesc": "Bots, groups, channels, and automation in one place—AI suggests, the system executes with a trail.",
+      "commerceLabel": "Monetization",
+      "commerceTitle": "From operations to revenue—close the loop",
+      "commerceSubtitle": "Telemaster turns acquire → convert → deliver → review into repeatable flows for Telegram community operators.",
+      "allianceLabel": "Alliance",
+      "allianceTitle": "Telegram growth & monetization alliance",
+      "allianceSubtitle": "A long-term bet: connect traffic with monetization products—turn one-off deals into repeatable alliance playbooks.",
+      "ctaJoin": "Join the alliance",
+      "ctaLearnAlliance": "About the alliance",
+      "ctaIntegrations": "Integrations",
+      "aiModules": [
+        {
+          "title": "AI conversation summaries",
+          "desc": "Surface hot topics, open questions, and follow-ups—less manual scrolling."
+        },
+        {
+          "title": "Intent routing",
+          "desc": "Detect support, complaints, partnerships, and route to forms, tickets, or humans."
+        },
+        {
+          "title": "Smart replies & playbooks",
+          "desc": "Template + knowledge-base replies—consistent tone and multilingual (where available)."
+        },
+        {
+          "title": "Risk hints",
+          "desc": "Flags for ads, phishing, and sensitive content—suggest blocks (where available)."
+        }
+      ],
+      "monetizationModel": [
+        {
+          "title": "Acquire: turn traffic into members",
+          "desc": "Clear entry and rules to onboard people into your conversion path.",
+          "bullets": [
+            "Welcome + fixed entry: benefits, FAQ, next steps",
+            "Keyword flows: lead magnets, signups, partnerships",
+            "Intent routing to DM, forms, or humans (where available)"
+          ]
+        },
+        {
+          "title": "Convert: interest into orders",
+          "desc": "Replace back-and-forth with repeatable playbooks—fewer dropped leads.",
+          "bullets": [
+            "Standard offers and packages—multilingual (where available)",
+            "Roles and rules—healthier discussions and willingness to pay",
+            "Hand-off to payment/checkout links (where available)"
+          ]
+        },
+        {
+          "title": "Deliver: repeatable service",
+          "desc": "Automation and schedules support delivery—serve more members with the same team.",
+          "bullets": [
+            "Channel calendars and assets—courses, updates, campaigns",
+            "Smart replies for FAQs—higher satisfaction",
+            "Anti-spam and risk—protect the delivery experience"
+          ]
+        },
+        {
+          "title": "Review: one sale into recurring revenue",
+          "desc": "Data and summaries show where to grow next—iterate conversion and retention.",
+          "bullets": [
+            "Unified dashboards—growth, engagement, leads (where available)",
+            "AI highlights needs and product opportunities",
+            "Follow-ups and SOPs—turn wins into team habits"
+          ]
+        }
+      ],
+      "monetizationOptions": [
+        "Membership / paid community",
+        "Courses, bootcamps, packs",
+        "Consulting & services",
+        "Sponsorships",
+        "Affiliate / rev-share",
+        "Lead gen & referrals"
+      ],
+      "allianceRoles": [
+        "Traffic: groups, channels, media",
+        "Products: courses, tools, services",
+        "Services: ops, growth, content, support"
+      ],
+      "alliancePillars": [
+        {
+          "title": "Matching",
+          "desc": "Pair the right offers with the right audiences—repeatable partnerships.",
+          "bullets": ["Audience & scenario tags", "Offer kits & assets", "Cadence & reach controls"]
+        },
+        {
+          "title": "Standard distribution",
+          "desc": "Unified scripts, entry points, and flows—less rework and fewer missed leads.",
+          "bullets": ["Keyword / welcome entry (where available)", "Templated campaigns & landers", "Route to DM, forms, tickets"]
+        },
+        {
+          "title": "Attribution",
+          "desc": "Measure paths and outcomes—optimize both sides.",
+          "bullets": ["Channel & creative tracking (where available)", "KPI dashboards (where available)", "Review themes (where available)"]
+        },
+        {
+          "title": "Settlement & collaboration",
+          "desc": "Transparent roles and records—scale partner ops with confidence.",
+          "bullets": ["Roles & least privilege", "Audit trails", "Rev-share & reconciliation (where available)"]
+        }
+      ]
+    },
+    "features": {
+      "label": "Product",
+      "title": "AI + ops system: core capabilities",
+      "subtitle": "Turn repetitive work into controlled flows—turn individual know-how into team playbooks.",
+      "items": [
+        {
+          "title": "Bots & workspaces",
+          "desc": "Manage bots, permissions, and environments in one place—safer collaboration across teams."
+        },
+        {
+          "title": "AI smart replies",
+          "desc": "Keywords + templates + AI—cover frequent questions with consistent tone."
+        },
+        {
+          "title": "Group moderation & anti-spam",
+          "desc": "Verification, rate limits, and rules—reduce spam and keep order."
+        },
+        {
+          "title": "Channel scheduling",
+          "desc": "Scheduled posts and assets—steady output with performance tracking (where available)."
+        },
+        {
+          "title": "Broadcasts & distribution",
+          "desc": "Template-based outreach to groups/channels—control frequency and scope."
+        },
+        {
+          "title": "Analytics & insights",
+          "desc": "Key metrics, hot topics, and risk signals—spot issues and opportunities faster."
+        }
+      ]
+    },
+    "testimonial": {
+      "quote": "We used to spend hours clearing spam, answering the same questions, and syncing updates. With Telemaster’s automation and AI copilot—summarize first, route next, execute in one click—our rhythm is steadier.",
+      "role": "Head of community operations",
+      "link": "See use cases"
+    },
+    "cta": {
+      "label": "Next step",
+      "title": "Turn Telegram operations into a system with AI",
+      "subtitle": "From pricing to sales—we’ll help you run the playbook end to end.",
+      "pricing": "View pricing",
+      "contact": "Contact us"
+    }
+  }
+}

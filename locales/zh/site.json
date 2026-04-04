@@ -1,0 +1,10 @@
+{
+  "site": {
+    "language": {
+      "title": "语言与地区",
+      "subtitle": "为 telemaster.io 及相关内容选择显示语言。",
+      "backHome": "首页",
+      "hint": "选择后将应用于全站，可随时在此更改。"
+    }
+  }
+}

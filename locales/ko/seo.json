@@ -1,0 +1,55 @@
+{
+  "seo": {
+    "defaultTitle": "Telemaster · AI 기반 Telegram 운영 플랫폼",
+    "defaultDescription": "Telegram 그룹·채널·봇 운영을 위한 플랫폼. 관리, 자동응답, 예약 게시, 분석을 한 콘솔에서.",
+    "titleTemplate": "{title} · Telemaster",
+    "defaultOgImageAlt": "Telemaster — AI 기반 Telegram 운영 플랫폼",
+    "home": {
+      "title": "AI 기반 Telegram 운영 플랫폼",
+      "description": "관리, 자동응답, 일정, 분석을 AI와 함께 한곳에서.",
+      "ogTitle": "Telemaster — AI 기반 Telegram 운영 플랫폼",
+      "ogDescription": "관리, 자동응답, 일정, 분석을 AI와 함께 한곳에서."
+    },
+    "tutorials": {
+      "breadcrumb": "튜토리얼",
+      "titleFallback": "튜토리얼",
+      "titleSuffix": "· Telemaster 튜토리얼"
+    },
+    "faq": {
+      "title": "자주 묻는 질문",
+      "description": "Telemaster 안내: 제품 소개, 시작 방법, 워크스페이스, 문의 방법.",
+      "ogTitle": "Telemaster — 자주 묻는 질문",
+      "ogDescription": "Telemaster 안내: 제품 소개, 시작 방법, 워크스페이스, 문의 방법."
+    },
+    "signin": {
+      "title": "로그인",
+      "description": "Telemaster에 로그인합니다.",
+      "ogTitle": "Telemaster — 로그인",
+      "ogDescription": "Telemaster에 로그인합니다."
+    },
+    "signup": {
+      "title": "회원가입",
+      "description": "Telemaster 계정을 만듭니다.",
+      "ogTitle": "Telemaster — 회원가입",
+      "ogDescription": "Telemaster 계정을 만듭니다."
+    },
+    "resetPassword": {
+      "title": "비밀번호 재설정",
+      "description": "Telemaster 계정 비밀번호를 재설정합니다.",
+      "ogTitle": "Telemaster — 비밀번호 재설정",
+      "ogDescription": "Telemaster 계정 비밀번호를 재설정합니다."
+    },
+    "tutorialsIndex": {
+      "title": "튜토리얼",
+      "description": "Telegram 그룹·채널·봇 운영을 위한 튜토리얼과 모범 사례.",
+      "ogTitle": "Telemaster — 튜토리얼",
+      "ogDescription": "Telegram 그룹·채널·봇 운영을 위한 튜토리얼과 모범 사례."
+    },
+    "language": {
+      "title": "언어 및 지역",
+      "description": "Telemaster 표시 언어를 선택합니다.",
+      "ogTitle": "Telemaster — 언어 및 지역",
+      "ogDescription": "Telemaster 표시 언어를 선택합니다."
+    }
+  }
+}

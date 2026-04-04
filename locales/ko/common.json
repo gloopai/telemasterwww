@@ -1,0 +1,49 @@
+{
+  "brand": "Telemaster",
+  "nav": {
+    "home": "홈",
+    "features": "기능",
+    "pricing": "요금",
+    "useCases": "활용 사례",
+    "miniApps": "미니 앱",
+    "miniGames": "미니 게임",
+    "ton": "TON",
+    "integrations": "연동",
+    "alliance": "얼라이언스",
+    "changelog": "변경 로그",
+    "about": "소개",
+    "contact": "문의",
+    "tutorials": "튜토리얼",
+    "faq": "자주 묻는 질문",
+    "terms": "이용약관",
+    "privacy": "개인정보 처리방침",
+    "signin": "로그인",
+    "signup": "회원가입"
+  },
+  "navAria": {
+    "mobile": "주요 내비게이션(모바일)",
+    "desktop": "주요 내비게이션(데스크톱)",
+    "openMenu": "메뉴 열기",
+    "closeMenu": "메뉴 닫기",
+    "close": "닫기",
+    "menu": "메뉴",
+    "drawerTitle": "내비게이션"
+  },
+  "lang": {
+    "en": "English",
+    "zh": "中文",
+    "ja": "日本語",
+    "ko": "한국어",
+    "selectLabel": "언어",
+    "switchTo": "언어"
+  },
+  "footer": {
+    "rights": "© telemaster.io — 무단 복제를 금지합니다.",
+    "product": "제품",
+    "company": "회사",
+    "resources": "리소스",
+    "pricingPlans": "요금제",
+    "languageLink": "언어 및 지역",
+    "languageHint": "telemaster.io 표시 언어를 선택하세요."
+  }
+}

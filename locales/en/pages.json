@@ -1,0 +1,61 @@
+{
+  "pages": {
+    "auth": {
+      "signin": {
+        "heading": "Sign in",
+        "email": "Email",
+        "password": "Password",
+        "submit": "Sign in",
+        "forgotPassword": "Forgot password"
+      },
+      "signup": {
+        "heading": "Create account",
+        "name": "Name",
+        "namePlaceholder": "Your name",
+        "email": "Email",
+        "phone": "Phone",
+        "phoneOptional": "Optional",
+        "password": "Password",
+        "submit": "Sign up",
+        "or": "or",
+        "continueWithGithub": "Continue with GitHub",
+        "agreePrefix": "By signing up you agree to the",
+        "terms": "Terms of Service",
+        "and": "and",
+        "privacy": "Privacy Policy",
+        "agreeSuffix": "."
+      },
+      "resetPassword": {
+        "heading": "Reset password",
+        "email": "Email",
+        "submit": "Send reset email"
+      }
+    },
+    "faq": {
+      "title": "FAQ",
+      "items": [
+        {
+          "q": "What is Telemaster?",
+          "a": "Telemaster is an operations platform for Telegram groups, channels, and bots—helping you automate and review your work with a smaller team."
+        },
+        {
+          "q": "How do I get started?",
+          "a": "Create an account, then follow the in-app steps to authorize and configure—then you can manage groups/channels and enable automation (per plan and availability)."
+        },
+        {
+          "q": "Do you support multiple accounts or workspaces?",
+          "a": "Yes. You can manage multiple groups/channels and related settings per workspace (per plan and availability)."
+        },
+        {
+          "q": "How do I contact support?",
+          "a": "Use the Contact page to email or submit a request—we’ll get back to you as soon as we can."
+        }
+      ]
+    },
+    "tutorialsIndex": {
+      "heading": "Tutorials",
+      "lead": "Practical guides and best practices to get more out of Telemaster for Telegram.",
+      "empty": "No articles yet."
+    }
+  }
+}
