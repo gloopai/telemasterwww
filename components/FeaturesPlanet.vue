@@ -1,22 +1,24 @@
 <template>
   <section class="border-t border-gray-200/80 bg-white">
     <div class="mx-auto max-w-6xl px-4 sm:px-6">
-      <div class="py-16 md:py-24">
-        <div class="mx-auto max-w-2xl text-center">
+      <div class="py-12 sm:py-16 md:py-24">
+        <div class="mx-auto max-w-2xl px-0 text-center">
           <p class="text-sm font-semibold text-blue-600">产品能力</p>
-          <h2 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 md:text-4xl">
+          <h2
+            class="mt-2 text-2xl font-bold leading-snug tracking-tight text-gray-900 sm:text-3xl md:text-4xl"
+          >
             AI + 运营系统：核心能力
           </h2>
-          <p class="mt-4 text-lg text-gray-600">
+          <p class="mt-4 text-base leading-relaxed text-gray-600 sm:text-lg">
             把重复劳动变成可控流程，把个人经验变成团队可复用的能力。
           </p>
         </div>
 
-        <div class="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5">
+        <div class="mt-10 grid min-w-0 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3 lg:gap-5">
           <article
             v-for="item in features"
             :key="item.title"
-            class="rounded-2xl border border-gray-200 bg-gray-50/50 p-6 transition-colors hover:border-blue-200/80 hover:bg-white md:p-7"
+            class="rounded-2xl border border-gray-200 bg-gray-50/50 p-5 transition-colors hover:border-blue-200/80 hover:bg-white sm:p-6 md:p-7"
           >
             <div
               class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-blue-600/10 text-blue-600"

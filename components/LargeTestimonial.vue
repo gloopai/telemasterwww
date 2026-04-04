@@ -1,13 +1,13 @@
 <template>
   <section class="border-t border-gray-200/80 bg-white">
     <div class="mx-auto max-w-6xl px-4 sm:px-6">
-      <div class="py-16 md:py-24">
+      <div class="py-12 sm:py-16 md:py-24">
         <figure
-          class="mx-auto max-w-3xl rounded-3xl border border-gray-200 bg-gray-50/80 p-8 md:p-12"
+          class="mx-auto max-w-3xl rounded-2xl border border-gray-200 bg-gray-50/80 p-5 sm:rounded-3xl sm:p-8 md:p-12"
         >
-          <div class="flex flex-col gap-8 md:flex-row md:items-start md:gap-10">
+          <div class="flex flex-col gap-6 sm:gap-8 md:flex-row md:items-start md:gap-10">
             <img
-              class="h-14 w-14 shrink-0 rounded-2xl object-cover ring-1 ring-gray-200"
+              class="h-12 w-12 shrink-0 rounded-xl object-cover ring-1 ring-gray-200 sm:h-14 sm:w-14 sm:rounded-2xl"
               src="/images/large-testimonial.jpg"
               width="56"
               height="56"
@@ -15,7 +15,7 @@
             />
             <div class="min-w-0 flex-1">
               <blockquote
-                class="text-xl font-semibold leading-relaxed text-gray-900 md:text-2xl md:leading-snug"
+                class="text-base font-semibold leading-relaxed text-gray-900 sm:text-xl md:text-2xl md:leading-snug"
               >
                 <span class="text-blue-600/90">“</span>
                 以前我们每天花大量时间在清理广告、回答重复问题、同步信息。现在用

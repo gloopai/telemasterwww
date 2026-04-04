@@ -1,7 +1,7 @@
 <template>
   <div class="flex min-h-screen flex-col">
     <UiHeader />
-    <main class="grow">
+    <main class="min-w-0 grow pb-[env(safe-area-inset-bottom)]">
       <slot />
     </main>
     <UiFooter :border="true" />

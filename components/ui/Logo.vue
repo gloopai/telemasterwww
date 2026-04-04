@@ -1,7 +1,17 @@
+<script setup lang="ts">
+withDefaults(
+  defineProps<{
+    /** 顶栏等窄位：仅在大屏显示文字标，避免与菜单按钮抢宽 */
+    wordmarkFromLg?: boolean;
+  }>(),
+  { wordmarkFromLg: false },
+);
+</script>
+
 <template>
   <NuxtLink
     to="/"
-    class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700"
+    class="inline-flex min-w-0 max-w-full items-center gap-1.5 text-blue-600 hover:text-blue-700 sm:gap-2"
     aria-label="Telemaster"
   >
     <svg
@@ -26,7 +36,10 @@
       height="21"
       viewBox="0 0 151 21"
       fill="currentColor"
-      class="block h-[21px] w-[151px]"
+      :class="[
+        'h-[18px] w-[120px] min-w-0 shrink sm:h-[21px] sm:w-[151px]',
+        wordmarkFromLg ? 'hidden lg:block' : 'hidden min-[340px]:block',
+      ]"
       aria-hidden="true"
     >
       <path

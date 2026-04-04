@@ -204,4 +204,15 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
   }
+
+  /* 防止未正确设置 viewport 时出现横向滚动；并避免 iOS 横竖屏时文字被系统放大破坏布局 */
+  html {
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
 }

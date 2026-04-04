@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer class="pb-[max(1rem,env(safe-area-inset-bottom))]">
     <div class="mx-auto max-w-6xl px-4 sm:px-6">
       <div
         :class="[

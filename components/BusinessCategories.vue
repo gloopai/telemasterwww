@@ -1,20 +1,22 @@
 <template>
     <section class="border-t border-gray-200/80 bg-gray-50">
       <div class="mx-auto max-w-6xl px-4 sm:px-6">
-        <div class="py-16 md:py-24">
-          <div class="mx-auto max-w-2xl pb-12 text-center md:pb-16">
+        <div class="py-12 sm:py-16 md:py-24">
+          <div class="mx-auto max-w-2xl px-0 pb-10 text-center sm:pb-12 md:pb-16">
             <p class="text-sm font-semibold text-blue-600">AI 助理</p>
-            <h2 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 md:text-4xl">
+            <h2
+              class="mt-2 text-2xl font-bold leading-snug tracking-tight text-gray-900 sm:text-3xl md:text-4xl"
+            >
               加入 AI 助理，让运营可编排
             </h2>
-            <p class="mt-4 text-lg text-gray-600">
+            <p class="mt-4 text-base leading-relaxed text-gray-600 sm:text-lg">
               AI 负责理解与建议，系统负责执行与审计，让团队在规模化下依然稳定。
             </p>
           </div>
 
-          <div class="grid gap-10 lg:grid-cols-2 lg:items-stretch lg:gap-12">
+          <div class="grid gap-8 lg:grid-cols-2 lg:items-stretch lg:gap-12">
             <div
-              class="flex min-h-[280px] flex-col items-center justify-center rounded-3xl border border-gray-200 bg-white p-10 text-center shadow-sm"
+              class="flex min-h-[220px] flex-col items-center justify-center rounded-2xl border border-gray-200 bg-white p-6 text-center shadow-sm sm:min-h-[260px] sm:rounded-3xl sm:p-8 md:p-10"
             >
               <div
                 class="flex h-20 w-20 items-center justify-center rounded-2xl bg-blue-600/10 ring-1 ring-blue-600/10"
@@ -34,11 +36,11 @@
               </p>
             </div>
 
-            <div class="grid gap-4 sm:grid-cols-2">
+            <div class="grid min-w-0 gap-3 sm:grid-cols-2 sm:gap-4">
               <div
                 v-for="m in aiModules"
                 :key="m.title"
-                class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-gray-200"
+                class="rounded-2xl bg-white p-4 shadow-sm ring-1 ring-gray-200 sm:p-6"
               >
                 <div class="flex items-center gap-3">
                   <span
@@ -72,33 +74,37 @@
             </div>
           </div>
 
-          <div class="mt-16 rounded-3xl border border-gray-200/80 bg-white p-8 shadow-sm md:p-10">
+          <div
+            class="mt-12 rounded-2xl border border-gray-200/80 bg-white p-5 shadow-sm sm:mt-16 sm:rounded-3xl sm:p-8 md:p-10"
+          >
             <div class="mx-auto max-w-3xl text-center">
               <p class="text-sm font-semibold text-blue-600">商业化</p>
-              <h3 class="mt-2 text-2xl font-bold tracking-tight text-gray-900 md:text-3xl">
+              <h3
+                class="mt-2 text-xl font-bold leading-snug tracking-tight text-gray-900 sm:text-2xl md:text-3xl"
+              >
                 社群变现：从运营到收入的闭环
               </h3>
-              <p class="mt-3 text-base text-gray-700">
+              <p class="mt-3 text-left text-sm text-gray-700 sm:text-center sm:text-base">
                 Telemaster 把“承接-转化-交付-复盘”做成可执行的流程，帮助 Telegram
                 社群运营者更稳定地获得收入与增长。
               </p>
             </div>
 
-            <div class="mt-8 flex flex-wrap justify-center gap-2">
+            <div class="mt-6 flex flex-wrap justify-center gap-1.5 sm:mt-8 sm:gap-2">
               <span
                 v-for="label in monetizationOptions"
                 :key="label"
-                class="rounded-full bg-gray-50 px-3 py-1 text-xs font-medium text-gray-700 ring-1 ring-gray-200"
+                class="rounded-full bg-gray-50 px-2.5 py-1 text-[11px] font-medium leading-tight text-gray-700 ring-1 ring-gray-200 sm:px-3 sm:text-xs"
               >
                 {{ label }}
               </span>
             </div>
 
-            <div class="mt-10 grid gap-6 lg:grid-cols-2">
+            <div class="mt-8 grid gap-4 sm:mt-10 sm:gap-6 lg:grid-cols-2">
               <div
                 v-for="s in monetizationModel"
                 :key="s.title"
-                class="rounded-2xl bg-gray-50 p-6 ring-1 ring-gray-200"
+                class="rounded-2xl bg-gray-50 p-4 ring-1 ring-gray-200 sm:p-6"
               >
                 <div class="text-sm font-semibold text-gray-900">
                   {{ s.title }}
@@ -117,33 +123,35 @@
             </div>
           </div>
 
-          <div class="mt-16 overflow-hidden rounded-3xl bg-gray-900 p-8 text-white shadow-lg ring-1 ring-white/10 md:p-10">
+          <div
+            class="mt-12 overflow-hidden rounded-2xl bg-gray-900 p-5 text-white shadow-lg ring-1 ring-white/10 sm:mt-16 sm:rounded-3xl sm:p-8 md:p-10"
+          >
             <div class="mx-auto max-w-3xl text-center">
               <p class="text-sm font-semibold text-blue-300/90">联盟</p>
-              <h3 class="mt-2 text-2xl font-bold tracking-tight md:text-3xl">
+              <h3 class="mt-2 text-xl font-bold leading-snug tracking-tight sm:text-2xl md:text-3xl">
                 Telegram 生态流量运营变现联盟
               </h3>
-              <p class="mt-3 text-base text-white/80">
+              <p class="mt-3 text-left text-sm leading-relaxed text-white/80 sm:text-center sm:text-base">
                 Telemaster 在做一件更长期的事：连接流量与变现产品，让合作从“单次对接”
                 变成“可复制的联盟协作”。
               </p>
             </div>
 
-            <div class="mt-8 flex flex-wrap justify-center gap-2">
+            <div class="mt-6 flex flex-wrap justify-center gap-1.5 sm:mt-8 sm:gap-2">
               <span
                 v-for="label in allianceRoles"
                 :key="label"
-                class="rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-white/90 ring-1 ring-white/10"
+                class="rounded-full bg-white/10 px-2.5 py-1 text-[11px] font-medium leading-tight text-white/90 ring-1 ring-white/10 sm:px-3 sm:text-xs"
               >
                 {{ label }}
               </span>
             </div>
 
-            <div class="mt-10 grid gap-6 lg:grid-cols-2">
+            <div class="mt-8 grid gap-4 sm:mt-10 sm:gap-6 lg:grid-cols-2">
               <div
                 v-for="p in alliancePillars"
                 :key="p.title"
-                class="rounded-2xl bg-white/5 p-6 ring-1 ring-white/10"
+                class="rounded-2xl bg-white/5 p-4 ring-1 ring-white/10 sm:p-6"
               >
                 <div class="text-sm font-semibold text-white">
                   {{ p.title }}
@@ -161,19 +169,24 @@
               </div>
             </div>
 
-            <div class="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
-              <NuxtLink to="/contact"  
-                class="inline-flex items-center justify-center rounded-lg bg-linear-to-t from-blue-600 to-blue-500 px-5 py-3 text-sm font-medium text-white shadow-sm hover:from-blue-600 hover:to-blue-600"
+            <div
+              class="mt-8 flex w-full flex-col items-stretch justify-center gap-2 sm:mt-10 sm:flex-row sm:flex-wrap sm:items-center sm:gap-3"
+            >
+              <NuxtLink
+                to="/contact"
+                class="inline-flex w-full items-center justify-center rounded-lg bg-linear-to-t from-blue-600 to-blue-500 px-5 py-3.5 text-sm font-medium text-white shadow-sm touch-manipulation hover:from-blue-600 hover:to-blue-600 sm:w-auto sm:py-3"
               >
                 加入联盟
               </NuxtLink>
-              <NuxtLink to="/alliance"  
-                class="inline-flex items-center justify-center rounded-lg bg-white/10 px-5 py-3 text-sm font-medium text-white ring-1 ring-white/10 hover:bg-white/15"
+              <NuxtLink
+                to="/alliance"
+                class="inline-flex w-full items-center justify-center rounded-lg bg-white/10 px-5 py-3.5 text-sm font-medium text-white ring-1 ring-white/10 touch-manipulation hover:bg-white/15 sm:w-auto sm:py-3"
               >
                 了解联盟
               </NuxtLink>
-              <NuxtLink to="/integrations"  
-                class="inline-flex items-center justify-center rounded-lg bg-white/10 px-5 py-3 text-sm font-medium text-white ring-1 ring-white/10 hover:bg-white/15"
+              <NuxtLink
+                to="/integrations"
+                class="inline-flex w-full items-center justify-center rounded-lg bg-white/10 px-5 py-3.5 text-sm font-medium text-white ring-1 ring-white/10 touch-manipulation hover:bg-white/15 sm:w-auto sm:py-3"
               >
                 查看集成能力
               </NuxtLink>
